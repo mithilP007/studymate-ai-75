@@ -33,7 +33,7 @@ function AuthPage() {
     return () => sub.subscription.unsubscribe();
   }, [nav]);
 
-  const signInGoogle = async () => {
+  const handleGoogleLogin = async () => {
     setLoading(true);
     try {
       const { data, error } = await supabase.auth.signInWithOAuth({
@@ -131,7 +131,7 @@ function AuthPage() {
 
           <div className="rounded-2xl border border-border bg-surface p-8 space-y-4">
             <Button
-              onClick={signInGoogle}
+              onClick={handleGoogleLogin}
               disabled={loading || loadingEmail}
               size="lg"
               variant="outline"

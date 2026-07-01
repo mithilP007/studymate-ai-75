@@ -7,7 +7,7 @@ function isNewSupabaseApiKey(value: string): boolean {
 }
 
 function createSupabaseFetch(supabaseKey: string): typeof fetch {
-  return (input, init) => {
+  return async (input, init) => {
     const headers = new Headers(
       typeof Request !== 'undefined' && input instanceof Request ? input.headers : undefined,
     );
@@ -22,7 +22,25 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
     }
 
     headers.set('apikey', supabaseKey);
-    return fetch(input, { ...init, headers });
+    const response = await fetch(input, { ...init, headers });
+
+    // Self-healing: if an auth request returns 401, clear local session storage to avoid infinite 401 lockouts
+    if (response.status === 401 && typeof window !== 'undefined') {
+      const urlStr = typeof input === 'string' ? input : (input && 'url' in input ? (input.url as string) : '');
+      if (urlStr.includes('/auth/v1/')) {
+        console.warn("[Supabase Fetch] Auth request returned 401. Clearing stale session tokens from localStorage...");
+        const keysToRemove: string[] = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && (key.startsWith('sb-') || key.includes('-auth-token'))) {
+            keysToRemove.push(key);
+          }
+        }
+        keysToRemove.forEach(key => localStorage.removeItem(key));
+      }
+    }
+
+    return response;
   };
 }
 

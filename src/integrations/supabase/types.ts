@@ -44,9 +44,11 @@ export type Database = {
           city: string | null
           created_at: string
           district: string | null
+          first_letter: string | null
           id: string
           institution_type: string | null
           name: string
+          normalized_name: string | null
           source: string | null
           state: string | null
           university_affiliation: string | null
@@ -57,9 +59,11 @@ export type Database = {
           city?: string | null
           created_at?: string
           district?: string | null
+          first_letter?: string | null
           id?: string
           institution_type?: string | null
           name: string
+          normalized_name?: string | null
           source?: string | null
           state?: string | null
           university_affiliation?: string | null
@@ -70,9 +74,11 @@ export type Database = {
           city?: string | null
           created_at?: string
           district?: string | null
+          first_letter?: string | null
           id?: string
           institution_type?: string | null
           name?: string
+          normalized_name?: string | null
           source?: string | null
           state?: string | null
           university_affiliation?: string | null

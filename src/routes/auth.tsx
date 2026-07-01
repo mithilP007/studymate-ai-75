@@ -1,9 +1,10 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { lovable } from "@/integrations/lovable";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ArrowLeft, Loader2 } from "lucide-react";
@@ -17,6 +18,10 @@ export const Route = createFileRoute("/auth")({
 function AuthPage() {
   const nav = useNavigate();
   const [loading, setLoading] = useState(false);
+  const [loadingEmail, setLoadingEmail] = useState(false);
+  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     supabase.auth.getSession().then(async ({ data }) => {
@@ -31,17 +36,71 @@ function AuthPage() {
   const signInGoogle = async () => {
     setLoading(true);
     try {
-      const res = await lovable.auth.signInWithOAuth("google", {
-        redirect_uri: window.location.origin + "/auth",
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback`,
+        },
       });
-      if (res.error) {
-        toast.error("Google sign-in failed", { description: String(res.error.message ?? res.error) });
+      if (error) {
+        toast.error("Google sign-in failed", { description: error.message });
         setLoading(false);
       }
     } catch (e) {
       toast.error("Could not start sign-in");
       console.error(e);
       setLoading(false);
+    }
+  };
+
+  const handleEmailSignIn = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoadingEmail(true);
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      if (error) {
+        toast.error("Sign in failed", { description: error.message });
+      } else {
+        toast.success("Successfully signed in!");
+      }
+    } catch (err) {
+      toast.error("Could not sign in");
+      console.error(err);
+    } finally {
+      setLoadingEmail(false);
+    }
+  };
+
+  const handleEmailSignUp = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoadingEmail(true);
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: window.location.origin + "/auth",
+        },
+      });
+      if (error) {
+        toast.error("Sign up failed", { description: error.message });
+      } else {
+        if (data?.session) {
+          toast.success("Successfully signed up!");
+        } else {
+          toast.success("Sign up successful!", {
+            description: "Please check your inbox to confirm your email.",
+          });
+        }
+      }
+    } catch (err) {
+      toast.error("Could not sign up");
+      console.error(err);
+    } finally {
+      setLoadingEmail(false);
     }
   };
 
@@ -54,20 +113,26 @@ function AuthPage() {
         <Logo />
         <ThemeToggle />
       </header>
-      <main className="flex-1 grid place-items-center px-6">
+      <main className="flex-1 grid place-items-center px-6 py-8">
         <div className="w-full max-w-md animate-fade-up">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft text-brand text-xs font-bold tracking-wider uppercase mb-4">
               Welcome
             </div>
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">Sign in to StudyMate AI</h1>
-            <p className="mt-2 text-muted-foreground">Continue with Google to access your study workspace.</p>
+            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+              {mode === "signin" ? "Sign in to StudyMate AI" : "Create your account"}
+            </h1>
+            <p className="mt-2 text-muted-foreground">
+              {mode === "signin"
+                ? "Continue with Google or email to access your study workspace."
+                : "Create an account with Google or email to start learning."}
+            </p>
           </div>
 
           <div className="rounded-2xl border border-border bg-surface p-8 space-y-4">
             <Button
               onClick={signInGoogle}
-              disabled={loading}
+              disabled={loading || loadingEmail}
               size="lg"
               variant="outline"
               className="w-full h-12 rounded-xl font-medium"
@@ -75,6 +140,75 @@ function AuthPage() {
               {loading ? <Loader2 className="size-4 animate-spin mr-2" /> : <GoogleIcon />}
               Continue with Google
             </Button>
+
+            <div className="relative flex py-2 items-center">
+              <div className="flex-grow border-t border-border"></div>
+              <span className="flex-shrink mx-4 text-xs text-muted-foreground uppercase">or</span>
+              <div className="flex-grow border-t border-border"></div>
+            </div>
+
+            <form onSubmit={mode === "signin" ? handleEmailSignIn : handleEmailSignUp} className="space-y-4">
+              <div className="space-y-1">
+                <Label htmlFor="email">Email address</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="h-11 rounded-xl"
+                />
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  className="h-11 rounded-xl"
+                  minLength={6}
+                />
+              </div>
+              <Button
+                type="submit"
+                disabled={loading || loadingEmail}
+                className="w-full h-11 rounded-xl bg-brand text-brand-foreground hover:opacity-90 font-medium"
+              >
+                {loadingEmail ? <Loader2 className="size-4 animate-spin mr-2" /> : null}
+                {mode === "signin" ? "Sign In" : "Sign Up"}
+              </Button>
+            </form>
+
+            <div className="text-center text-sm pt-2">
+              {mode === "signin" ? (
+                <>
+                  Don't have an account?{" "}
+                  <button
+                    type="button"
+                    onClick={() => setMode("signup")}
+                    className="text-brand font-medium hover:underline focus:outline-none"
+                  >
+                    Sign up
+                  </button>
+                </>
+              ) : (
+                <>
+                  Already have an account?{" "}
+                  <button
+                    type="button"
+                    onClick={() => setMode("signin")}
+                    className="text-brand font-medium hover:underline focus:outline-none"
+                  >
+                    Sign in
+                  </button>
+                </>
+              )}
+            </div>
+
             <p className="text-[11px] text-center text-muted-foreground leading-relaxed pt-2">
               By continuing you agree to our Terms and acknowledge our Privacy Policy. Your study data is encrypted and private to you.
             </p>
@@ -110,3 +244,4 @@ function GoogleIcon() {
     </svg>
   );
 }
+

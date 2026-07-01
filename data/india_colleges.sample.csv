@@ -1,0 +1,22 @@
+name,aishe_code,state,district,city,institution_type,university_affiliation,source
+Indian Institute of Technology Madras,C-12345,Tamil Nadu,Chennai,Chennai,Engineering,Institute of National Importance,AISHE
+Vellore Institute of Technology,C-12346,Tamil Nadu,Vellore,Vellore,Engineering,Deemed University,AISHE
+Indian Institute of Technology Bombay,C-12347,Maharashtra,Mumbai,Mumbai,Engineering,Institute of National Importance,AISHE
+University of Mumbai,U-0123,Maharashtra,Mumbai,Mumbai,University,State University,UGC
+College of Engineering Pune,C-12348,Maharashtra,Pune,Pune,Engineering,Savitribai Phule Pune University,AICTE
+Indian Institute of Technology Delhi,C-12349,Delhi,New Delhi,New Delhi,Engineering,Institute of National Importance,AISHE
+Delhi University,U-0124,Delhi,North Delhi,New Delhi,University,Central University,UGC
+Miranda House,C-12350,Delhi,North Delhi,New Delhi,Arts & Science,Delhi University,AISHE
+Indian Institute of Technology Kanpur,C-12351,Uttar Pradesh,Kanpur,Kanpur,Engineering,Institute of National Importance,AISHE
+Banaras Hindu University,U-0125,Uttar Pradesh,Varanasi,Varanasi,University,Central University,UGC
+Indian Institute of Science,U-0126,Karnataka,Bengaluru Urban,Bengaluru,University,Institute of National Importance,UGC
+R. V. College of Engineering,C-12352,Karnataka,Bengaluru Urban,Bengaluru,Engineering,Visvesvaraya Technological University,AICTE
+National Institute of Technology Trichy,C-12353,Tamil Nadu,Tiruchirappalli,Tiruchirappalli,Engineering,Institute of National Importance,AISHE
+Christian Medical College Vellore,C-12354,Tamil Nadu,Vellore,Vellore,Medical,Tamil Nadu Dr. M.G.R. Medical University,AISHE
+BITS Pilani,U-0127,Rajasthan,Jhunjhunu,Pilani,University,Deemed University,UGC
+Jadavpur University,U-0128,West Bengal,Kolkata,Kolkata,University,State University,UGC
+St. Xavier's College Kolkata,C-12355,West Bengal,Kolkata,Kolkata,Arts & Science,Calcutta University,AISHE
+National Law School of India University,U-0129,Karnataka,Bengaluru Urban,Bengaluru,Law,State University,UGC
+Symbiosis Institute of Business Management,C-12356,Maharashtra,Pune,Pune,Management,Symbiosis International University,AICTE
+Government College of Pharmacy Bengaluru,C-12357,Karnataka,Bengaluru Urban,Bengaluru,Pharmacy,Rajiv Gandhi University of Health Sciences,AICTE
+Kathir College of Engineering,,Tamil Nadu,Coimbatore,Coimbatore,Engineering,,Manual_Test

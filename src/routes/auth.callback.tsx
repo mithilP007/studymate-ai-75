@@ -13,21 +13,15 @@ function AuthCallbackPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleCallback = async () => {
+    let handled = false;
+
+    const processSession = async (session: any) => {
+      if (handled) return;
+      handled = true;
+      
+      const user = session.user;
+
       try {
-        const {
-          data: { session },
-          error: sessionError,
-        } = await supabase.auth.getSession();
-
-        if (sessionError || !session) {
-          console.error("Session fetch error:", sessionError);
-          navigate({ to: "/auth", replace: true });
-          return;
-        }
-
-        const user = session.user;
-
         const { data: existingProfile, error: profileError } = await supabase
           .from("profiles")
           .select("*")
@@ -73,7 +67,35 @@ function AuthCallbackPage() {
       }
     };
 
-    handleCallback();
+    // 1. Check existing session immediately
+    supabase.auth.getSession().then(({ data: { session }, error }) => {
+      if (error) {
+        console.error("getSession error:", error.message);
+      }
+      if (session) {
+        processSession(session);
+      }
+    });
+
+    // 2. Listen to state changes (handles the OAuth hash parsing event)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session) {
+        processSession(session);
+      }
+    });
+
+    // 3. Fallback timeout: if no session is captured after 3.5 seconds, redirect to login
+    const timeout = setTimeout(() => {
+      if (!handled) {
+        console.warn("Auth callback timed out without a session.");
+        navigate({ to: "/auth", replace: true });
+      }
+    }, 3500);
+
+    return () => {
+      subscription.unsubscribe();
+      clearTimeout(timeout);
+    };
   }, [navigate]);
 
   return (

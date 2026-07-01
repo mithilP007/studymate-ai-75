@@ -115,6 +115,25 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => {
+    const handleChunkError = (e: ErrorEvent) => {
+      const errorMsg = e.message || "";
+      if (
+        errorMsg.includes("Failed to fetch dynamically imported module") ||
+        errorMsg.includes("Importing a module script failed") ||
+        (e.error?.name === "TypeError" && e.error?.message?.includes("Failed to fetch dynamically imported module"))
+      ) {
+        console.warn("Chunk loading failed. Reloading page to fetch the latest version...");
+        e.preventDefault();
+        window.location.reload();
+      }
+    };
+
+    window.addEventListener("error", handleChunkError);
+    return () => window.removeEventListener("error", handleChunkError);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>

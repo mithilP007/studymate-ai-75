@@ -47,6 +47,10 @@ function createSupabaseClient() {
     throw new Error(message);
   }
 
+  if (typeof window !== 'undefined') {
+    console.log(`[Supabase Init] URL: ${SUPABASE_URL}, Key (prefix): ${SUPABASE_PUBLISHABLE_KEY.substring(0, 16)}...`);
+  }
+
   return createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
     global: {
       fetch: createSupabaseFetch(SUPABASE_PUBLISHABLE_KEY),

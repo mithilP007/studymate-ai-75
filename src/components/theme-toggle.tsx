@@ -16,12 +16,12 @@ const ACCENTS: {
   mainColor: string;
   secColor: string;
 }[] = [
-  { id: "emerald",  label: "Emerald",  emoji: "🌿", desc: "Clean and focused green theme",              mainColor: "hsl(160 84% 39%)", secColor: "hsl(160 84% 39% / 0.22)" },
-  { id: "ocean",    label: "Ocean",    emoji: "🌊", desc: "Cool blue theme for long study sessions",   mainColor: "hsl(200 95% 45%)", secColor: "hsl(200 95% 45% / 0.22)" },
-  { id: "lavender", label: "Lavender", emoji: "💜", desc: "Soft purple for a calm experience",         mainColor: "hsl(262 83% 65%)", secColor: "hsl(262 83% 65% / 0.22)" },
-  { id: "sunset",   label: "Sunset",   emoji: "🔥", desc: "Warm orange theme with energetic accents",  mainColor: "hsl(20 90% 55%)",  secColor: "hsl(20 90% 55% / 0.22)"  },
-  { id: "mono",     label: "Mono",     emoji: "⚫", desc: "Minimal grayscale theme",                   mainColor: "hsl(220 10% 45%)", secColor: "hsl(220 10% 45% / 0.22)" },
-];
+    { id: "emerald", label: "Emerald", emoji: "🌿", desc: "Clean and focused green theme", mainColor: "hsl(160 84% 39%)", secColor: "hsl(160 84% 39% / 0.22)" },
+    { id: "ocean", label: "Ocean", emoji: "🌊", desc: "Cool blue theme for long study sessions", mainColor: "hsl(200 95% 45%)", secColor: "hsl(200 95% 45% / 0.22)" },
+    { id: "lavender", label: "Lavender", emoji: "💜", desc: "Soft purple for a calm experience", mainColor: "hsl(262 83% 65%)", secColor: "hsl(262 83% 65% / 0.22)" },
+    { id: "sunset", label: "Sunset", emoji: "🔥", desc: "Warm orange theme with energetic accents", mainColor: "hsl(20 90% 55%)", secColor: "hsl(20 90% 55% / 0.22)" },
+    { id: "mono", label: "Mono", emoji: "⚫", desc: "Minimal grayscale theme", mainColor: "hsl(220 10% 45%)", secColor: "hsl(220 10% 45% / 0.22)" },
+  ];
 
 /** One-click Sun ↔ Moon toggle */
 export function ThemeToggle() {
@@ -36,7 +36,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       {isDark
-        ? <Sun  className="size-4 transition-transform duration-300 rotate-0" />
+        ? <Sun className="size-4 transition-transform duration-300 rotate-0" />
         : <Moon className="size-4 transition-transform duration-300 rotate-0" />
       }
     </Button>
@@ -96,8 +96,8 @@ export function PersonalizeToggle() {
                       : "text-muted-foreground border border-transparent hover:text-foreground hover:-translate-y-0.5 hover:bg-muted/60",
                   ].join(" ")}
                 >
-                  {t === "light"  && <Sun     className="size-3.5 mb-1 text-brand" />}
-                  {t === "dark"   && <Moon    className="size-3.5 mb-1 text-brand" />}
+                  {t === "light" && <Sun className="size-3.5 mb-1 text-brand" />}
+                  {t === "dark" && <Moon className="size-3.5 mb-1 text-brand" />}
                   {t === "system" && <Monitor className="size-3.5 mb-1 text-brand" />}
                   {t}
                 </button>

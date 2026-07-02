@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useEffect, useState, useMemo } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/components/auth-provider";
@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Check, GraduationCap, Loader2, Search, Sparkles } from "lucide-react";
+import { Check, GraduationCap, Loader2, PlusCircle, Search, Sparkles } from "lucide-react";
+import STATE_DISTRICTS from "@/data/state-districts.json";
 
 export const Route = createFileRoute("/_authenticated/onboarding")({
   ssr: false,
@@ -18,47 +19,53 @@ export const Route = createFileRoute("/_authenticated/onboarding")({
   component: Onboarding,
 });
 
+/** Sorted list of all Indian states from the CSV */
+const ALL_STATES = Object.keys(STATE_DISTRICTS).sort() as string[];
+
+/** Institution keyword filters — searches in college name */
 const INSTITUTION_TYPES = [
-  "Engineering",
-  "Arts & Science",
-  "Medical",
-  "Polytechnic",
-  "University",
-  "Nursing",
-  "Law",
-  "Management",
-  "Pharmacy",
-  "Education",
-  "Other",
+  { label: "All Types",        keyword: "" },
+  { label: "Engineering",      keyword: "Engineering" },
+  { label: "Arts & Science",   keyword: "Arts" },
+  { label: "Medical",          keyword: "Medical" },
+  { label: "Polytechnic",      keyword: "Polytechnic" },
+  { label: "University",       keyword: "University" },
+  { label: "Nursing",          keyword: "Nursing" },
+  { label: "Law",              keyword: "Law" },
+  { label: "Management",       keyword: "Management" },
+  { label: "Pharmacy",         keyword: "Pharmacy" },
+  { label: "Education",        keyword: "Education" },
 ];
+
 const LANGUAGES = ["English", "Tamil", "Hindi", "Hinglish", "Other"];
 const GOALS = ["Exam preparation", "Daily study", "Coding help", "Project help", "Interview prep", "Research help"];
 
 function Onboarding() {
   const { user } = useAuth();
   const nav = useNavigate();
+  const qc = useQueryClient();
   const [step, setStep] = useState(1);
   const [saving, setSaving] = useState(false);
 
-  // Step 2 state variables
+  // Step 2 — college search filters
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
-  const [typeFilter, setTypeFilter] = useState<string>("");
-  const [stateFilter, setStateFilter] = useState<string>("");
-  const [districtFilter, setDistrictFilter] = useState<string>("");
-  const [firstLetter, setFirstLetter] = useState<string>("All");
+  const [typeKeyword, setTypeKeyword] = useState("");        // keyword filter (college name)
+  const [stateFilter, setStateFilter] = useState("");
+  const [districtFilter, setDistrictFilter] = useState("");
   const [selectedCollege, setSelectedCollege] = useState<{ id?: string; name: string } | null>(null);
 
-  // Manual entry states
+  // Manual entry
   const [isManualEntry, setIsManualEntry] = useState(false);
   const [manualCollege, setManualCollege] = useState({
     name: "",
     state: "",
-    city: "",
+    district: "",
     type: "",
   });
+  const [manualDistrictList, setManualDistrictList] = useState<string[]>([]);
 
-  // Step 3 state variables
+  // Step 3 — profile
   const [fullName, setFullName] = useState(user?.user_metadata?.full_name ?? user?.user_metadata?.name ?? "");
   const [degree, setDegree] = useState("");
   const [department, setDepartment] = useState("");
@@ -66,73 +73,61 @@ function Onboarding() {
   const [language, setLanguage] = useState("English");
   const [goal, setGoal] = useState("Exam preparation");
 
-  // Debounce search input by 300ms
+  // Debounce search by 300 ms
   useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedSearch(search);
-    }, 300);
-    return () => clearTimeout(handler);
+    const t = setTimeout(() => setDebouncedSearch(search), 300);
+    return () => clearTimeout(t);
   }, [search]);
 
-  // Main college query hook
+  // Districts filtered to selected state (main search)
+  const districtOptions = useMemo<string[]>(() => {
+    if (!stateFilter) return [];
+    const map = STATE_DISTRICTS as Record<string, string[]>;
+    return (map[stateFilter] ?? []).sort();
+  }, [stateFilter]);
+
+  // Districts filtered to manual-entry selected state
+  useEffect(() => {
+    if (!manualCollege.state) { setManualDistrictList([]); return; }
+    const map = STATE_DISTRICTS as Record<string, string[]>;
+    setManualDistrictList((map[manualCollege.state] ?? []).sort());
+    setManualCollege((p) => ({ ...p, district: "" }));
+  }, [manualCollege.state]);
+
+  // --- College query (Supabase) ---
   const { data: colleges = [], isLoading } = useQuery({
-    queryKey: ["colleges", debouncedSearch, typeFilter, stateFilter, districtFilter, firstLetter],
+    queryKey: ["colleges", debouncedSearch, typeKeyword, stateFilter, districtFilter],
     queryFn: async () => {
       let q = supabase
         .from("colleges")
         .select("id,name,state,city,district,institution_type,verified,source");
 
-      if (debouncedSearch) {
-        q = q.ilike("name", `%${debouncedSearch}%`);
-      }
+      // Combine user search + institution keyword in a single ilike on name
+      const nameQuery = [debouncedSearch, typeKeyword].filter(Boolean).join(" ");
+      if (nameQuery) q = q.ilike("name", `%${nameQuery}%`);
 
-      if (firstLetter && firstLetter !== "All") {
-        q = q.eq("first_letter", firstLetter);
-      }
+      if (stateFilter)    q = q.eq("state",    stateFilter);
+      if (districtFilter) q = q.eq("district", districtFilter);
 
-      if (stateFilter && stateFilter !== "all" && stateFilter !== "") {
-        q = q.eq("state", stateFilter);
-      }
-
-      if (districtFilter && districtFilter !== "all" && districtFilter !== "") {
-        q = q.eq("district", districtFilter);
-      }
-
-      if (typeFilter && typeFilter !== "all" && typeFilter !== "") {
-        q = q.eq("institution_type", typeFilter);
-      }
-
-      const { data, error } = await q.order("name").limit(35);
+      const { data, error } = await q.order("name").limit(40);
       if (error) throw error;
       return data;
     },
   });
 
-  // Query unique states list
-  const { data: states = [] } = useQuery({
-    queryKey: ["college-states"],
+  // Total college count
+  const { data: totalCollegesCount = 0 } = useQuery({
+    queryKey: ["colleges-count"],
     queryFn: async () => {
-      const { data } = await supabase.from("colleges").select("state").not("state", "is", null);
-      return Array.from(new Set((data ?? []).map((d) => d.state).filter(Boolean))).sort() as string[];
-    },
-  });
-
-  // Query districts dynamic list
-  const { data: districts = [] } = useQuery({
-    queryKey: ["college-districts", stateFilter],
-    queryFn: async () => {
-      if (!stateFilter || stateFilter === "all") return [];
-      const { data } = await supabase
+      const { count, error } = await supabase
         .from("colleges")
-        .select("district")
-        .eq("state", stateFilter)
-        .not("district", "is", null);
-      return Array.from(new Set((data ?? []).map((d) => d.district).filter(Boolean))).sort() as string[];
+        .select("*", { count: "exact", head: true });
+      if (error) throw error;
+      return count ?? 0;
     },
-    enabled: !!stateFilter && stateFilter !== "all",
   });
 
-  // Query popular/recent colleges for empty-state recommendations
+  // Popular colleges for empty-state
   const { data: popularColleges = [] } = useQuery({
     queryKey: ["popular-colleges"],
     queryFn: async () => {
@@ -145,18 +140,7 @@ function Onboarding() {
     },
   });
 
-  // Query total number of colleges loaded in public.colleges
-  const { data: totalCollegesCount = 0, refetch: refetchCount } = useQuery({
-    queryKey: ["colleges-count"],
-    queryFn: async () => {
-      const { count, error } = await supabase
-        .from("colleges")
-        .select("*", { count: "exact", head: true });
-      if (error) throw error;
-      return count ?? 0;
-    },
-  });
-
+  // Redirect if already onboarded
   useEffect(() => {
     if (!user) return;
     supabase.from("profiles").select("onboarding_completed").eq("id", user.id).maybeSingle()
@@ -168,32 +152,35 @@ function Onboarding() {
     setSaving(true);
     try {
       let collegeId: string | null = null;
-      let collegeName: string = "";
+      let collegeName = "";
 
       if (isManualEntry) {
         collegeName = manualCollege.name.trim();
+        const firstLetter = collegeName.charAt(0).toUpperCase();
 
-        // Safe insertion of unverified custom college
-        const firstLetterChar = collegeName.charAt(0).toUpperCase();
-        const { data: newCollege, error: insertCollegeError } = await supabase
+        const { data: newCollege, error: insertErr } = await supabase
           .from("colleges")
           .insert({
             name: collegeName,
             normalized_name: collegeName.toLowerCase(),
-            state: manualCollege.state.trim() || null,
-            city: manualCollege.city.trim() || null,
+            state: manualCollege.state || null,
+            district: manualCollege.district || null,
+            city: manualCollege.district || null,          // use district as city fallback
             institution_type: manualCollege.type || null,
             verified: false,
             source: "User",
-            first_letter: firstLetterChar,
+            first_letter: firstLetter,
           })
           .select("id")
           .maybeSingle();
 
-        if (insertCollegeError) {
-          console.warn("Could not save manual college to registry:", insertCollegeError.message);
+        if (insertErr) {
+          console.warn("Manual college insert failed:", insertErr.message);
         } else if (newCollege) {
           collegeId = newCollege.id;
+          // Invalidate college list so the new entry appears in future searches
+          qc.invalidateQueries({ queryKey: ["colleges"] });
+          qc.invalidateQueries({ queryKey: ["colleges-count"] });
         }
       } else {
         collegeId = selectedCollege?.id ?? null;
@@ -232,7 +219,7 @@ function Onboarding() {
       (isManualEntry
         ? manualCollege.name.trim().length > 2 &&
           manualCollege.state.trim().length > 1 &&
-          manualCollege.city.trim().length > 1 &&
+          manualCollege.district.trim().length > 1 &&
           !!manualCollege.type
         : !!selectedCollege)) ||
     (step === 3 && fullName.trim().length > 1);
@@ -246,6 +233,7 @@ function Onboarding() {
           <ThemeToggle />
         </div>
       </header>
+
       <div className="max-w-2xl mx-auto px-6 py-12 animate-fade-up">
         {/* Progress bar */}
         <div className="flex items-center gap-2 mb-10">
@@ -254,6 +242,7 @@ function Onboarding() {
           ))}
         </div>
 
+        {/* ─── Step 1: Welcome ─── */}
         {step === 1 && (
           <div className="text-center space-y-6">
             <div className="size-16 mx-auto rounded-2xl bg-brand-soft text-brand grid place-items-center">
@@ -274,6 +263,7 @@ function Onboarding() {
           </div>
         )}
 
+        {/* ─── Step 2: College Selection ─── */}
         {step === 2 && (
           <div className="space-y-6">
             <div>
@@ -281,17 +271,15 @@ function Onboarding() {
               <p className="mt-1 text-muted-foreground text-sm">Choose your institution to get a syllabus-aware AI experience.</p>
             </div>
 
-            {/* Development Sample Alert */}
             {totalCollegesCount < 1000 && (
               <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs leading-relaxed space-y-1">
                 <span className="font-bold block">⚠️ Development Sample Data Only</span>
-                <p>Full India college CSV has not been imported yet. You can configure the directory by following the <a href="file:///d:/studymate/studymate-ai-75/docs/FULL_COLLEGE_IMPORT_GUIDE.md" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-85 font-semibold">Import Guide</a>.</p>
+                <p>Full India college CSV has not been imported yet.</p>
               </div>
             )}
 
-            {/* Directory count status */}
             <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
-              <span>College directory: <strong className="text-foreground">{totalCollegesCount}</strong> institutions loaded</span>
+              <span>College directory: <strong className="text-foreground">{totalCollegesCount.toLocaleString()}</strong> institutions</span>
               {totalCollegesCount < 1000 && (
                 <span className="text-[10px] text-amber-600 dark:text-amber-500 font-semibold bg-amber-500/5 px-2 py-0.5 rounded border border-amber-500/10">
                   Sample List
@@ -301,7 +289,7 @@ function Onboarding() {
 
             {!isManualEntry ? (
               <div className="space-y-4">
-                {/* Search Bar */}
+                {/* Search bar */}
                 <div className="relative">
                   <Search className="size-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
                   <Input
@@ -312,32 +300,9 @@ function Onboarding() {
                   />
                 </div>
 
-                {/* A-Z Alphabet Filter */}
-                <div className="flex gap-1 overflow-x-auto pb-2 scrollbar-none -mx-2 px-2 scroll-smooth">
-                  {["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")].map((letter) => {
-                    const active = firstLetter === letter;
-                    return (
-                      <button
-                        key={letter}
-                        type="button"
-                        onClick={() => {
-                          setFirstLetter(letter);
-                          setSelectedCollege(null);
-                        }}
-                        className={`px-3 py-1.5 rounded-lg text-xs font-semibold border shrink-0 transition-colors ${
-                          active
-                            ? "bg-brand text-brand-foreground border-brand"
-                            : "bg-surface border-border hover:bg-accent text-muted-foreground hover:text-foreground"
-                        }`}
-                      >
-                        {letter}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                {/* Advanced Dropdown Filters */}
+                {/* Filter row: State / District / Institution Type (keyword) */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {/* State */}
                   <Select
                     value={stateFilter || "all"}
                     onValueChange={(v) => {
@@ -349,53 +314,54 @@ function Onboarding() {
                     <SelectTrigger className="h-10 rounded-xl">
                       <SelectValue placeholder="State" />
                     </SelectTrigger>
-                    <SelectContent className="max-h-60">
+                    <SelectContent className="max-h-64">
                       <SelectItem value="all">All States</SelectItem>
-                      {states.map((s) => (
+                      {ALL_STATES.map((s) => (
                         <SelectItem key={s} value={s}>{s}</SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
 
+                  {/* District — populated from CSV mapping */}
                   <Select
                     value={districtFilter || "all"}
                     onValueChange={(v) => {
                       setDistrictFilter(v === "all" ? "" : v);
                       setSelectedCollege(null);
                     }}
-                    disabled={!stateFilter || stateFilter === ""}
+                    disabled={!stateFilter}
                   >
                     <SelectTrigger className="h-10 rounded-xl">
-                      <SelectValue placeholder={stateFilter ? "District" : "State Required"} />
+                      <SelectValue placeholder={stateFilter ? "District" : "Select State first"} />
                     </SelectTrigger>
-                    <SelectContent className="max-h-60">
+                    <SelectContent className="max-h-64">
                       <SelectItem value="all">All Districts</SelectItem>
-                      {districts.map((d) => (
+                      {districtOptions.map((d) => (
                         <SelectItem key={d} value={d}>{d}</SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
 
+                  {/* Institution type — keyword search on college name */}
                   <Select
-                    value={typeFilter || "all"}
+                    value={typeKeyword || "all"}
                     onValueChange={(v) => {
-                      setTypeFilter(v === "all" ? "" : v);
+                      setTypeKeyword(v === "all" ? "" : v);
                       setSelectedCollege(null);
                     }}
                   >
                     <SelectTrigger className="h-10 rounded-xl">
-                      <SelectValue placeholder="Type" />
+                      <SelectValue placeholder="Institution Type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">All Types</SelectItem>
                       {INSTITUTION_TYPES.map((t) => (
-                        <SelectItem key={t} value={t}>{t}</SelectItem>
+                        <SelectItem key={t.label} value={t.keyword || "all"}>{t.label}</SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
                 </div>
 
-                {/* Colleges list */}
+                {/* College list */}
                 <div className="rounded-xl border border-border bg-surface max-h-80 overflow-y-auto divide-y divide-border">
                   {isLoading && (
                     <div className="p-8 text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
@@ -405,54 +371,46 @@ function Onboarding() {
 
                   {!isLoading && colleges.length === 0 && (
                     <div className="p-8 text-center text-sm text-muted-foreground">
-                      College not found. You can add it manually or import the full official India college dataset.
+                      No colleges found. Try different filters or add yours manually below.
                     </div>
                   )}
 
-                  {!isLoading &&
-                    colleges.map((c) => {
-                      const active = selectedCollege?.id === c.id;
-                      return (
-                        <button
-                          key={c.id}
-                          type="button"
-                          onClick={() => setSelectedCollege({ id: c.id, name: c.name })}
-                          className={`w-full text-left px-4 py-3 flex items-center justify-between gap-3 hover:bg-accent transition-colors ${
-                            active ? "bg-brand-soft" : ""
-                          }`}
-                        >
-                          <div className="min-w-0">
-                            <div className="text-sm font-semibold flex items-center gap-2 truncate">
-                              <span>{c.name}</span>
-                              {c.verified ? (
-                                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-green-500/10 text-green-600 border border-green-500/20">
-                                  Verified
-                                </span>
-                              ) : (
-                                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-muted text-muted-foreground border border-border">
-                                  {c.source || "External"}
-                                </span>
-                              )}
-                            </div>
-                            <div className="text-xs text-muted-foreground truncate">
-                              {c.institution_type} • {c.district || c.city}, {c.state}
-                            </div>
+                  {!isLoading && colleges.map((c) => {
+                    const active = selectedCollege?.id === c.id;
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        onClick={() => setSelectedCollege({ id: c.id, name: c.name })}
+                        className={`w-full text-left px-4 py-3 flex items-center justify-between gap-3 hover:bg-accent transition-colors ${
+                          active ? "bg-brand-soft" : ""
+                        }`}
+                      >
+                        <div className="min-w-0">
+                          <div className="text-sm font-semibold flex items-center gap-2 truncate">
+                            <span>{c.name}</span>
+                            {c.verified ? (
+                              <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-green-500/10 text-green-600 border border-green-500/20">
+                                Verified
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-muted text-muted-foreground border border-border">
+                                {c.source || "External"}
+                              </span>
+                            )}
                           </div>
-                          {active && <Check className="size-4 text-brand shrink-0" />}
-                        </button>
-                      );
-                    })}
+                          <div className="text-xs text-muted-foreground truncate">
+                            {c.district || c.city}{c.state ? `, ${c.state}` : ""}
+                          </div>
+                        </div>
+                        {active && <Check className="size-4 text-brand shrink-0" />}
+                      </button>
+                    );
+                  })}
                 </div>
 
-                {/* Directory sample-only notice warning */}
-                {totalCollegesCount < 1000 && (
-                  <p className="text-[11px] text-muted-foreground bg-muted/40 p-2.5 rounded-lg border border-border/50 text-center">
-                    Only sample college data is loaded. Import the full AISHE/UGC/AICTE dataset to search all Indian colleges.
-                  </p>
-                )}
-
-                {/* Popular colleges quick selection */}
-                {!search && (!stateFilter || stateFilter === "") && firstLetter === "All" && popularColleges.length > 0 && (
+                {/* Popular colleges quick-picks */}
+                {!search && !stateFilter && popularColleges.length > 0 && (
                   <div className="space-y-2">
                     <span className="text-xs font-semibold text-muted-foreground">Popular / Recent Institutions</span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -469,7 +427,7 @@ function Onboarding() {
                           >
                             <span className="font-semibold block truncate">{c.name}</span>
                             <span className="text-muted-foreground block truncate">
-                              {c.district || c.city}, {c.state}
+                              {c.district || c.city}{c.state ? `, ${c.state}` : ""}
                             </span>
                           </button>
                         );
@@ -479,15 +437,18 @@ function Onboarding() {
                 )}
               </div>
             ) : (
-              /* Manual Entry Form */
-              <div className="rounded-xl border border-dashed border-border p-5 bg-muted/20 space-y-4 animate-fade-up">
+              /* ── Manual Entry Form ── */
+              <div className="rounded-xl border border-dashed border-brand/40 bg-brand-soft/10 p-5 space-y-4 animate-fade-up">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-bold text-foreground">Manually Enter College Details</h3>
+                  <div className="flex items-center gap-2">
+                    <PlusCircle className="size-4 text-brand" />
+                    <h3 className="text-sm font-bold text-foreground">Add College Manually</h3>
+                  </div>
                   <button
                     type="button"
                     onClick={() => {
                       setIsManualEntry(false);
-                      setManualCollege({ name: "", state: "", city: "", type: "" });
+                      setManualCollege({ name: "", state: "", district: "", type: "" });
                     }}
                     className="text-xs text-brand hover:underline font-semibold"
                   >
@@ -495,62 +456,82 @@ function Onboarding() {
                   </button>
                 </div>
 
+                <p className="text-xs text-muted-foreground">
+                  Your college will be added to the directory so other students can find it too.
+                </p>
+
                 <div className="grid gap-4">
                   <div className="grid gap-1.5">
-                    <Label htmlFor="manual-name" className="text-xs">College / Institution Name</Label>
+                    <Label htmlFor="manual-name" className="text-xs font-semibold">College / Institution Name *</Label>
                     <Input
                       id="manual-name"
                       placeholder="e.g. SRM Institute of Science and Technology"
                       value={manualCollege.name}
-                      onChange={(e) => setManualCollege((prev) => ({ ...prev, name: e.target.value }))}
+                      onChange={(e) => setManualCollege((p) => ({ ...p, name: e.target.value }))}
                       className="h-10 rounded-lg text-sm bg-background"
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {/* State dropdown */}
                     <div className="grid gap-1.5">
-                      <Label htmlFor="manual-state" className="text-xs">State</Label>
-                      <Input
-                        id="manual-state"
-                        placeholder="e.g. Tamil Nadu"
-                        value={manualCollege.state}
-                        onChange={(e) => setManualCollege((prev) => ({ ...prev, state: e.target.value }))}
-                        className="h-10 rounded-lg text-sm bg-background"
-                      />
-                    </div>
-
-                    <div className="grid gap-1.5">
-                      <Label htmlFor="manual-city" className="text-xs">City / Town</Label>
-                      <Input
-                        id="manual-city"
-                        placeholder="e.g. Chennai"
-                        value={manualCollege.city}
-                        onChange={(e) => setManualCollege((prev) => ({ ...prev, city: e.target.value }))}
-                        className="h-10 rounded-lg text-sm bg-background"
-                      />
-                    </div>
-
-                    <div className="grid gap-1.5">
-                      <Label htmlFor="manual-type" className="text-xs">Institution Type</Label>
+                      <Label className="text-xs font-semibold">State *</Label>
                       <Select
-                        value={manualCollege.type}
-                        onValueChange={(v) => setManualCollege((prev) => ({ ...prev, type: v }))}
+                        value={manualCollege.state || ""}
+                        onValueChange={(v) => setManualCollege((p) => ({ ...p, state: v, district: "" }))}
                       >
                         <SelectTrigger className="h-10 rounded-lg text-sm bg-background">
-                          <SelectValue placeholder="Select type" />
+                          <SelectValue placeholder="Select State" />
                         </SelectTrigger>
-                        <SelectContent className="max-h-60">
-                          {INSTITUTION_TYPES.map((t) => (
-                            <SelectItem key={t} value={t}>{t}</SelectItem>
+                        <SelectContent className="max-h-64">
+                          {ALL_STATES.map((s) => (
+                            <SelectItem key={s} value={s}>{s}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* District dropdown — filtered by selected state */}
+                    <div className="grid gap-1.5">
+                      <Label className="text-xs font-semibold">District *</Label>
+                      <Select
+                        value={manualCollege.district || ""}
+                        onValueChange={(v) => setManualCollege((p) => ({ ...p, district: v }))}
+                        disabled={!manualCollege.state}
+                      >
+                        <SelectTrigger className="h-10 rounded-lg text-sm bg-background">
+                          <SelectValue placeholder={manualCollege.state ? "Select District" : "Select State first"} />
+                        </SelectTrigger>
+                        <SelectContent className="max-h-64">
+                          {manualDistrictList.map((d) => (
+                            <SelectItem key={d} value={d}>{d}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>
                     </div>
                   </div>
+
+                  <div className="grid gap-1.5">
+                    <Label className="text-xs font-semibold">Institution Type *</Label>
+                    <Select
+                      value={manualCollege.type}
+                      onValueChange={(v) => setManualCollege((p) => ({ ...p, type: v }))}
+                    >
+                      <SelectTrigger className="h-10 rounded-lg text-sm bg-background">
+                        <SelectValue placeholder="Select type" />
+                      </SelectTrigger>
+                      <SelectContent className="max-h-60">
+                        {INSTITUTION_TYPES.filter((t) => t.keyword !== "").map((t) => (
+                          <SelectItem key={t.label} value={t.label}>{t.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
                 </div>
               </div>
             )}
 
+            {/* Bottom bar */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-border">
               {!isManualEntry ? (
                 <button
@@ -559,8 +540,9 @@ function Onboarding() {
                     setIsManualEntry(true);
                     setSelectedCollege(null);
                   }}
-                  className="text-xs text-muted-foreground hover:text-foreground font-semibold underline"
+                  className="flex items-center gap-2 text-xs font-bold text-brand border border-brand/40 bg-brand-soft/15 hover:bg-brand-soft/30 px-4 py-2 rounded-xl transition-colors"
                 >
+                  <PlusCircle className="size-3.5" />
                   My college is not listed
                 </button>
               ) : (
@@ -581,31 +563,10 @@ function Onboarding() {
                 </Button>
               </div>
             </div>
-
-            {/* Developer utility card */}
-            <details className="text-xs border border-border rounded-xl bg-muted/20 p-3 select-none">
-              <summary className="font-semibold text-muted-foreground cursor-pointer hover:text-foreground">
-                🛠️ Developer Import Utility
-              </summary>
-              <div className="mt-2 space-y-2 text-muted-foreground leading-relaxed select-text">
-                <p>To populate the directory with the complete dataset of 45,000+ Indian higher education institutions:</p>
-                <div className="bg-background p-2.5 rounded border border-border font-mono text-[10px] space-y-1">
-                  <div>1. Place official CSV at: <span className="text-foreground">data/india_colleges.csv</span></div>
-                  <div>2. Configure <span className="text-foreground font-bold">SUPABASE_SERVICE_ROLE_KEY</span> in .env</div>
-                  <div>3. Run script command:</div>
-                  <div className="text-brand font-bold mt-1">bun run scripts/import-colleges.ts</div>
-                </div>
-                <div className="flex justify-between items-center text-[10px] pt-1">
-                  <span>Current directory: <strong>{totalCollegesCount} loaded</strong></span>
-                  <span className={`px-2 py-0.5 rounded font-bold border ${totalCollegesCount < 1000 ? "bg-amber-500/10 text-amber-600 border-amber-500/20" : "bg-green-500/10 text-green-600 border-green-500/20"}`}>
-                    {totalCollegesCount < 1000 ? "Import Status: Sample Only" : "Import Status: Complete"}
-                  </span>
-                </div>
-              </div>
-            </details>
           </div>
         )}
 
+        {/* ─── Step 3: Profile Details ─── */}
         {step === 3 && (
           <div className="space-y-6">
             <div>
@@ -639,14 +600,14 @@ function Onboarding() {
                   <Label>Language</Label>
                   <Select value={language} onValueChange={setLanguage}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>{LANGUAGES.map(l => <SelectItem key={l} value={l}>{l}</SelectItem>)}</SelectContent>
+                    <SelectContent>{LANGUAGES.map((l) => <SelectItem key={l} value={l}>{l}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
                 <div className="grid gap-1.5">
                   <Label>Goal</Label>
                   <Select value={goal} onValueChange={setGoal}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>{GOALS.map(g => <SelectItem key={g} value={g}>{g}</SelectItem>)}</SelectContent>
+                    <SelectContent>{GOALS.map((g) => <SelectItem key={g} value={g}>{g}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
               </div>

@@ -1,12 +1,10 @@
-import { Moon, Sun, Monitor, Palette } from "lucide-react";
+import { Moon, Sun, Palette } from "lucide-react";
 import { useTheme, type Accent } from "./theme-provider";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -18,34 +16,45 @@ const ACCENTS: { id: Accent; label: string; color: string }[] = [
   { id: "rose", label: "Rose", color: "hsl(346 84% 60%)" },
 ];
 
+/** Simple sun/moon toggle — one click switches dark ↔ light */
 export function ThemeToggle() {
-  const { theme, setTheme, accent, setAccent, resolvedTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
+  return (
+    <Button
+      variant="ghost"
+      size="icon"
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className="rounded-full"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+    >
+      {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
+    </Button>
+  );
+}
+
+/** Palette picker — accent colours only */
+export function PersonalizeToggle() {
+  const { accent, setAccent } = useTheme();
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Theme settings" className="rounded-full">
-          {resolvedTheme === "dark" ? <Moon className="size-4" /> : <Sun className="size-4" />}
+        <Button variant="ghost" size="icon" aria-label="Personalize accent colour" className="rounded-full">
+          <Palette className="size-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
-        <DropdownMenuItem onClick={() => setTheme("light")} className={theme === "light" ? "bg-accent" : ""}>
-          <Sun className="size-4 mr-2" /> Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")} className={theme === "dark" ? "bg-accent" : ""}>
-          <Moon className="size-4 mr-2" /> Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")} className={theme === "system" ? "bg-accent" : ""}>
-          <Monitor className="size-4 mr-2" /> System
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuLabel className="flex items-center gap-2"><Palette className="size-3.5" /> Accent</DropdownMenuLabel>
-        <div className="flex items-center gap-2 px-2 py-1.5">
+      <DropdownMenuContent align="end" className="w-48">
+        <DropdownMenuLabel className="flex items-center gap-2 text-xs">
+          <Palette className="size-3.5" /> Accent colour
+        </DropdownMenuLabel>
+        <div className="flex items-center gap-2 px-3 py-2">
           {ACCENTS.map((a) => (
             <button
               key={a.id}
               onClick={() => setAccent(a.id)}
-              className={`size-7 rounded-full ring-2 transition-all ${accent === a.id ? "ring-foreground" : "ring-transparent hover:ring-border"}`}
+              className={`size-7 rounded-full ring-2 transition-all ${
+                accent === a.id ? "ring-foreground" : "ring-transparent hover:ring-border"
+              }`}
               style={{ backgroundColor: a.color }}
               aria-label={a.label}
             />

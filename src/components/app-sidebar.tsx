@@ -9,31 +9,18 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import {
-  MessageSquarePlus, BookOpen, FileText, ClipboardList, Layers,
-  CalendarDays, TrendingUp, Bookmark, GraduationCap, Settings,
-  Search, ChevronLeft, PanelLeftClose, PanelLeftOpen, LogOut,
+  MessageSquarePlus, Settings,
+  Search, PanelLeftClose, PanelLeftOpen, LogOut,
   User as UserIcon,
 } from "lucide-react";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle, PersonalizeToggle } from "@/components/theme-toggle";
 
 const PRIMARY_NAV = [
-  { to: "/app", icon: MessageSquarePlus, label: "New Chat" },
-  { to: "/files", icon: FileText, label: "Uploaded Files" },
-  { to: "/planner", icon: CalendarDays, label: "Study Planner" },
-  { to: "/progress", icon: TrendingUp, label: "Progress" },
   { to: "/settings", icon: Settings, label: "Settings" },
-] as const;
-
-const SECONDARY_NAV = [
-  { to: "/app", icon: BookOpen, label: "AI Notes" },
-  { to: "/app", icon: ClipboardList, label: "Quizzes" },
-  { to: "/app", icon: Layers, label: "Flashcards" },
-  { to: "/app", icon: Bookmark, label: "Saved Answers" },
-  { to: "/app", icon: GraduationCap, label: "Exam Mode" },
 ] as const;
 
 interface Props {
@@ -139,9 +126,8 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
             )}
 
             <div className="pt-2 border-t border-sidebar-border">
-              <div className="px-2 pb-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Workspace</div>
               <div className="space-y-0.5">
-                {[...PRIMARY_NAV.slice(1), ...SECONDARY_NAV].map((item) => (
+                {PRIMARY_NAV.map((item) => (
                   <Link
                     key={item.label + item.to}
                     to={item.to}
@@ -160,7 +146,7 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
         )}
         {collapsed && (
           <div className="py-2 flex flex-col items-center gap-1">
-            {[...PRIMARY_NAV.slice(1), ...SECONDARY_NAV].map((item) => (
+            {PRIMARY_NAV.map((item) => (
               <Link key={item.label + item.to} to={item.to} className="size-10 grid place-items-center rounded-lg hover:bg-sidebar-accent">
                 <item.icon className="size-4" />
               </Link>
@@ -194,11 +180,13 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild><Link to="/settings"><UserIcon className="size-4 mr-2" />Profile & Settings</Link></DropdownMenuItem>
-            <DropdownMenuItem asChild><Link to="/progress"><TrendingUp className="size-4 mr-2" />Progress</Link></DropdownMenuItem>
             <DropdownMenuSeparator />
             <div className="px-2 py-1.5 flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Theme</span>
-              <ThemeToggle />
+              <span className="text-muted-foreground">Appearance</span>
+              <div className="flex items-center gap-1">
+                <ThemeToggle />
+                <PersonalizeToggle />
+              </div>
             </div>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={signOut} className="text-destructive focus:text-destructive"><LogOut className="size-4 mr-2" />Sign out</DropdownMenuItem>

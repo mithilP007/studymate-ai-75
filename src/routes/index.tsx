@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Sparkles, FileText, Image as ImageIcon, Mic, GraduationCap, ListChecks, TrendingUp, CalendarDays, ShieldCheck, MessageSquare } from "lucide-react";
+import { ArrowRight, Sparkles, GraduationCap, ListChecks, MessageSquare, ShieldCheck } from "lucide-react";
 import { Logo } from "@/components/logo";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle, PersonalizeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
@@ -19,23 +19,23 @@ export const Route = createFileRoute("/")({
 function Landing() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-brand/20">
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 glass border-b border-border">
+      {/* Nav — solid background so scrolled content doesn't bleed through */}
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Logo />
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#features" className="hover:text-foreground transition-colors">Features</a>
             <a href="#how" className="hover:text-foreground transition-colors">How It Works</a>
-            <a href="#students" className="hover:text-foreground transition-colors">For Students</a>
             <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <ThemeToggle />
+            <PersonalizeToggle />
             <Link to="/auth">
-              <Button variant="ghost" size="sm" className="hidden sm:inline-flex rounded-full">Log in</Button>
+              <Button variant="ghost" size="sm" className="hidden sm:inline-flex rounded-full ml-1">Log in</Button>
             </Link>
             <Link to="/auth">
-              <Button size="sm" className="rounded-full bg-brand text-brand-foreground hover:opacity-90">
+              <Button size="sm" className="rounded-full bg-brand text-brand-foreground hover:opacity-90 ml-1">
                 Get Started <ArrowRight className="size-3.5 ml-1" />
               </Button>
             </Link>
@@ -58,7 +58,7 @@ function Landing() {
             Your Personal AI Study Mate for <span className="text-brand">College Learning</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Ask doubts, upload notes, summarize PDFs, generate quizzes, and plan your semester — tailored to IIT Madras, VIT, Anna University, and 40,000+ Indian colleges.
+            Ask doubts, generate quizzes, and master your semester — tailored to Anna University, VIT, IIT Madras, and 40,000+ Indian colleges.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link to="/auth">
@@ -107,7 +107,6 @@ function Landing() {
                         <li>Substitute back to find eigenvectors.</li>
                       </ol>
                       <div className="flex flex-wrap gap-2 pt-1">
-                        <span className="text-[10px] font-medium px-2 py-1 bg-muted rounded">Convert to Notes</span>
                         <span className="text-[10px] font-medium px-2 py-1 bg-muted rounded">Generate Quiz</span>
                         <span className="text-[10px] font-medium px-2 py-1 bg-muted rounded">Explain in Tamil</span>
                       </div>
@@ -120,25 +119,13 @@ function Landing() {
         </div>
       </section>
 
-      {/* Trust */}
-      <section id="students" className="border-y border-border bg-surface/50">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <p className="text-center text-xs font-bold text-muted-foreground uppercase tracking-widest mb-8">Trusted by students from</p>
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 opacity-60">
-            {["IIT MADRAS", "VIT VELLORE", "ANNA UNIVERSITY", "SRM KTR", "DELHI UNIVERSITY", "BITS PILANI", "NIT TRICHY", "MANIPAL"].map(c => (
-              <span key={c} className="font-bold text-sm tracking-wider">{c}</span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
+      {/* Features — only implemented ones */}
       <section id="features" className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Everything you need to ace your semester</h2>
-          <p className="mt-4 text-muted-foreground">A complete AI study toolkit, built around the way Indian college students actually learn.</p>
+          <p className="mt-4 text-muted-foreground">A focused AI study toolkit, built around the way Indian college students actually learn.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {FEATURES.map((f) => (
             <div key={f.title} className="group p-6 rounded-2xl border border-border bg-surface hover:border-brand/40 transition-all">
               <div className="size-10 rounded-xl bg-brand-soft text-brand grid place-items-center mb-4 group-hover:scale-110 transition-transform">
@@ -169,7 +156,7 @@ function Landing() {
         </div>
       </section>
 
-      {/* Trust */}
+      {/* Privacy */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
         <ShieldCheck className="size-10 text-brand mx-auto mb-4" />
         <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">Your learning data stays private</h3>
@@ -181,7 +168,7 @@ function Landing() {
         <div className="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-brand to-brand/70 p-12 md:p-16 text-center text-brand-foreground relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,white,transparent_50%)] opacity-20" />
           <h2 className="relative text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Start learning smarter today</h2>
-          <p className="relative opacity-90 max-w-lg mx-auto mb-8">Join thousands of Indian college students using StudyMate AI to study faster and ace exams.</p>
+          <p className="relative opacity-90 max-w-lg mx-auto mb-8">Join Indian college students using StudyMate AI to study faster and ace exams.</p>
           <Link to="/auth" className="relative inline-block">
             <Button size="lg" variant="secondary" className="rounded-xl px-10 h-12 font-bold">
               Get Started — It's Free
@@ -190,7 +177,7 @@ function Landing() {
         </div>
       </section>
 
-      {/* FAQ + footer */}
+      {/* Footer */}
       <footer id="faq" className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
           <Logo />
@@ -206,20 +193,16 @@ function Landing() {
   );
 }
 
+// Only implemented features shown
 const FEATURES = [
-  { icon: MessageSquare, title: "AI Doubt Solver", desc: "Ask any topic in English, Tamil, Hindi or Hinglish. Get step-by-step explanations." },
-  { icon: FileText, title: "PDF & Notes Summarizer", desc: "Drop a 100-page textbook and get clean unit-wise summaries instantly." },
-  { icon: ImageIcon, title: "Image Doubt Help", desc: "Snap a hard problem and get an instant solution with reasoning." },
-  { icon: Mic, title: "Voice-to-Text Doubts", desc: "Speak your doubt in your language — perfect for quick study breaks." },
-  { icon: GraduationCap, title: "Semester Learning", desc: "Tailored to your college and semester syllabus, not generic content." },
-  { icon: ListChecks, title: "Quiz & Flashcards", desc: "Auto-generate MCQs, 2-mark, 5-mark and 16-mark practice questions." },
-  { icon: TrendingUp, title: "Progress Tracker", desc: "Daily streaks, subject-wise progress, and study-time analytics." },
-  { icon: CalendarDays, title: "Smart Study Plan", desc: "Personalized timetable based on exam dates and pending topics." },
+  { icon: MessageSquare, title: "AI Doubt Solver", desc: "Ask any topic in English, Tamil, Hindi or Hinglish. Get step-by-step explanations tailored to your syllabus." },
+  { icon: ListChecks, title: "Quiz & Flashcards", desc: "Auto-generate MCQs, 2-mark, 5-mark and 16-mark practice questions from any topic or uploaded notes." },
+  { icon: GraduationCap, title: "Semester Learning", desc: "Tailored to your college and semester syllabus — not generic content. Supports 40,000+ Indian institutions." },
 ];
 
 const STEPS = [
   { title: "Sign in with Google", desc: "One-click login, no passwords to remember." },
   { title: "Pick your college & semester", desc: "Search from 40,000+ Indian institutions." },
-  { title: "Upload or ask", desc: "Drop notes, snap an image, or ask in plain Hinglish." },
-  { title: "Learn faster", desc: "Notes, quizzes, plans, and progress in one place." },
+  { title: "Upload or ask", desc: "Drop notes or ask in plain Hinglish." },
+  { title: "Learn faster", desc: "Notes, quizzes, and answers in one place." },
 ];

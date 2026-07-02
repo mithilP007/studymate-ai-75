@@ -106,8 +106,18 @@ function Dashboard() {
       });
 
       if (!res.ok || !res.body) {
-        const err = await res.text();
-        throw new Error(err || "AI request failed");
+        let errMsg = "AI request failed";
+        try {
+          const clone = res.clone();
+          const errData = await clone.json();
+          errMsg = errData.error || errData.message || errMsg;
+        } catch (_) {
+          try {
+            const text = await res.text();
+            errMsg = text || errMsg;
+          } catch (__) {}
+        }
+        throw new Error(errMsg);
       }
 
       const reader = res.body.getReader();

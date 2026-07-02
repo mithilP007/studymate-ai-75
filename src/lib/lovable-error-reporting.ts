@@ -20,6 +20,8 @@ declare global {
 
 export function reportLovableError(error: unknown, context: Record<string, unknown> = {}) {
   if (typeof window === "undefined") return;
+  console.error("[StudyMate AI Error]", error, context);
+  
   window.__lovableEvents?.captureException?.(
     error,
     {
@@ -34,3 +36,6 @@ export function reportLovableError(error: unknown, context: Record<string, unkno
     },
   );
 }
+
+// Alias for clean, generic error reporting
+export const reportError = reportLovableError;

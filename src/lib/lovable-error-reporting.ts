@@ -34,3 +34,6 @@ export function reportLovableError(error: unknown, context: Record<string, unkno
     },
   );
 }
+
+export const reportError = reportLovableError;
+

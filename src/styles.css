@@ -190,33 +190,83 @@
 .animate-fade-up { animation: fade-up 0.6s cubic-bezier(0.19, 1, 0.22, 1) both; }
 .animate-fade-in { animation: fade-in 0.4s ease-out both; }
 
-/* Premium buttons and custom animations */
+/* Primary CTA button — scale 1.05, brand glow expands */
+@utility btn-cta {
+  transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 280ms cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 200ms ease;
+}
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 32px -5px color-mix(in oklab, var(--brand) 38%, transparent),
+              0 6px 16px -3px color-mix(in oklab, var(--brand) 22%, transparent);
+}
+.btn-cta:active {
+  transform: scale(0.98);
+  transition: transform 100ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 100ms ease;
+}
+
+/* Smaller premium button (nav Get Started) */
 @utility btn-premium {
-  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1), 
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1),
               opacity 200ms ease,
               background-color 200ms ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 .btn-premium:hover {
-  transform: translateY(-1px) scale(1.02);
-  box-shadow: 0 10px 25px -4px color-mix(in oklab, var(--brand) 25%, transparent),
-              0 4px 12px -2px color-mix(in oklab, var(--brand) 15%, transparent);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px -4px color-mix(in oklab, var(--brand) 28%, transparent),
+              0 3px 10px -2px color-mix(in oklab, var(--brand) 15%, transparent);
 }
 .btn-premium:active {
-  transform: translateY(1px) scale(0.98);
-  transition-duration: 80ms;
+  transform: scale(0.97);
+  transition: transform 100ms ease;
+}
+
+/* Secondary outline button — scale 1.03, border glow, bg tint */
+@utility btn-secondary-premium {
+  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 250ms cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 200ms ease,
+              border-color 200ms ease;
+}
+.btn-secondary-premium:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 1.5px color-mix(in oklab, var(--brand) 45%, transparent),
+              0 6px 20px -4px color-mix(in oklab, var(--brand) 14%, transparent);
+  background-color: color-mix(in oklab, var(--brand) 6%, transparent);
+}
+.btn-secondary-premium:active {
+  transform: scale(0.98);
+  transition: transform 100ms ease;
+}
+
+/* Theme tooltip — CSS-only, 100ms delay on enter, immediate on leave */
+.theme-tooltip {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 150ms ease-out 0ms, transform 150ms ease-out 0ms;
+}
+.theme-btn:hover .theme-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 150ms ease-out 100ms, transform 150ms ease-out 100ms;
+}
+
+/* Theme circle swatch scale on hover */
+.theme-swatch {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.theme-btn:hover .theme-swatch {
+  transform: scale(1.1);
 }
 
 @keyframes fade-up-cta {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 .animate-cta-1 {
   animation: fade-up-cta 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -227,12 +277,13 @@
   animation-delay: 450ms;
 }
 
-/* Offset for sticky navbar */
-section {
-  scroll-margin-top: 90px;
-}
+/* Scroll offset so sticky nav never covers section titles */
+section { scroll-margin-top: 90px; }
 
-/* Accessibility: Respect user choice of reduced motion */
+/* Radix dropdown content — open/close animations */
+[data-radix-popper-content-wrapper] { z-index: 200 !important; }
+
+/* Accessibility: respect prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-delay: 0s !important;
@@ -240,8 +291,8 @@ section {
     animation-iteration-count: 1 !important;
     transition-duration: 0s !important;
     scroll-behavior: auto !important;
-    transform: none !important;
-    box-shadow: none !important;
   }
+  .theme-tooltip { transition: none !important; }
 }
+
 

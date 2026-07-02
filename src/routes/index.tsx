@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, Sparkles, GraduationCap, ListChecks, MessageSquare, ShieldCheck } from "lucide-react";
+import { ArrowRight, GraduationCap, ListChecks, MessageSquare, ShieldCheck } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { ThemeToggle, PersonalizeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -208,13 +208,13 @@ function Landing() {
           {/* Staggered load animation on hero CTA buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link to="/auth" className="animate-cta-1">
-              <Button size="lg" className="bg-brand text-brand-foreground hover:opacity-95 rounded-xl px-8 h-12 glow-brand btn-premium group font-bold">
-                Start Learning Now 
-                <ArrowRight className="size-4 ml-1 transition-transform duration-220 ease-out group-hover:translate-x-1" />
+              <Button size="lg" className="bg-brand text-brand-foreground rounded-xl px-8 h-12 glow-brand btn-cta group font-bold">
+                Start Learning Now
+                <ArrowRight className="size-4 ml-1.5 transition-transform duration-[250ms] ease-out group-hover:translate-x-1" />
               </Button>
             </Link>
             <a href="#features" onClick={(e) => handleScrollTo(e, "features")} className="animate-cta-2">
-              <Button size="lg" variant="outline" className="rounded-xl px-8 h-12 btn-premium font-bold hover:bg-muted/30">
+              <Button size="lg" variant="outline" className="rounded-xl px-8 h-12 btn-secondary-premium font-semibold">
                 See Features
               </Button>
             </a>
@@ -319,7 +319,7 @@ function Landing() {
           <h2 className="relative text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Start learning smarter today</h2>
           <p className="relative opacity-90 max-w-lg mx-auto mb-8">Join Indian college students using StudyMate AI to study faster and ace exams.</p>
           <Link to="/auth" className="relative inline-block">
-            <Button size="lg" variant="secondary" className="rounded-xl px-10 h-12 font-bold btn-premium shadow-md hover:opacity-95">
+            <Button size="lg" variant="secondary" className="rounded-xl px-10 h-12 font-bold btn-cta group shadow-md">
               Get Started — It's Free
             </Button>
           </Link>

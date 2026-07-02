@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
 export type Theme = "light" | "dark" | "system";
-export type Accent = "indigo" | "cyan" | "emerald" | "violet" | "rose";
+export type Accent = "emerald" | "ocean" | "lavender" | "sunset" | "mono";
 
 interface ThemeCtx {
   theme: Theme;
@@ -22,12 +22,12 @@ function resolve(theme: Theme): "light" | "dark" {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("dark");
-  const [accent, setAccentState] = useState<Accent>("indigo");
+  const [accent, setAccentState] = useState<Accent>("emerald");
   const [resolvedTheme, setResolved] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
     const t = (localStorage.getItem("sm.theme") as Theme) || "dark";
-    const a = (localStorage.getItem("sm.accent") as Accent) || "indigo";
+    const a = (localStorage.getItem("sm.accent") as Accent) || "emerald";
     setThemeState(t);
     setAccentState(a);
   }, []);

@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { ArrowRight, Sparkles, GraduationCap, ListChecks, MessageSquare, ShieldCheck } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { ThemeToggle, PersonalizeToggle } from "@/components/theme-toggle";
@@ -17,26 +18,163 @@ export const Route = createFileRoute("/")({
 });
 
 function Landing() {
+  const [activeSection, setActiveSection] = useState<string>("");
+
+  // Smooth scroll implementation with easeInOutCubic deceleration and offset
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (!element) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      element.scrollIntoView({ behavior: "auto" });
+      return;
+    }
+
+    const headerOffset = 90;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    const startPosition = window.pageYOffset;
+    const distance = offsetPosition - startPosition;
+    const duration = 800; // 700ms - 900ms target
+    let startTimestamp: number | null = null;
+
+    const easeInOutCubic = (t: number) => {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    };
+
+    const step = (timestamp: number) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      window.scrollTo(0, startPosition + distance * easeInOutCubic(progress));
+
+      if (elapsed < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  };
+
+  // IntersectionObserver to highlight currently active section
+  useEffect(() => {
+    const sections = ["features", "how", "faq"];
+    const observers = sections.map((id) => {
+      const el = document.getElementById(id);
+      if (!el) return null;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveSection(id);
+            }
+          });
+        },
+        {
+          rootMargin: "-30% 0px -55% 0px", // triggers when section is in active view area
+        }
+      );
+      observer.observe(el);
+      return { observer, el, id };
+    });
+
+    // Clear active section if at the very top of the page
+    const handleScroll = () => {
+      if (window.pageYOffset < 100) {
+        setActiveSection("");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      observers.forEach((item) => {
+        if (item) item.observer.unobserve(item.el);
+      });
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-brand/20">
       {/* Nav — solid background so scrolled content doesn't bleed through */}
-      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/80 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Logo />
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <a href="#features" className="hover:text-foreground transition-colors">Features</a>
-            <a href="#how" className="hover:text-foreground transition-colors">How It Works</a>
-            <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
+          
+          {/* Logo with global navigation + premium hover scaling and glow */}
+          <Link 
+            to="/" 
+            className="cursor-pointer group flex items-center gap-2 transition-all duration-200 active:scale-95 hover:scale-[1.03] hover:drop-shadow-[0_0_8px_color-mix(in_oklab,var(--brand)_40%,transparent)]"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
+            <Logo />
+          </Link>
+
+          {/* Nav links with hover & active animations */}
+          <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-foreground">
+            <a 
+              href="#features" 
+              onClick={(e) => handleScrollTo(e, "features")}
+              className={`relative py-2 transition-colors duration-200 cursor-pointer ${
+                activeSection === "features" ? "text-foreground" : "hover:text-foreground"
+              }`}
+            >
+              Features
+              <span 
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] bg-brand origin-center transition-transform duration-300 ease-out ${
+                  activeSection === "features" ? "w-full scale-x-100" : "w-full scale-x-0 hover:scale-x-100"
+                }`}
+              />
+            </a>
+            <a 
+              href="#how" 
+              onClick={(e) => handleScrollTo(e, "how")}
+              className={`relative py-2 transition-colors duration-200 cursor-pointer ${
+                activeSection === "how" ? "text-foreground" : "hover:text-foreground"
+              }`}
+            >
+              How It Works
+              <span 
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] bg-brand origin-center transition-transform duration-300 ease-out ${
+                  activeSection === "how" ? "w-full scale-x-100" : "w-full scale-x-0 hover:scale-x-100"
+                }`}
+              />
+            </a>
+            <a 
+              href="#faq" 
+              onClick={(e) => handleScrollTo(e, "faq")}
+              className={`relative py-2 transition-colors duration-200 cursor-pointer ${
+                activeSection === "faq" ? "text-foreground" : "hover:text-foreground"
+              }`}
+            >
+              FAQ
+              <span 
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] bg-brand origin-center transition-transform duration-300 ease-out ${
+                  activeSection === "faq" ? "w-full scale-x-100" : "w-full scale-x-0 hover:scale-x-100"
+                }`}
+              />
+            </a>
           </div>
-          <div className="flex items-center gap-1">
+
+          <div className="flex items-center gap-1.5">
             <ThemeToggle />
             <PersonalizeToggle />
             <Link to="/auth">
-              <Button variant="ghost" size="sm" className="hidden sm:inline-flex rounded-full ml-1">Log in</Button>
+              <Button variant="ghost" size="sm" className="hidden sm:inline-flex rounded-full ml-1 font-medium transition-transform active:scale-95 duration-200">
+                Log in
+              </Button>
             </Link>
             <Link to="/auth">
-              <Button size="sm" className="rounded-full bg-brand text-brand-foreground hover:opacity-90 ml-1">
-                Get Started <ArrowRight className="size-3.5 ml-1" />
+              <Button size="sm" className="rounded-full bg-brand text-brand-foreground hover:opacity-95 ml-1 font-semibold btn-premium group">
+                Get Started 
+                <ArrowRight className="size-3.5 ml-1 transition-transform duration-220 ease-out group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
@@ -54,20 +192,31 @@ function Landing() {
             </span>
             Built for Indian Universities
           </div>
+          
+          {/* Subtle gradient glow behind highlighted text */}
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-balance leading-[1.05] max-w-4xl mx-auto">
-            Your Personal AI Study Mate for <span className="text-brand">College Learning</span>
+            Your Personal AI Study Mate for <span className="relative text-brand inline-block">
+              College Learning
+              <span className="absolute -inset-x-2 -inset-y-1 -z-10 bg-brand/10 blur-xl rounded-full opacity-70 animate-pulse duration-[4000ms]" />
+            </span>
           </h1>
+          
           <p className="mt-6 text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Ask doubts, generate quizzes, and master your semester — tailored to Anna University, VIT, IIT Madras, and 40,000+ Indian colleges.
           </p>
+
+          {/* Staggered load animation on hero CTA buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link to="/auth">
-              <Button size="lg" className="bg-brand text-brand-foreground hover:opacity-90 rounded-xl px-8 h-12 glow-brand">
-                Start Learning Now <ArrowRight className="size-4 ml-1" />
+            <Link to="/auth" className="animate-cta-1">
+              <Button size="lg" className="bg-brand text-brand-foreground hover:opacity-95 rounded-xl px-8 h-12 glow-brand btn-premium group font-bold">
+                Start Learning Now 
+                <ArrowRight className="size-4 ml-1 transition-transform duration-220 ease-out group-hover:translate-x-1" />
               </Button>
             </Link>
-            <a href="#features">
-              <Button size="lg" variant="outline" className="rounded-xl px-8 h-12">See Features</Button>
+            <a href="#features" onClick={(e) => handleScrollTo(e, "features")} className="animate-cta-2">
+              <Button size="lg" variant="outline" className="rounded-xl px-8 h-12 btn-premium font-bold hover:bg-muted/30">
+                See Features
+              </Button>
             </a>
           </div>
         </div>
@@ -93,12 +242,12 @@ function Landing() {
                 </aside>
                 <div className="p-6 space-y-5 min-h-[320px]">
                   <div className="flex gap-3 justify-end">
-                    <div className="bg-brand text-brand-foreground rounded-2xl rounded-br-sm px-4 py-2.5 text-sm max-w-md">
+                    <div className="bg-brand text-brand-foreground rounded-2xl rounded-br-sm px-4 py-2.5 text-sm max-w-md shadow-sm">
                       Explain Eigenvalues for my Linear Algebra mid-term at Anna University?
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <div className="size-7 rounded-full bg-brand shrink-0 grid place-items-center text-[10px] font-bold text-brand-foreground">AI</div>
+                    <div className="size-7 rounded-full bg-brand shrink-0 grid place-items-center text-[10px] font-bold text-brand-foreground shadow-sm">AI</div>
                     <div className="space-y-2 max-w-lg">
                       <p className="text-sm">For your Anna University (MA8352) syllabus, follow these steps:</p>
                       <ol className="text-sm list-decimal pl-5 space-y-1 text-muted-foreground">
@@ -127,11 +276,11 @@ function Landing() {
         </div>
         <div className="grid md:grid-cols-3 gap-4">
           {FEATURES.map((f) => (
-            <div key={f.title} className="group p-6 rounded-2xl border border-border bg-surface hover:border-brand/40 transition-all">
-              <div className="size-10 rounded-xl bg-brand-soft text-brand grid place-items-center mb-4 group-hover:scale-110 transition-transform">
+            <div key={f.title} className="group p-6 rounded-2xl border border-border bg-surface hover:border-brand/40 transition-all hover:-translate-y-1 duration-300">
+              <div className="size-10 rounded-xl bg-brand-soft text-brand grid place-items-center mb-4 group-hover:scale-110 transition-transform duration-200">
                 <f.icon className="size-5" />
               </div>
-              <h3 className="font-bold mb-2">{f.title}</h3>
+              <h3 className="font-bold mb-2 text-foreground">{f.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
             </div>
           ))}
@@ -146,9 +295,9 @@ function Landing() {
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {STEPS.map((s, i) => (
-              <div key={s.title} className="relative p-6 rounded-2xl border border-border bg-background">
+              <div key={s.title} className="relative p-6 rounded-2xl border border-border bg-background hover:-translate-y-1 transition-all duration-300">
                 <div className="font-mono text-[10px] text-brand mb-3">STEP {String(i + 1).padStart(2, "0")}</div>
-                <h4 className="font-bold mb-2">{s.title}</h4>
+                <h4 className="font-bold mb-2 text-foreground">{s.title}</h4>
                 <p className="text-sm text-muted-foreground">{s.desc}</p>
               </div>
             ))}
@@ -164,13 +313,13 @@ function Landing() {
       </section>
 
       {/* Final CTA */}
-      <section className="px-6 pb-24">
-        <div className="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-brand to-brand/70 p-12 md:p-16 text-center text-brand-foreground relative overflow-hidden">
+      <section id="faq" className="px-6 pb-24">
+        <div className="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-brand to-brand/70 p-12 md:p-16 text-center text-brand-foreground relative overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,white,transparent_50%)] opacity-20" />
           <h2 className="relative text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Start learning smarter today</h2>
           <p className="relative opacity-90 max-w-lg mx-auto mb-8">Join Indian college students using StudyMate AI to study faster and ace exams.</p>
           <Link to="/auth" className="relative inline-block">
-            <Button size="lg" variant="secondary" className="rounded-xl px-10 h-12 font-bold">
+            <Button size="lg" variant="secondary" className="rounded-xl px-10 h-12 font-bold btn-premium shadow-md hover:opacity-95">
               Get Started — It's Free
             </Button>
           </Link>
@@ -178,10 +327,12 @@ function Landing() {
       </section>
 
       {/* Footer */}
-      <footer id="faq" className="border-t border-border">
+      <footer className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-          <Logo />
-          <div className="flex gap-6 text-xs font-medium text-muted-foreground uppercase tracking-widest">
+          <Link to="/" className="hover:opacity-90 transition-opacity">
+            <Logo />
+          </Link>
+          <div className="flex gap-6 text-xs font-semibold text-muted-foreground uppercase tracking-widest">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Support</a>

@@ -34,22 +34,25 @@ function AuthPage() {
   }, [nav]);
 
   const handleGoogleLogin = async () => {
-    setLoading(true);
     try {
-      const { data, error } = await supabase.auth.signInWithOAuth({
+      console.log("[Auth] Starting Google OAuth");
+      const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
           redirectTo: `${window.location.origin}/auth/callback`,
+          queryParams: {
+            access_type: "offline",
+            prompt: "select_account",
+          },
         },
       });
+
       if (error) {
-        toast.error("Google sign-in failed", { description: error.message });
-        setLoading(false);
+        console.error("Google login error:", error.message);
+        toast.error("Login failed", { description: error.message });
       }
-    } catch (e) {
-      toast.error("Could not start sign-in");
-      console.error(e);
-      setLoading(false);
+    } catch (err) {
+      console.error("Unexpected Google login error:", err);
     }
   };
 

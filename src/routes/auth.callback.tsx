@@ -13,15 +13,41 @@ function AuthCallbackPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    let handled = false;
-
-    const processSession = async (session: any) => {
-      if (handled) return;
-      handled = true;
-      
-      const user = session.user;
-
+    const handleAuthCallback = async () => {
       try {
+        console.log("[Auth] Callback reached");
+        const url = new URL(window.location.href);
+        const code = url.searchParams.get("code");
+
+        if (code) {
+          const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
+
+          if (exchangeError) {
+            console.error("Code exchange error:", exchangeError.message);
+            await supabase.auth.signOut();
+            localStorage.clear();
+            navigate({ to: "/auth", replace: true });
+            return;
+          }
+
+          window.history.replaceState({}, document.title, "/auth/callback");
+        }
+
+        const {
+          data: { session },
+          error: sessionError,
+        } = await supabase.auth.getSession();
+
+        if (sessionError || !session?.user) {
+          console.error("No session after callback:", sessionError?.message);
+          await supabase.auth.signOut();
+          navigate({ to: "/auth", replace: true });
+          return;
+        }
+
+        console.log("[Auth] Session exists:", !!session);
+        const user = session.user;
+
         const { data: existingProfile, error: profileError } = await supabase
           .from("profiles")
           .select("*")
@@ -35,14 +61,17 @@ function AuthCallbackPage() {
         }
 
         if (!existingProfile) {
-          const fullName = user.user_metadata?.full_name || user.user_metadata?.name || "";
-          const avatarUrl = user.user_metadata?.avatar_url || user.user_metadata?.picture || "";
-
           const { error: insertError } = await supabase.from("profiles").insert({
             id: user.id,
             email: user.email,
-            full_name: fullName,
-            avatar_url: avatarUrl,
+            full_name:
+              user.user_metadata?.full_name ||
+              user.user_metadata?.name ||
+              "",
+            avatar_url:
+              user.user_metadata?.avatar_url ||
+              user.user_metadata?.picture ||
+              "",
             onboarding_completed: false,
           });
 
@@ -57,45 +86,20 @@ function AuthCallbackPage() {
         }
 
         if (existingProfile.onboarding_completed) {
-          navigate({ to: "/app", replace: true }); // '/app' serves as the dashboard
+          navigate({ to: "/app", replace: true }); // '/app' serves as the dashboard in this codebase
         } else {
           navigate({ to: "/onboarding", replace: true });
         }
       } catch (err) {
-        console.error("Auth callback exception:", err);
+        console.error("Auth callback unexpected error:", err);
+        try {
+          await supabase.auth.signOut();
+        } catch (_) {}
         navigate({ to: "/auth", replace: true });
       }
     };
 
-    // 1. Check existing session immediately
-    supabase.auth.getSession().then(({ data: { session }, error }) => {
-      if (error) {
-        console.error("getSession error:", error.message);
-      }
-      if (session) {
-        processSession(session);
-      }
-    });
-
-    // 2. Listen to state changes (handles the OAuth hash parsing event)
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (session) {
-        processSession(session);
-      }
-    });
-
-    // 3. Fallback timeout: if no session is captured after 3.5 seconds, redirect to login
-    const timeout = setTimeout(() => {
-      if (!handled) {
-        console.warn("Auth callback timed out without a session.");
-        navigate({ to: "/auth", replace: true });
-      }
-    }, 3500);
-
-    return () => {
-      subscription.unsubscribe();
-      clearTimeout(timeout);
-    };
+    handleAuthCallback();
   }, [navigate]);
 
   return (

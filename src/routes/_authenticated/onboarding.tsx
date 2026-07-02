@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState, useMemo } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Check, GraduationCap, Loader2, PlusCircle, Search, Sparkles } from "lucide-react";
+import { Check, GraduationCap, Loader2, PlusCircle, ArrowRight, Search, Sparkles } from "lucide-react";
 import STATE_DISTRICTS from "@/data/state-districts.json";
 
 export const Route = createFileRoute("/_authenticated/onboarding")({
@@ -102,9 +102,17 @@ function Onboarding() {
         .from("colleges")
         .select("id,name,state,city,district,institution_type,verified,source");
 
-      // Combine user search + institution keyword in a single ilike on name
-      const nameQuery = [debouncedSearch, typeKeyword].filter(Boolean).join(" ");
-      if (nameQuery) q = q.ilike("name", `%${nameQuery}%`);
+      // Split both user search and institution type keyword into individual words
+      const words = debouncedSearch.split(/\s+/).filter(Boolean);
+      if (typeKeyword) {
+        words.push(typeKeyword);
+      }
+      const uniqueWords = Array.from(new Set(words.map((w) => w.toLowerCase())));
+
+      // Apply independent ilike filters for each unique search term
+      uniqueWords.forEach((word) => {
+        q = q.ilike("name", `%${word}%`);
+      });
 
       if (stateFilter)    q = q.eq("state",    stateFilter);
       if (districtFilter) q = q.eq("district", districtFilter);
@@ -226,11 +234,35 @@ function Onboarding() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border h-16 flex items-center justify-between px-6">
-        <Logo />
+      <header className="border-b border-border h-16 flex items-center justify-between px-6 bg-background/95 backdrop-blur-md sticky top-0 z-50">
+        <Link 
+          to="/app" 
+          className="cursor-pointer group flex items-center gap-2 transition-all duration-200 active:scale-95 hover:scale-[1.02] hover:drop-shadow-[0_0_8px_color-mix(in_oklab,var(--brand)_40%,transparent)]"
+        >
+          <Logo />
+        </Link>
         <div className="flex items-center gap-4">
+          {user && (
+            <span className="text-xs text-muted-foreground hidden md:inline">
+              Account: <strong className="text-foreground">{user.email}</strong>
+            </span>
+          )}
           <span className="hidden sm:block text-xs text-muted-foreground">Step {step} of 3</span>
           <ThemeToggle />
+          {user && (
+            <Button
+              variant="ghost"
+              size="sm"
+              className="rounded-full text-xs font-bold text-destructive hover:text-destructive hover:bg-destructive/10"
+              onClick={async () => {
+                await supabase.auth.signOut();
+                toast.success("Signed out successfully");
+                nav({ to: "/auth" });
+              }}
+            >
+              Sign Out
+            </Button>
+          )}
         </div>
       </header>
 
@@ -531,8 +563,8 @@ function Onboarding() {
               </div>
             )}
 
-            {/* Bottom bar */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-border">
+             {/* Bottom bar */}
+            <div className="flex flex-col gap-4 pt-4 border-t border-border">
               {!isManualEntry ? (
                 <button
                   type="button"
@@ -540,10 +572,16 @@ function Onboarding() {
                     setIsManualEntry(true);
                     setSelectedCollege(null);
                   }}
-                  className="flex items-center gap-2 text-xs font-bold text-brand border border-brand/40 bg-brand-soft/15 hover:bg-brand-soft/30 px-4 py-2 rounded-xl transition-colors"
+                  className="w-full flex items-center justify-between p-4 rounded-xl border-2 border-dashed border-brand/50 bg-brand-soft/10 hover:bg-brand-soft/20 text-brand transition-all cursor-pointer shadow-sm hover:shadow active:scale-[0.99] duration-200"
                 >
-                  <PlusCircle className="size-3.5" />
-                  My college is not listed
+                  <div className="flex items-center gap-3">
+                    <PlusCircle className="size-5 shrink-0 text-brand" />
+                    <div className="text-left">
+                      <span className="text-xs font-bold block text-foreground">My college is not listed</span>
+                      <span className="text-[11px] text-muted-foreground block mt-0.5">Click here to manually type your college name, state, and district</span>
+                    </div>
+                  </div>
+                  <ArrowRight className="size-4 shrink-0 text-brand" />
                 </button>
               ) : (
                 <div />

@@ -34,10 +34,6 @@ export const Route = createFileRoute("/_authenticated")({
       const onboardingCompleted = profile?.onboarding_completed ?? false;
       const isOnboardingPath = location.pathname === "/onboarding";
 
-      if (!onboardingCompleted && !isOnboardingPath) {
-        throw redirect({ to: "/onboarding" });
-      }
-
       if (onboardingCompleted && isOnboardingPath) {
         throw redirect({ to: "/app" }); // '/app' serves as the dashboard in this codebase
       }

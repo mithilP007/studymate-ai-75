@@ -1,0 +1,1521 @@
+Course_Name,Branch_Department,Duration_Years,Semesters,Level,Regulatory_Body,Category
+B.Tech,Computer Science & Engineering (CSE),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Computer Science & Engineering (AI & ML),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Computer Science & Engineering (Data Science),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Computer Science & Engineering (Cyber Security),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Computer Science & Engineering (IoT),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Computer Science & Engineering (Blockchain),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Information Technology (IT),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Electronics & Communication Engineering (ECE),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Electronics & Communication Engineering (VLSI),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Electrical Engineering (EE),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Electrical & Electronics Engineering (EEE),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Mechanical Engineering (ME),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Civil Engineering (CE),4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Chemical Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Biotechnology,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Aerospace Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Aeronautical Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Automobile Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Petroleum Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Mining Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Metallurgical Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Materials Science & Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Instrumentation & Control Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Robotics & Automation,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Mechatronics,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Agricultural Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Food Technology,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Textile Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Production Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Industrial Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Marine Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Naval Architecture,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Environmental Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Biomedical Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Genetic Engineering,4,8,Undergraduate,AICTE,Engineering & Technology
+B.Tech,Nanotechnology,4,8,Undergraduate,AICTE,Engineering & Technology
+M.Tech,Computer Science & Engineering (CSE),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Computer Science & Engineering (AI & ML),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Computer Science & Engineering (Data Science),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Computer Science & Engineering (Cyber Security),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Information Technology (IT),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Electronics & Communication Engineering (ECE),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Electronics & Communication Engineering (VLSI),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Electrical Engineering (EE),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Electrical & Electronics Engineering (EEE),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Mechanical Engineering (ME),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Civil Engineering (CE),2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Chemical Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Biotechnology,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Aerospace Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Aeronautical Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Automobile Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Petroleum Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Mining Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Metallurgical Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Materials Science & Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Instrumentation & Control Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Robotics & Automation,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Mechatronics,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Agricultural Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Food Technology,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Textile Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Production Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Industrial Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Marine Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Naval Architecture,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Environmental Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Biomedical Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Genetic Engineering,2,4,Postgraduate,AICTE,Engineering & Technology
+M.Tech,Nanotechnology,2,4,Postgraduate,AICTE,Engineering & Technology
+Diploma in Engineering,Civil Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Mechanical Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Electrical Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Electronics Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Computer Science & Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Automobile Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Chemical Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Mining Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Textile Technology,3,6,Diploma,AICTE,Engineering & Technology
+Diploma in Engineering,Agricultural Engineering,3,6,Diploma,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,CSE,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,ECE,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,ME,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,CE,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,EE,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,IT,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,AI & ML,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,Data Science,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,Cyber Security,5,10,Integrated,AICTE,Engineering & Technology
+Integrated B.Tech + M.Tech,Biotechnology,5,10,Integrated,AICTE,Engineering & Technology
+B.Arch,General Architecture,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Architectural Conservation,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Urban Design,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Landscape Architecture,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Sustainable Architecture,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Industrial Design,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Environmental Planning,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Transport Planning,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Housing,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Regional Planning,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Town & Country Planning,5,10,Undergraduate,COA,Architecture & Planning
+B.Arch,Digital Architecture,5,10,Undergraduate,COA,Architecture & Planning
+M.Arch,General Architecture,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Architectural Conservation,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Urban Design,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Landscape Architecture,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Sustainable Architecture,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Industrial Design,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Environmental Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Transport Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Housing,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Regional Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Town & Country Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Arch,Digital Architecture,2,4,Postgraduate,COA,Architecture & Planning
+B.Plan,Urban Planning,4,8,Undergraduate,COA,Architecture & Planning
+B.Plan,Regional Planning,4,8,Undergraduate,COA,Architecture & Planning
+B.Plan,Environmental Planning,4,8,Undergraduate,COA,Architecture & Planning
+B.Plan,Transport Planning,4,8,Undergraduate,COA,Architecture & Planning
+M.Plan,Urban Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Plan,Regional Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Plan,Environmental Planning,2,4,Postgraduate,COA,Architecture & Planning
+M.Plan,Transport Planning,2,4,Postgraduate,COA,Architecture & Planning
+Integrated B.Arch + M.Arch,General Architecture,6,12,Integrated,COA,Architecture & Planning
+Integrated B.Arch + M.Arch,Urban Design,6,12,Integrated,COA,Architecture & Planning
+Integrated B.Arch + M.Arch,Sustainable Architecture,6,12,Integrated,COA,Architecture & Planning
+B.Pharm,General Pharmacy,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmaceutics,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmacology,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmaceutical Analysis,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmaceutical Chemistry,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmacognosy,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Regulatory Affairs,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Quality Assurance,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Industrial Pharmacy,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Clinical Pharmacy,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Pharmacovigilance,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Biopharmaceutics,4,8,Undergraduate,PCI,Pharmacy
+B.Pharm,Drug Regulatory Affairs,4,8,Undergraduate,PCI,Pharmacy
+M.Pharm,General Pharmacy,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmaceutics,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmacology,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmaceutical Analysis,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmaceutical Chemistry,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmacognosy,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Regulatory Affairs,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Quality Assurance,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Industrial Pharmacy,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Clinical Pharmacy,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Pharmacovigilance,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Biopharmaceutics,2,4,Postgraduate,PCI,Pharmacy
+M.Pharm,Drug Regulatory Affairs,2,4,Postgraduate,PCI,Pharmacy
+D.Pharm,General Pharmacy,2,4,Diploma,PCI,Pharmacy
+Pharm.D,Doctor of Pharmacy,6,12,Doctoral,PCI,Pharmacy
+Pharm.D (Post Baccalaureate),Doctor of Pharmacy,3,6,Doctoral,PCI,Pharmacy
+Integrated B.Pharm + M.Pharm,Pharmaceutics,6,12,Integrated,PCI,Pharmacy
+Integrated B.Pharm + M.Pharm,Pharmacology,6,12,Integrated,PCI,Pharmacy
+Integrated B.Pharm + M.Pharm,Pharmaceutical Chemistry,6,12,Integrated,PCI,Pharmacy
+Integrated B.Pharm + M.Pharm,Pharmaceutical Analysis,6,12,Integrated,PCI,Pharmacy
+BBA,General,3,6,Undergraduate,UGC,Management
+BBA,Finance,3,6,Undergraduate,UGC,Management
+BBA,Marketing,3,6,Undergraduate,UGC,Management
+BBA,Human Resource Management,3,6,Undergraduate,UGC,Management
+BBA,International Business,3,6,Undergraduate,UGC,Management
+BBA,Digital Marketing,3,6,Undergraduate,UGC,Management
+BBA,Business Intelligence & Analytics,3,6,Undergraduate,UGC,Management
+BBA,Banking & Insurance,3,6,Undergraduate,UGC,Management
+BBA,Entrepreneurship,3,6,Undergraduate,UGC,Management
+BBA,Supply Chain Management,3,6,Undergraduate,UGC,Management
+BBA,Hospitality & Tourism,3,6,Undergraduate,UGC,Management
+BBA,Accounting,3,6,Undergraduate,UGC,Management
+BBA,Retail Management,3,6,Undergraduate,UGC,Management
+BBA,Event Management,3,6,Undergraduate,UGC,Management
+BBA,Aviation Management,3,6,Undergraduate,UGC,Management
+BBA,Healthcare Management,3,6,Undergraduate,UGC,Management
+BBA,Sports Management,3,6,Undergraduate,UGC,Management
+BBA,Media Management,3,6,Undergraduate,UGC,Management
+BBA,Agri-Business Management,3,6,Undergraduate,UGC,Management
+BBA,Real Estate Management,3,6,Undergraduate,UGC,Management
+BBA,Operations Management,3,6,Undergraduate,UGC,Management
+BBA,Project Management,3,6,Undergraduate,UGC,Management
+BBA,Rural Management,3,6,Undergraduate,UGC,Management
+BBA,Infrastructure Management,3,6,Undergraduate,UGC,Management
+BBA,Energy Management,3,6,Undergraduate,UGC,Management
+BBA,Telecom Management,3,6,Undergraduate,UGC,Management
+BBA,Fashion Management,3,6,Undergraduate,UGC,Management
+BBA,Luxury Brand Management,3,6,Undergraduate,UGC,Management
+BBA,Port & Shipping Management,3,6,Undergraduate,UGC,Management
+BBA,Logistics Management,3,6,Undergraduate,UGC,Management
+MBA,General Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Finance,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Marketing,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Human Resource Management (HRM),2,4,Postgraduate,UGC/AICTE,Management
+MBA,Operations Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Information Technology (IT),2,4,Postgraduate,UGC/AICTE,Management
+MBA,International Business,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Business Analytics,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Supply Chain Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Rural Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Healthcare Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Retail Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Banking & Financial Services,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Entrepreneurship,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Digital Marketing,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Data Analytics,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Artificial Intelligence & Machine Learning,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Project Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Tourism & Hospitality Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Agri-Business Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Infrastructure Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Energy Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Telecom Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Media Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Fashion Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Pharmaceutical Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Aviation Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Event Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Sports Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Real Estate Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Port & Shipping Management,2,4,Postgraduate,UGC/AICTE,Management
+MBA,Logistics & Warehouse Management,2,4,Postgraduate,UGC/AICTE,Management
+Integrated BBA + MBA,General,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,Finance,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,Marketing,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,HR,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,Operations,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,International Business,5,10,Integrated,UGC/AICTE,Management
+Integrated BBA + MBA,Business Analytics,5,10,Integrated,UGC/AICTE,Management
+BMS,General,3,6,Undergraduate,UGC,Management
+BMS,Marketing,3,6,Undergraduate,UGC,Management
+BMS,Finance,3,6,Undergraduate,UGC,Management
+BMS,HR,3,6,Undergraduate,UGC,Management
+BCA,General,3,6,Undergraduate,UGC,Computer Applications
+BCA,Data Science,3,6,Undergraduate,UGC,Computer Applications
+BCA,Artificial Intelligence,3,6,Undergraduate,UGC,Computer Applications
+BCA,Cyber Security,3,6,Undergraduate,UGC,Computer Applications
+BCA,Cloud Computing,3,6,Undergraduate,UGC,Computer Applications
+BCA,Software Development,3,6,Undergraduate,UGC,Computer Applications
+BCA,Mobile Application Development,3,6,Undergraduate,UGC,Computer Applications
+BCA,Internet of Things (IoT),3,6,Undergraduate,UGC,Computer Applications
+BCA,Blockchain Technology,3,6,Undergraduate,UGC,Computer Applications
+BCA,Full Stack Development,3,6,Undergraduate,UGC,Computer Applications
+BCA,Machine Learning,3,6,Undergraduate,UGC,Computer Applications
+BCA,Animation & Multimedia,3,6,Undergraduate,UGC,Computer Applications
+BCA,Gaming & Graphics,3,6,Undergraduate,UGC,Computer Applications
+MCA,General,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Data Science,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Artificial Intelligence,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Cyber Security,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Cloud Computing,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Software Engineering,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Mobile Computing,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Internet of Things (IoT),2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Blockchain Technology,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Full Stack Development,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Machine Learning,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA,Big Data Analytics,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA (Lateral Entry),General,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA (Lateral Entry),Data Science,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA (Lateral Entry),Artificial Intelligence,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA (Lateral Entry),Cyber Security,2,4,Postgraduate,UGC/AICTE,Computer Applications
+MCA (Lateral Entry),Cloud Computing,2,4,Postgraduate,UGC/AICTE,Computer Applications
+Integrated BCA + MCA,General,5,10,Integrated,UGC/AICTE,Computer Applications
+Integrated BCA + MCA,Data Science,5,10,Integrated,UGC/AICTE,Computer Applications
+Integrated BCA + MCA,Artificial Intelligence,5,10,Integrated,UGC/AICTE,Computer Applications
+Integrated BCA + MCA,Cyber Security,5,10,Integrated,UGC/AICTE,Computer Applications
+Integrated BCA + MCA,Cloud Computing,5,10,Integrated,UGC/AICTE,Computer Applications
+B.Sc,Physics,3,6,Undergraduate,UGC,Science
+B.Sc,Chemistry,3,6,Undergraduate,UGC,Science
+B.Sc,Mathematics,3,6,Undergraduate,UGC,Science
+B.Sc,Biology,3,6,Undergraduate,UGC,Science
+B.Sc,Biotechnology,3,6,Undergraduate,UGC,Science
+B.Sc,Microbiology,3,6,Undergraduate,UGC,Science
+B.Sc,Biochemistry,3,6,Undergraduate,UGC,Science
+B.Sc,Zoology,3,6,Undergraduate,UGC,Science
+B.Sc,Botany,3,6,Undergraduate,UGC,Science
+B.Sc,Environmental Science,3,6,Undergraduate,UGC,Science
+B.Sc,Computer Science,3,6,Undergraduate,UGC,Science
+B.Sc,Information Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Data Science,3,6,Undergraduate,UGC,Science
+B.Sc,Artificial Intelligence,3,6,Undergraduate,UGC,Science
+B.Sc,Cyber Security,3,6,Undergraduate,UGC,Science
+B.Sc,Statistics,3,6,Undergraduate,UGC,Science
+B.Sc,Economics,3,6,Undergraduate,UGC,Science
+B.Sc,Agriculture,3,6,Undergraduate,UGC,Science
+B.Sc,Horticulture,3,6,Undergraduate,UGC,Science
+B.Sc,Forestry,3,6,Undergraduate,UGC,Science
+B.Sc,Food Science & Nutrition,3,6,Undergraduate,UGC,Science
+B.Sc,Dietetics,3,6,Undergraduate,UGC,Science
+B.Sc,Nursing,3,6,Undergraduate,UGC,Science
+B.Sc,Medical Laboratory Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Radiology & Imaging Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Optometry,3,6,Undergraduate,UGC,Science
+B.Sc,Physiotherapy,3,6,Undergraduate,UGC,Science
+B.Sc,Occupational Therapy,3,6,Undergraduate,UGC,Science
+B.Sc,Audiology & Speech Therapy,3,6,Undergraduate,UGC,Science
+B.Sc,Psychology,3,6,Undergraduate,UGC,Science
+B.Sc,Geography,3,6,Undergraduate,UGC,Science
+B.Sc,Geology,3,6,Undergraduate,UGC,Science
+B.Sc,Electronics,3,6,Undergraduate,UGC,Science
+B.Sc,Instrumentation,3,6,Undergraduate,UGC,Science
+B.Sc,Animation & Multimedia,3,6,Undergraduate,UGC,Science
+B.Sc,Fashion Design,3,6,Undergraduate,UGC,Science
+B.Sc,Interior Design,3,6,Undergraduate,UGC,Science
+B.Sc,Textile Design,3,6,Undergraduate,UGC,Science
+B.Sc,Nautical Science,3,6,Undergraduate,UGC,Science
+B.Sc,Aviation,3,6,Undergraduate,UGC,Science
+B.Sc,Animation,3,6,Undergraduate,UGC,Science
+B.Sc,Game Design & Development,3,6,Undergraduate,UGC,Science
+B.Sc,Film & Television Production,3,6,Undergraduate,UGC,Science
+B.Sc,Photography,3,6,Undergraduate,UGC,Science
+B.Sc,Acting & Drama,3,6,Undergraduate,UGC,Science
+B.Sc,Dance,3,6,Undergraduate,UGC,Science
+B.Sc,Music,3,6,Undergraduate,UGC,Science
+B.Sc,Fine Arts,3,6,Undergraduate,UGC,Science
+B.Sc,Visual Communication,3,6,Undergraduate,UGC,Science
+B.Sc,Journalism & Mass Communication,3,6,Undergraduate,UGC,Science
+B.Sc,Advertising & Public Relations,3,6,Undergraduate,UGC,Science
+B.Sc,Event Management,3,6,Undergraduate,UGC,Science
+B.Sc,Travel & Tourism,3,6,Undergraduate,UGC,Science
+B.Sc,Hospitality & Hotel Administration,3,6,Undergraduate,UGC,Science
+B.Sc,Culinary Arts,3,6,Undergraduate,UGC,Science
+B.Sc,Bakery & Confectionery,3,6,Undergraduate,UGC,Science
+B.Sc,Sports Science,3,6,Undergraduate,UGC,Science
+B.Sc,Physical Education,3,6,Undergraduate,UGC,Science
+B.Sc,Yoga,3,6,Undergraduate,UGC,Science
+B.Sc,Naturopathy,3,6,Undergraduate,UGC,Science
+B.Sc,Home Science,3,6,Undergraduate,UGC,Science
+B.Sc,Library & Information Science,3,6,Undergraduate,UGC,Science
+B.Sc,Bioinformatics,3,6,Undergraduate,UGC,Science
+B.Sc,Computational Biology,3,6,Undergraduate,UGC,Science
+B.Sc,Neuroscience,3,6,Undergraduate,UGC,Science
+B.Sc,Marine Science,3,6,Undergraduate,UGC,Science
+B.Sc,Meteorology,3,6,Undergraduate,UGC,Science
+B.Sc,Astronomy,3,6,Undergraduate,UGC,Science
+B.Sc,Nanoscience & Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Material Science,3,6,Undergraduate,UGC,Science
+B.Sc,Renewable Energy,3,6,Undergraduate,UGC,Science
+B.Sc,Sustainability Studies,3,6,Undergraduate,UGC,Science
+B.Sc,Forensic Science,3,6,Undergraduate,UGC,Science
+B.Sc,Clinical Research,3,6,Undergraduate,UGC,Science
+B.Sc,Public Health,3,6,Undergraduate,UGC,Science
+B.Sc,Health Information Management,3,6,Undergraduate,UGC,Science
+B.Sc,Medical Imaging Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Operation Theatre Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Anaesthesia Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Dialysis Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Cardiac Care Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Emergency Medicine Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Respiratory Therapy,3,6,Undergraduate,UGC,Science
+B.Sc,Neuroscience Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Food Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Dairy Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Water Science & Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Remote Sensing & GIS,3,6,Undergraduate,UGC,Science
+B.Sc,Earth Science,3,6,Undergraduate,UGC,Science
+B.Sc,Oceanography,3,6,Undergraduate,UGC,Science
+B.Sc,Climate Change & Sustainability,3,6,Undergraduate,UGC,Science
+B.Sc,Disaster Management,3,6,Undergraduate,UGC,Science
+B.Sc,Wildlife Science,3,6,Undergraduate,UGC,Science
+B.Sc,Sericulture,3,6,Undergraduate,UGC,Science
+B.Sc,Seed Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Post Harvest Technology,3,6,Undergraduate,UGC,Science
+B.Sc,Food Processing,3,6,Undergraduate,UGC,Science
+B.Sc,Agricultural Biotechnology,3,6,Undergraduate,UGC,Science
+B.Sc,Agricultural Economics,3,6,Undergraduate,UGC,Science
+B.Sc,Agricultural Extension,3,6,Undergraduate,UGC,Science
+B.Sc,Agronomy,3,6,Undergraduate,UGC,Science
+B.Sc,Plant Breeding & Genetics,3,6,Undergraduate,UGC,Science
+B.Sc,Soil Science,3,6,Undergraduate,UGC,Science
+B.Sc,Entomology,3,6,Undergraduate,UGC,Science
+B.Sc,Plant Pathology,3,6,Undergraduate,UGC,Science
+B.Sc,Nematology,3,6,Undergraduate,UGC,Science
+B.Sc,Agricultural Statistics,3,6,Undergraduate,UGC,Science
+B.Sc,Agricultural Microbiology,3,6,Undergraduate,UGC,Science
+B.Sc,Animal Husbandry,3,6,Undergraduate,UGC,Science
+B.Sc,Poultry Science,3,6,Undergraduate,UGC,Science
+B.Sc,Fisheries Science,3,6,Undergraduate,UGC,Science
+B.Sc,Aquaculture,3,6,Undergraduate,UGC,Science
+B.Sc,Community Science,3,6,Undergraduate,UGC,Science
+B.Sc,Family Resource Management,3,6,Undergraduate,UGC,Science
+B.Sc,Child Development,3,6,Undergraduate,UGC,Science
+B.Sc,Food & Nutrition,3,6,Undergraduate,UGC,Science
+B.Sc,Textile & Apparel Designing,3,6,Undergraduate,UGC,Science
+B.Sc,Extension Education,3,6,Undergraduate,UGC,Science
+B.Sc,Interior Design,3,6,Undergraduate,UGC,Science
+B.Sc,Exhibition Design,3,6,Undergraduate,UGC,Science
+B.Sc,Set Design,3,6,Undergraduate,UGC,Science
+B.Sc,Costume Design,3,6,Undergraduate,UGC,Science
+B.Sc,Makeup & Styling,3,6,Undergraduate,UGC,Science
+B.Sc,Sound Design,3,6,Undergraduate,UGC,Science
+B.Sc,Communication Design,3,6,Undergraduate,UGC,Science
+B.Sc,Industrial Design,3,6,Undergraduate,UGC,Science
+B.Sc,Craft Design,3,6,Undergraduate,UGC,Science
+B.Sc,Sustainable Design,3,6,Undergraduate,UGC,Science
+B.Sc,Social Design,3,6,Undergraduate,UGC,Science
+B.Sc,Strategic Design Management,3,6,Undergraduate,UGC,Science
+M.Sc,Physics,2,4,Postgraduate,UGC,Science
+M.Sc,Chemistry,2,4,Postgraduate,UGC,Science
+M.Sc,Mathematics,2,4,Postgraduate,UGC,Science
+M.Sc,Biology,2,4,Postgraduate,UGC,Science
+M.Sc,Biotechnology,2,4,Postgraduate,UGC,Science
+M.Sc,Microbiology,2,4,Postgraduate,UGC,Science
+M.Sc,Biochemistry,2,4,Postgraduate,UGC,Science
+M.Sc,Zoology,2,4,Postgraduate,UGC,Science
+M.Sc,Botany,2,4,Postgraduate,UGC,Science
+M.Sc,Environmental Science,2,4,Postgraduate,UGC,Science
+M.Sc,Computer Science,2,4,Postgraduate,UGC,Science
+M.Sc,Information Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Data Science,2,4,Postgraduate,UGC,Science
+M.Sc,Artificial Intelligence,2,4,Postgraduate,UGC,Science
+M.Sc,Cyber Security,2,4,Postgraduate,UGC,Science
+M.Sc,Statistics,2,4,Postgraduate,UGC,Science
+M.Sc,Economics,2,4,Postgraduate,UGC,Science
+M.Sc,Agriculture,2,4,Postgraduate,UGC,Science
+M.Sc,Horticulture,2,4,Postgraduate,UGC,Science
+M.Sc,Forestry,2,4,Postgraduate,UGC,Science
+M.Sc,Food Science & Nutrition,2,4,Postgraduate,UGC,Science
+M.Sc,Dietetics,2,4,Postgraduate,UGC,Science
+M.Sc,Nursing,2,4,Postgraduate,UGC,Science
+M.Sc,Medical Laboratory Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Radiology & Imaging Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Optometry,2,4,Postgraduate,UGC,Science
+M.Sc,Physiotherapy,2,4,Postgraduate,UGC,Science
+M.Sc,Occupational Therapy,2,4,Postgraduate,UGC,Science
+M.Sc,Audiology & Speech Therapy,2,4,Postgraduate,UGC,Science
+M.Sc,Psychology,2,4,Postgraduate,UGC,Science
+M.Sc,Geography,2,4,Postgraduate,UGC,Science
+M.Sc,Geology,2,4,Postgraduate,UGC,Science
+M.Sc,Electronics,2,4,Postgraduate,UGC,Science
+M.Sc,Instrumentation,2,4,Postgraduate,UGC,Science
+M.Sc,Animation & Multimedia,2,4,Postgraduate,UGC,Science
+M.Sc,Fashion Design,2,4,Postgraduate,UGC,Science
+M.Sc,Interior Design,2,4,Postgraduate,UGC,Science
+M.Sc,Textile Design,2,4,Postgraduate,UGC,Science
+M.Sc,Nautical Science,2,4,Postgraduate,UGC,Science
+M.Sc,Aviation,2,4,Postgraduate,UGC,Science
+M.Sc,Animation,2,4,Postgraduate,UGC,Science
+M.Sc,Game Design & Development,2,4,Postgraduate,UGC,Science
+M.Sc,Film & Television Production,2,4,Postgraduate,UGC,Science
+M.Sc,Photography,2,4,Postgraduate,UGC,Science
+M.Sc,Acting & Drama,2,4,Postgraduate,UGC,Science
+M.Sc,Dance,2,4,Postgraduate,UGC,Science
+M.Sc,Music,2,4,Postgraduate,UGC,Science
+M.Sc,Fine Arts,2,4,Postgraduate,UGC,Science
+M.Sc,Visual Communication,2,4,Postgraduate,UGC,Science
+M.Sc,Journalism & Mass Communication,2,4,Postgraduate,UGC,Science
+M.Sc,Advertising & Public Relations,2,4,Postgraduate,UGC,Science
+M.Sc,Event Management,2,4,Postgraduate,UGC,Science
+M.Sc,Travel & Tourism,2,4,Postgraduate,UGC,Science
+M.Sc,Hospitality & Hotel Administration,2,4,Postgraduate,UGC,Science
+M.Sc,Culinary Arts,2,4,Postgraduate,UGC,Science
+M.Sc,Bakery & Confectionery,2,4,Postgraduate,UGC,Science
+M.Sc,Sports Science,2,4,Postgraduate,UGC,Science
+M.Sc,Physical Education,2,4,Postgraduate,UGC,Science
+M.Sc,Yoga,2,4,Postgraduate,UGC,Science
+M.Sc,Naturopathy,2,4,Postgraduate,UGC,Science
+M.Sc,Home Science,2,4,Postgraduate,UGC,Science
+M.Sc,Library & Information Science,2,4,Postgraduate,UGC,Science
+M.Sc,Bioinformatics,2,4,Postgraduate,UGC,Science
+M.Sc,Computational Biology,2,4,Postgraduate,UGC,Science
+M.Sc,Neuroscience,2,4,Postgraduate,UGC,Science
+M.Sc,Marine Science,2,4,Postgraduate,UGC,Science
+M.Sc,Meteorology,2,4,Postgraduate,UGC,Science
+M.Sc,Astronomy,2,4,Postgraduate,UGC,Science
+M.Sc,Nanoscience & Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Material Science,2,4,Postgraduate,UGC,Science
+M.Sc,Renewable Energy,2,4,Postgraduate,UGC,Science
+M.Sc,Sustainability Studies,2,4,Postgraduate,UGC,Science
+M.Sc,Forensic Science,2,4,Postgraduate,UGC,Science
+M.Sc,Clinical Research,2,4,Postgraduate,UGC,Science
+M.Sc,Public Health,2,4,Postgraduate,UGC,Science
+M.Sc,Health Information Management,2,4,Postgraduate,UGC,Science
+M.Sc,Medical Imaging Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Operation Theatre Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Anaesthesia Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Dialysis Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Cardiac Care Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Emergency Medicine Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Respiratory Therapy,2,4,Postgraduate,UGC,Science
+M.Sc,Neuroscience Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Food Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Dairy Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Water Science & Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Remote Sensing & GIS,2,4,Postgraduate,UGC,Science
+M.Sc,Earth Science,2,4,Postgraduate,UGC,Science
+M.Sc,Oceanography,2,4,Postgraduate,UGC,Science
+M.Sc,Climate Change & Sustainability,2,4,Postgraduate,UGC,Science
+M.Sc,Disaster Management,2,4,Postgraduate,UGC,Science
+M.Sc,Wildlife Science,2,4,Postgraduate,UGC,Science
+M.Sc,Sericulture,2,4,Postgraduate,UGC,Science
+M.Sc,Seed Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Post Harvest Technology,2,4,Postgraduate,UGC,Science
+M.Sc,Food Processing,2,4,Postgraduate,UGC,Science
+M.Sc,Agricultural Biotechnology,2,4,Postgraduate,UGC,Science
+M.Sc,Agricultural Economics,2,4,Postgraduate,UGC,Science
+M.Sc,Agricultural Extension,2,4,Postgraduate,UGC,Science
+M.Sc,Agronomy,2,4,Postgraduate,UGC,Science
+M.Sc,Plant Breeding & Genetics,2,4,Postgraduate,UGC,Science
+M.Sc,Soil Science,2,4,Postgraduate,UGC,Science
+M.Sc,Entomology,2,4,Postgraduate,UGC,Science
+M.Sc,Plant Pathology,2,4,Postgraduate,UGC,Science
+M.Sc,Nematology,2,4,Postgraduate,UGC,Science
+M.Sc,Agricultural Statistics,2,4,Postgraduate,UGC,Science
+M.Sc,Agricultural Microbiology,2,4,Postgraduate,UGC,Science
+M.Sc,Animal Husbandry,2,4,Postgraduate,UGC,Science
+M.Sc,Poultry Science,2,4,Postgraduate,UGC,Science
+M.Sc,Fisheries Science,2,4,Postgraduate,UGC,Science
+M.Sc,Aquaculture,2,4,Postgraduate,UGC,Science
+M.Sc,Community Science,2,4,Postgraduate,UGC,Science
+M.Sc,Family Resource Management,2,4,Postgraduate,UGC,Science
+M.Sc,Child Development,2,4,Postgraduate,UGC,Science
+M.Sc,Food & Nutrition,2,4,Postgraduate,UGC,Science
+M.Sc,Textile & Apparel Designing,2,4,Postgraduate,UGC,Science
+M.Sc,Extension Education,2,4,Postgraduate,UGC,Science
+M.Sc,Interior Design,2,4,Postgraduate,UGC,Science
+M.Sc,Exhibition Design,2,4,Postgraduate,UGC,Science
+M.Sc,Set Design,2,4,Postgraduate,UGC,Science
+M.Sc,Costume Design,2,4,Postgraduate,UGC,Science
+M.Sc,Makeup & Styling,2,4,Postgraduate,UGC,Science
+M.Sc,Sound Design,2,4,Postgraduate,UGC,Science
+M.Sc,Communication Design,2,4,Postgraduate,UGC,Science
+M.Sc,Industrial Design,2,4,Postgraduate,UGC,Science
+M.Sc,Craft Design,2,4,Postgraduate,UGC,Science
+M.Sc,Sustainable Design,2,4,Postgraduate,UGC,Science
+M.Sc,Social Design,2,4,Postgraduate,UGC,Science
+M.Sc,Strategic Design Management,2,4,Postgraduate,UGC,Science
+B.Sc (Hons),Physics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Chemistry,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Mathematics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Biology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Biotechnology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Microbiology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Biochemistry,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Zoology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Botany,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Environmental Science,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Computer Science,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Information Technology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Data Science,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Artificial Intelligence,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Cyber Security,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Statistics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Economics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Agriculture,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Horticulture,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Forestry,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Food Science & Nutrition,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Dietetics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Nursing,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Medical Laboratory Technology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Radiology & Imaging Technology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Optometry,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Psychology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Geography,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Geology,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Electronics,4,8,Undergraduate,UGC,Science
+B.Sc (Hons),Instrumentation,4,8,Undergraduate,UGC,Science
+Integrated B.Sc + M.Sc,Physics,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Chemistry,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Mathematics,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Biology,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Biotechnology,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Computer Science,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Environmental Science,5,10,Integrated,UGC,Science
+Integrated B.Sc + M.Sc,Data Science,5,10,Integrated,UGC,Science
+BA,English,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Hindi,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Sanskrit,3,6,Undergraduate,UGC,Arts & Humanities
+BA,History,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Political Science,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Economics,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Sociology,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Psychology,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Philosophy,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Geography,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Anthropology,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Archaeology,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Linguistics,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Journalism & Mass Communication,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Public Administration,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Social Work,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Fine Arts,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Music,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Dance,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Drama & Theatre,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Film Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Photography,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Visual Arts,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Graphic Design,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Fashion Design,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Interior Design,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Textile Design,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Animation,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Multimedia,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Advertising,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Public Relations,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Event Management,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Travel & Tourism,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Library & Information Science,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Physical Education,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Yoga,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Military Science,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Women Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Environmental Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Development Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Media Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Communication Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Religious Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Islamic Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Buddhist Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Christian Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Jain Studies,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Pali,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Persian,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Arabic,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Urdu,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Bengali,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Marathi,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Gujarati,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Punjabi,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Tamil,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Telugu,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Kannada,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Malayalam,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Odia,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Assamese,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Manipuri,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Nepali,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Sindhi,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Kashmiri,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Konkani,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Bodo,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Dogri,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Maithili,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Santhali,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Rajasthani,3,6,Undergraduate,UGC,Arts & Humanities
+BA,Haryanvi,3,6,Undergraduate,UGC,Arts & Humanities
+MA,English,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Hindi,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Sanskrit,2,4,Postgraduate,UGC,Arts & Humanities
+MA,History,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Political Science,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Economics,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Sociology,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Psychology,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Philosophy,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Geography,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Anthropology,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Archaeology,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Linguistics,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Journalism & Mass Communication,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Public Administration,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Social Work,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Fine Arts,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Music,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Dance,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Drama & Theatre,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Film Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Photography,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Visual Arts,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Graphic Design,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Fashion Design,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Interior Design,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Textile Design,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Animation,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Multimedia,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Advertising,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Public Relations,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Event Management,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Travel & Tourism,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Library & Information Science,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Physical Education,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Yoga,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Military Science,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Women Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Environmental Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Development Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Media Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Communication Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Religious Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Islamic Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Buddhist Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Christian Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Jain Studies,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Pali,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Persian,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Arabic,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Urdu,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Bengali,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Marathi,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Gujarati,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Punjabi,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Tamil,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Telugu,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Kannada,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Malayalam,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Odia,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Assamese,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Manipuri,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Nepali,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Sindhi,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Kashmiri,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Konkani,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Bodo,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Dogri,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Maithili,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Santhali,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Rajasthani,2,4,Postgraduate,UGC,Arts & Humanities
+MA,Haryanvi,2,4,Postgraduate,UGC,Arts & Humanities
+BA (Hons),English,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Hindi,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Sanskrit,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),History,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Political Science,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Economics,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Sociology,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Psychology,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Philosophy,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Geography,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Anthropology,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Archaeology,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Linguistics,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Journalism & Mass Communication,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Public Administration,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Social Work,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Fine Arts,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Music,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Dance,4,8,Undergraduate,UGC,Arts & Humanities
+BA (Hons),Drama & Theatre,4,8,Undergraduate,UGC,Arts & Humanities
+Integrated BA + MA,English,5,10,Integrated,UGC,Arts & Humanities
+Integrated BA + MA,History,5,10,Integrated,UGC,Arts & Humanities
+Integrated BA + MA,Political Science,5,10,Integrated,UGC,Arts & Humanities
+Integrated BA + MA,Economics,5,10,Integrated,UGC,Arts & Humanities
+Integrated BA + MA,Sociology,5,10,Integrated,UGC,Arts & Humanities
+Integrated BA + MA,Psychology,5,10,Integrated,UGC,Arts & Humanities
+B.Com,General,3,6,Undergraduate,UGC,Commerce
+B.Com,Accounting & Finance,3,6,Undergraduate,UGC,Commerce
+B.Com,Taxation,3,6,Undergraduate,UGC,Commerce
+B.Com,Economics,3,6,Undergraduate,UGC,Commerce
+B.Com,Banking & Insurance,3,6,Undergraduate,UGC,Commerce
+B.Com,Business Economics,3,6,Undergraduate,UGC,Commerce
+B.Com,Computer Applications,3,6,Undergraduate,UGC,Commerce
+B.Com,E-Commerce,3,6,Undergraduate,UGC,Commerce
+B.Com,Marketing,3,6,Undergraduate,UGC,Commerce
+B.Com,HRM,3,6,Undergraduate,UGC,Commerce
+B.Com,International Business,3,6,Undergraduate,UGC,Commerce
+B.Com,Corporate Secretaryship,3,6,Undergraduate,UGC,Commerce
+B.Com,Cost Accounting,3,6,Undergraduate,UGC,Commerce
+B.Com,Financial Markets,3,6,Undergraduate,UGC,Commerce
+B.Com,Investment Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Wealth Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Risk Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Actuarial Science,3,6,Undergraduate,UGC,Commerce
+B.Com,Business Analytics,3,6,Undergraduate,UGC,Commerce
+B.Com,Digital Marketing,3,6,Undergraduate,UGC,Commerce
+B.Com,Entrepreneurship,3,6,Undergraduate,UGC,Commerce
+B.Com,Supply Chain Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Retail Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Tourism & Travel Management,3,6,Undergraduate,UGC,Commerce
+B.Com,Hospitality Management,3,6,Undergraduate,UGC,Commerce
+B.Com (Hons),General,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Accounting & Finance,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Taxation,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Economics,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Banking & Insurance,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Business Economics,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Computer Applications,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Marketing,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),International Business,4,8,Undergraduate,UGC,Commerce
+B.Com (Hons),Business Analytics,4,8,Undergraduate,UGC,Commerce
+M.Com,General,2,4,Postgraduate,UGC,Commerce
+M.Com,Accounting & Finance,2,4,Postgraduate,UGC,Commerce
+M.Com,Taxation,2,4,Postgraduate,UGC,Commerce
+M.Com,Economics,2,4,Postgraduate,UGC,Commerce
+M.Com,Banking & Insurance,2,4,Postgraduate,UGC,Commerce
+M.Com,Business Economics,2,4,Postgraduate,UGC,Commerce
+M.Com,Computer Applications,2,4,Postgraduate,UGC,Commerce
+M.Com,E-Commerce,2,4,Postgraduate,UGC,Commerce
+M.Com,Marketing,2,4,Postgraduate,UGC,Commerce
+M.Com,HRM,2,4,Postgraduate,UGC,Commerce
+M.Com,International Business,2,4,Postgraduate,UGC,Commerce
+M.Com,Corporate Secretaryship,2,4,Postgraduate,UGC,Commerce
+M.Com,Cost Accounting,2,4,Postgraduate,UGC,Commerce
+M.Com,Financial Markets,2,4,Postgraduate,UGC,Commerce
+M.Com,Investment Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Wealth Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Risk Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Actuarial Science,2,4,Postgraduate,UGC,Commerce
+M.Com,Business Analytics,2,4,Postgraduate,UGC,Commerce
+M.Com,Digital Marketing,2,4,Postgraduate,UGC,Commerce
+M.Com,Entrepreneurship,2,4,Postgraduate,UGC,Commerce
+M.Com,Supply Chain Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Retail Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Tourism & Travel Management,2,4,Postgraduate,UGC,Commerce
+M.Com,Hospitality Management,2,4,Postgraduate,UGC,Commerce
+Integrated B.Com + M.Com,General,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Accounting,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Finance,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Economics,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Banking & Insurance,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Marketing,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,International Business,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Business Analytics,5,10,Integrated,UGC,Commerce
+Integrated B.Com + M.Com,Taxation,5,10,Integrated,UGC,Commerce
+LLB,General,3,6,Undergraduate,BCI,Law
+LLB,Corporate Law,3,6,Undergraduate,BCI,Law
+LLB,Criminal Law,3,6,Undergraduate,BCI,Law
+LLB,Constitutional Law,3,6,Undergraduate,BCI,Law
+LLB,Civil Law,3,6,Undergraduate,BCI,Law
+LLB,International Law,3,6,Undergraduate,BCI,Law
+LLB,Labour Law,3,6,Undergraduate,BCI,Law
+LLB,Environmental Law,3,6,Undergraduate,BCI,Law
+LLB,Human Rights Law,3,6,Undergraduate,BCI,Law
+LLB,Intellectual Property Law,3,6,Undergraduate,BCI,Law
+LLB,Cyber Law,3,6,Undergraduate,BCI,Law
+LLB,Taxation Law,3,6,Undergraduate,BCI,Law
+LLB,Family Law,3,6,Undergraduate,BCI,Law
+LLB,Alternative Dispute Resolution,3,6,Undergraduate,BCI,Law
+LLM,General,2,4,Postgraduate,BCI,Law
+LLM,Corporate Law,2,4,Postgraduate,BCI,Law
+LLM,Criminal Law,2,4,Postgraduate,BCI,Law
+LLM,Constitutional Law,2,4,Postgraduate,BCI,Law
+LLM,Civil Law,2,4,Postgraduate,BCI,Law
+LLM,International Law,2,4,Postgraduate,BCI,Law
+LLM,Labour Law,2,4,Postgraduate,BCI,Law
+LLM,Environmental Law,2,4,Postgraduate,BCI,Law
+LLM,Human Rights Law,2,4,Postgraduate,BCI,Law
+LLM,Intellectual Property Law,2,4,Postgraduate,BCI,Law
+LLM,Cyber Law,2,4,Postgraduate,BCI,Law
+LLM,Taxation Law,2,4,Postgraduate,BCI,Law
+LLM,Family Law,2,4,Postgraduate,BCI,Law
+LLM,Alternative Dispute Resolution,2,4,Postgraduate,BCI,Law
+BA LLB,General,5,10,Integrated,BCI,Law
+BA LLB,Corporate Law,5,10,Integrated,BCI,Law
+BA LLB,Criminal Law,5,10,Integrated,BCI,Law
+BA LLB,Constitutional Law,5,10,Integrated,BCI,Law
+BBA LLB,General,5,10,Integrated,BCI,Law
+BBA LLB,Corporate Law,5,10,Integrated,BCI,Law
+BBA LLB,Criminal Law,5,10,Integrated,BCI,Law
+BBA LLB,Constitutional Law,5,10,Integrated,BCI,Law
+B.Com LLB,General,5,10,Integrated,BCI,Law
+B.Com LLB,Corporate Law,5,10,Integrated,BCI,Law
+B.Com LLB,Criminal Law,5,10,Integrated,BCI,Law
+B.Com LLB,Constitutional Law,5,10,Integrated,BCI,Law
+B.Sc LLB,General,5,10,Integrated,BCI,Law
+B.Sc LLB,Corporate Law,5,10,Integrated,BCI,Law
+B.Sc LLB,Criminal Law,5,10,Integrated,BCI,Law
+B.Sc LLB,Constitutional Law,5,10,Integrated,BCI,Law
+MBBS,Medicine & Surgery,5.5,9,Undergraduate,NMC,Medical & Health Sciences
+BDS,Dental Surgery,5,8,Undergraduate,DCI,Medical & Health Sciences
+BAMS,Ayurvedic Medicine & Surgery,5.5,9,Undergraduate,NCISM,Medical & Health Sciences
+BHMS,Homeopathic Medicine & Surgery,5.5,9,Undergraduate,NCH,Medical & Health Sciences
+BUMS,Unani Medicine & Surgery,5.5,9,Undergraduate,NCISM,Medical & Health Sciences
+BSMS,Siddha Medicine & Surgery,5.5,9,Undergraduate,NCISM,Medical & Health Sciences
+BNYS,Naturopathy & Yogic Sciences,5.5,9,Undergraduate,NCISM,Medical & Health Sciences
+GNM,General Nursing & Midwifery,3,6,Diploma,INC,Medical & Health Sciences
+B.Sc Nursing,Nursing,4,8,Undergraduate,INC,Medical & Health Sciences
+Post Basic B.Sc Nursing,Nursing,2,4,Undergraduate,INC,Medical & Health Sciences
+M.Sc Nursing,Nursing,2,4,Postgraduate,INC,Medical & Health Sciences
+BPT,Physiotherapy,4.5,9,Undergraduate,NCS,Medical & Health Sciences
+MPT,Physiotherapy,2,4,Postgraduate,NCS,Medical & Health Sciences
+BOT,Occupational Therapy,4.5,9,Undergraduate,NCS,Medical & Health Sciences
+MOT,Occupational Therapy,2,4,Postgraduate,NCS,Medical & Health Sciences
+B.Sc MLT,Medical Laboratory Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+M.Sc MLT,Medical Laboratory Technology,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Sc MIT,Medical Imaging Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Optometry,Optometry,4,8,Undergraduate,UGC,Medical & Health Sciences
+M.Sc Optometry,Optometry,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Sc Radiotherapy,Radiotherapy,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Anaesthesia,Anaesthesia Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Operation Theatre,Operation Theatre Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Dialysis,Dialysis Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Cardiac Care,Cardiac Care Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Neuroscience,Neuroscience Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Emergency Medicine,Emergency Medicine Technology,3,6,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Respiratory Therapy,Respiratory Therapy,4,8,Undergraduate,UGC,Medical & Health Sciences
+B.Sc Audiology & Speech,Audiology & Speech Language Pathology,3,6,Undergraduate,UGC,Medical & Health Sciences
+M.Sc Audiology & Speech,Audiology & Speech Language Pathology,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Sc Prosthetics & Orthotics,Prosthetics & Orthotics,4.5,9,Undergraduate,NCS,Medical & Health Sciences
+M.Sc Prosthetics & Orthotics,Prosthetics & Orthotics,2,4,Postgraduate,NCS,Medical & Health Sciences
+BASLP,Audiology & Speech Language Pathology,4,8,Undergraduate,UGC,Medical & Health Sciences
+MASLP,Audiology & Speech Language Pathology,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Sc Clinical Psychology,Clinical Psychology,3,6,Undergraduate,UGC,Medical & Health Sciences
+M.Sc Clinical Psychology,Clinical Psychology,2,4,Postgraduate,UGC,Medical & Health Sciences
+M.Phil Clinical Psychology,Clinical Psychology,2,4,Postgraduate Research,UGC,Medical & Health Sciences
+Professional Diploma in Clinical Psychology,Clinical Psychology,1,2,Professional Diploma,UGC,Medical & Health Sciences
+B.Sc Forensic Science,Forensic Science,3,6,Undergraduate,UGC,Medical & Health Sciences
+M.Sc Forensic Science,Forensic Science,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Sc Cyber Forensics,Cyber Forensics,3,6,Undergraduate,UGC,Medical & Health Sciences
+M.Sc Cyber Forensics,Cyber Forensics,2,4,Postgraduate,UGC,Medical & Health Sciences
+B.Ed,General Education,2,4,Undergraduate,NCTE,Education
+B.Ed,Special Education,2,4,Undergraduate,NCTE,Education
+B.Ed,Physical Education,2,4,Undergraduate,NCTE,Education
+B.Ed,Yoga Education,2,4,Undergraduate,NCTE,Education
+M.Ed,General Education,2,4,Postgraduate,NCTE,Education
+M.Ed,Special Education,2,4,Postgraduate,NCTE,Education
+B.El.Ed,Elementary Education,4,8,Undergraduate,NCTE,Education
+D.El.Ed,Elementary Education,2,4,Diploma,NCTE,Education
+B.P.Ed,Physical Education,2,4,Undergraduate,NCTE,Education
+M.P.Ed,Physical Education,2,4,Postgraduate,NCTE,Education
+B.Ed Special Education,Visual Impairment,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Hearing Impairment,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Mental Retardation,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Learning Disability,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Autism Spectrum Disorder,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Cerebral Palsy,2,4,Undergraduate,NCTE,Education
+B.Ed Special Education,Multiple Disabilities,2,4,Undergraduate,NCTE,Education
+M.Ed Special Education,Visual Impairment,2,4,Postgraduate,NCTE,Education
+M.Ed Special Education,Hearing Impairment,2,4,Postgraduate,NCTE,Education
+M.Ed Special Education,Mental Retardation,2,4,Postgraduate,NCTE,Education
+M.Ed Special Education,Learning Disability,2,4,Postgraduate,NCTE,Education
+M.Ed Special Education,Autism Spectrum Disorder,2,4,Postgraduate,NCTE,Education
+PG Diploma in Special Education,Special Education,1,2,Postgraduate Diploma,NCTE,Education
+Diploma in Rehabilitation,Rehabilitation Therapy,1,2,Diploma,UGC,Education
+B.Sc Rehabilitation,Rehabilitation Science,3,6,Undergraduate,UGC,Education
+M.Sc Rehabilitation,Rehabilitation Science,2,4,Postgraduate,UGC,Education
+B.Sc Agriculture,Agriculture,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Horticulture,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Forestry,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Sericulture,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Engineering,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Biotechnology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Economics,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Extension,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agronomy,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Plant Breeding & Genetics,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Soil Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Entomology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Plant Pathology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Nematology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Statistics,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Microbiology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Animal Husbandry,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Dairy Technology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Dairy Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Veterinary Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Fisheries Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Aquaculture,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Poultry Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Food Technology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Food Science & Nutrition,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Food Processing,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Post Harvest Technology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Seed Technology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Water Science & Technology,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agricultural Business Management,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Agri-Marketing,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Rural Development,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Community Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Home Science,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Family Resource Management,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Child Development,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Food & Nutrition,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Textile & Apparel Designing,4,8,Undergraduate,ICAR,Agriculture & Allied
+B.Sc Agriculture,Extension Education,4,8,Undergraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agriculture,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Horticulture,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Forestry,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Sericulture,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Engineering,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Biotechnology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Economics,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Extension,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agronomy,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Plant Breeding & Genetics,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Soil Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Entomology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Plant Pathology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Nematology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Statistics,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Microbiology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Animal Husbandry,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Dairy Technology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Dairy Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Veterinary Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Fisheries Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Aquaculture,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Poultry Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Food Technology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Food Science & Nutrition,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Food Processing,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Post Harvest Technology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Seed Technology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Water Science & Technology,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agricultural Business Management,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Agri-Marketing,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Rural Development,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Community Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Home Science,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Family Resource Management,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Child Development,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Food & Nutrition,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Textile & Apparel Designing,2,4,Postgraduate,ICAR,Agriculture & Allied
+M.Sc Agriculture,Extension Education,2,4,Postgraduate,ICAR,Agriculture & Allied
+B.Tech,Agricultural Engineering,4,8,Undergraduate,ICAR/AICTE,Agriculture & Allied
+B.Tech,Dairy Technology,4,8,Undergraduate,ICAR/AICTE,Agriculture & Allied
+B.Tech,Food Technology,4,8,Undergraduate,ICAR/AICTE,Agriculture & Allied
+B.Tech,Agricultural Biotechnology,4,8,Undergraduate,ICAR/AICTE,Agriculture & Allied
+M.Tech,Agricultural Engineering,2,4,Postgraduate,ICAR/AICTE,Agriculture & Allied
+M.Tech,Dairy Technology,2,4,Postgraduate,ICAR/AICTE,Agriculture & Allied
+M.Tech,Food Technology,2,4,Postgraduate,ICAR/AICTE,Agriculture & Allied
+M.Tech,Agricultural Biotechnology,2,4,Postgraduate,ICAR/AICTE,Agriculture & Allied
+BVSc & AH,Veterinary Science,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Animal Husbandry,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Pathology,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Microbiology,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Parasitology,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Public Health,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Surgery,5.5,10,Undergraduate,VCI,Agriculture & Allied
+BVSc & AH,Veterinary Gynaecology,5.5,10,Undergraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Science,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Animal Husbandry,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Pathology,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Microbiology,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Parasitology,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Public Health,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Surgery,2,4,Postgraduate,VCI,Agriculture & Allied
+MVSc,Veterinary Gynaecology,2,4,Postgraduate,VCI,Agriculture & Allied
+B.Des,Fashion Design,4,8,Undergraduate,UGC,Design
+B.Des,Interior Design,4,8,Undergraduate,UGC,Design
+B.Des,Product Design,4,8,Undergraduate,UGC,Design
+B.Des,Graphic Design,4,8,Undergraduate,UGC,Design
+B.Des,Textile Design,4,8,Undergraduate,UGC,Design
+B.Des,Jewellery Design,4,8,Undergraduate,UGC,Design
+B.Des,Accessory Design,4,8,Undergraduate,UGC,Design
+B.Des,Leather Design,4,8,Undergraduate,UGC,Design
+B.Des,Knitwear Design,4,8,Undergraduate,UGC,Design
+B.Des,Apparel Production,4,8,Undergraduate,UGC,Design
+B.Des,Fashion Communication,4,8,Undergraduate,UGC,Design
+B.Des,Fashion Styling,4,8,Undergraduate,UGC,Design
+B.Des,Visual Communication,4,8,Undergraduate,UGC,Design
+B.Des,Animation Design,4,8,Undergraduate,UGC,Design
+B.Des,Game Design,4,8,Undergraduate,UGC,Design
+B.Des,Interaction Design,4,8,Undergraduate,UGC,Design
+B.Des,User Experience (UX) Design,4,8,Undergraduate,UGC,Design
+B.Des,User Interface (UI) Design,4,8,Undergraduate,UGC,Design
+B.Des,Transportation Design,4,8,Undergraduate,UGC,Design
+B.Des,Automobile Design,4,8,Undergraduate,UGC,Design
+B.Des,Ceramic Design,4,8,Undergraduate,UGC,Design
+B.Des,Glass Design,4,8,Undergraduate,UGC,Design
+B.Des,Furniture Design,4,8,Undergraduate,UGC,Design
+B.Des,Exhibition Design,4,8,Undergraduate,UGC,Design
+B.Des,Set Design,4,8,Undergraduate,UGC,Design
+B.Des,Costume Design,4,8,Undergraduate,UGC,Design
+B.Des,Makeup & Styling,4,8,Undergraduate,UGC,Design
+B.Des,Photography,4,8,Undergraduate,UGC,Design
+B.Des,Film & Video Design,4,8,Undergraduate,UGC,Design
+B.Des,Sound Design,4,8,Undergraduate,UGC,Design
+B.Des,Communication Design,4,8,Undergraduate,UGC,Design
+B.Des,Industrial Design,4,8,Undergraduate,UGC,Design
+B.Des,Craft Design,4,8,Undergraduate,UGC,Design
+B.Des,Sustainable Design,4,8,Undergraduate,UGC,Design
+B.Des,Social Design,4,8,Undergraduate,UGC,Design
+B.Des,Strategic Design Management,4,8,Undergraduate,UGC,Design
+M.Des,Fashion Design,2,4,Postgraduate,UGC,Design
+M.Des,Interior Design,2,4,Postgraduate,UGC,Design
+M.Des,Product Design,2,4,Postgraduate,UGC,Design
+M.Des,Graphic Design,2,4,Postgraduate,UGC,Design
+M.Des,Textile Design,2,4,Postgraduate,UGC,Design
+M.Des,Jewellery Design,2,4,Postgraduate,UGC,Design
+M.Des,Accessory Design,2,4,Postgraduate,UGC,Design
+M.Des,Leather Design,2,4,Postgraduate,UGC,Design
+M.Des,Knitwear Design,2,4,Postgraduate,UGC,Design
+M.Des,Apparel Production,2,4,Postgraduate,UGC,Design
+M.Des,Fashion Communication,2,4,Postgraduate,UGC,Design
+M.Des,Fashion Styling,2,4,Postgraduate,UGC,Design
+M.Des,Visual Communication,2,4,Postgraduate,UGC,Design
+M.Des,Animation Design,2,4,Postgraduate,UGC,Design
+M.Des,Game Design,2,4,Postgraduate,UGC,Design
+M.Des,Interaction Design,2,4,Postgraduate,UGC,Design
+M.Des,User Experience (UX) Design,2,4,Postgraduate,UGC,Design
+M.Des,User Interface (UI) Design,2,4,Postgraduate,UGC,Design
+M.Des,Transportation Design,2,4,Postgraduate,UGC,Design
+M.Des,Automobile Design,2,4,Postgraduate,UGC,Design
+M.Des,Ceramic Design,2,4,Postgraduate,UGC,Design
+M.Des,Glass Design,2,4,Postgraduate,UGC,Design
+M.Des,Furniture Design,2,4,Postgraduate,UGC,Design
+M.Des,Exhibition Design,2,4,Postgraduate,UGC,Design
+M.Des,Set Design,2,4,Postgraduate,UGC,Design
+M.Des,Costume Design,2,4,Postgraduate,UGC,Design
+M.Des,Makeup & Styling,2,4,Postgraduate,UGC,Design
+M.Des,Photography,2,4,Postgraduate,UGC,Design
+M.Des,Film & Video Design,2,4,Postgraduate,UGC,Design
+M.Des,Sound Design,2,4,Postgraduate,UGC,Design
+M.Des,Communication Design,2,4,Postgraduate,UGC,Design
+M.Des,Industrial Design,2,4,Postgraduate,UGC,Design
+M.Des,Craft Design,2,4,Postgraduate,UGC,Design
+M.Des,Sustainable Design,2,4,Postgraduate,UGC,Design
+M.Des,Social Design,2,4,Postgraduate,UGC,Design
+M.Des,Strategic Design Management,2,4,Postgraduate,UGC,Design
+BHM,Hotel Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Hospitality & Tourism,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Culinary Arts,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Bakery & Confectionery,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Food Production,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Food & Beverage Service,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Front Office Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Housekeeping Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Travel & Tourism,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Airline & Airport Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Event Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Resort Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Cruise Line Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHM,Spa & Wellness Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Hotel Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Hospitality & Tourism,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Culinary Arts,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Bakery & Confectionery,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Food Production,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Food & Beverage Service,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Front Office Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Housekeeping Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Travel & Tourism,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Airline & Airport Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Event Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Resort Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Cruise Line Operations,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+BHMCT,Spa & Wellness Management,4,8,Undergraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Hotel Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Hospitality & Tourism,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Culinary Arts,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Bakery & Confectionery,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Food Production,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Food & Beverage Service,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Front Office Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Housekeeping Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Travel & Tourism,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Airline & Airport Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Event Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Resort Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Cruise Line Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MHM,Spa & Wellness Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Hotel Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Hospitality & Tourism,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Culinary Arts,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Bakery & Confectionery,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Food Production,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Food & Beverage Service,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Front Office Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Housekeeping Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Travel & Tourism,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Airline & Airport Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Event Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Resort Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Cruise Line Operations,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+MTTM,Spa & Wellness Management,2,4,Postgraduate,NCHMCT/AICTE,Hospitality & Tourism
+Diploma in Hotel Management,Hotel Management,1.5,3,Diploma,NCHMCT/AICTE,Hospitality & Tourism
+Diploma in Hotel Management,Food Production,1.5,3,Diploma,NCHMCT/AICTE,Hospitality & Tourism
+Diploma in Hotel Management,Bakery & Confectionery,1.5,3,Diploma,NCHMCT/AICTE,Hospitality & Tourism
+Diploma in Hotel Management,Travel & Tourism,1.5,3,Diploma,NCHMCT/AICTE,Hospitality & Tourism
+PhD,Engineering,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Technology,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Science,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Arts,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Commerce,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Management,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Law,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Medicine,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Pharmacy,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Architecture,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Education,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Agriculture,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Design,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Computer Applications,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Social Sciences,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Humanities,3,6,Doctoral,UGC,Doctoral & Research
+PhD,Interdisciplinary Studies,3,6,Doctoral,UGC,Doctoral & Research
+M.Phil,Engineering,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Technology,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Science,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Arts,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Commerce,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Management,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Law,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Medicine,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Pharmacy,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Architecture,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Education,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Agriculture,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Design,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Computer Applications,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Social Sciences,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Humanities,1,2,Postgraduate Research,UGC,Doctoral & Research
+M.Phil,Interdisciplinary Studies,1,2,Postgraduate Research,UGC,Doctoral & Research
+Diploma in Nursing,General Nursing,3,6,Diploma,INC,Paramedical & Vocational
+Diploma in Pharmacy,Pharmacy,2,4,Diploma,PCI,Paramedical & Vocational
+Diploma in Medical Lab Tech,Medical Laboratory Technology,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in Radiography,Radiography,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in Physiotherapy,Physiotherapy,2,4,Diploma,NCS,Paramedical & Vocational
+Diploma in Optometry,Optometry,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in Dental Mechanics,Dental Mechanics,2,4,Diploma,DCI,Paramedical & Vocational
+Diploma in Dental Hygiene,Dental Hygiene,2,4,Diploma,DCI,Paramedical & Vocational
+Diploma in Operation Theatre,Operation Theatre Technology,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in Anaesthesia,Anaesthesia Technology,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in Dialysis,Dialysis Technology,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in X-Ray Technology,X-Ray Technology,2,4,Diploma,UGC,Paramedical & Vocational
+Diploma in ECG Technology,ECG Technology,1,2,Diploma,UGC,Paramedical & Vocational
+Diploma in Sanitary Inspector,Sanitary Inspection,1,2,Diploma,UGC,Paramedical & Vocational
+Diploma in Health Inspector,Health Inspection,1,2,Diploma,UGC,Paramedical & Vocational
+Certificate in Nursing,Auxiliary Nursing & Midwifery,1.5,3,Certificate,INC,Paramedical & Vocational
+Certificate in Pharmacy,Pharmacy Assistant,1,2,Certificate,PCI,Paramedical & Vocational
+Certificate in Medical Lab Tech,Lab Assistant,1,2,Certificate,UGC,Paramedical & Vocational
+Certificate in First Aid,First Aid,0.5,1,Certificate,UGC,Paramedical & Vocational
+CA,Chartered Accountancy,4.5,9,Professional Certification,ICAI,Professional Finance & Accounting
+CS,Company Secretary,3,6,Professional Certification,ICSI,Professional Finance & Accounting
+CMA,Cost & Management Accounting,3,6,Professional Certification,ICMAI,Professional Finance & Accounting
+CFA,Chartered Financial Analyst,2,4,Professional Certification,CFA Institute,Professional Finance & Accounting
+CPA,Certified Public Accountant,1,2,Professional Certification,AICPA,Professional Finance & Accounting
+ACCA,Association of Chartered Certified Accountants,2,4,Professional Certification,ACCA Global,Professional Finance & Accounting
+FRM,Financial Risk Management,1,2,Professional Certification,GARP,Professional Finance & Accounting
+CIA,Certified Internal Auditor,1,2,Professional Certification,IIA,Professional Finance & Accounting
+CISA,Certified Information Systems Auditor,1,2,Professional Certification,ISACA,Professional Finance & Accounting
+CISM,Certified Information Security Manager,1,2,Professional Certification,ISACA,Professional Finance & Accounting
+CISSP,Certified Information Systems Security Professional,1,2,Professional Certification,ISC2,Professional Finance & Accounting
+PMP,Project Management Professional,0.5,1,Professional Certification,PMI,Professional Finance & Accounting
+PRINCE2,Projects in Controlled Environments,0.5,1,Professional Certification,AXELOS,Professional Finance & Accounting
+Six Sigma,Six Sigma Certification,0.5,1,Professional Certification,Various,Professional Finance & Accounting
+ITIL,Information Technology Infrastructure Library,0.5,1,Professional Certification,AXELOS,Professional Finance & Accounting
+CMA (US),Certified Management Accountant (US),1,2,Professional Certification,IMA,Professional Finance & Accounting
+CPA (Australia),Certified Practising Accountant,1,2,Professional Certification,CPA Australia,Professional Finance & Accounting
+CFP,Certified Financial Planner,1,2,Professional Certification,FPSB,Professional Finance & Accounting
+CWM,Chartered Wealth Manager,1,2,Professional Certification,AAFM,Professional Finance & Accounting
+CMT,Chartered Market Technician,1,2,Professional Certification,CMT Association,Professional Finance & Accounting
+CAIA,Chartered Alternative Investment Analyst,1,2,Professional Certification,CAIA Association,Professional Finance & Accounting
+CERA,Certified Enterprise Risk Actuary,1,2,Professional Certification,SOA,Professional Finance & Accounting
+Actuarial Science,Actuarial Science,3,6,Professional Certification,IAI,Professional Finance & Accounting
+BAJMC,Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Mass Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Advertising,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Public Relations,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Radio & TV Production,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Film Making,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Digital Media,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Social Media,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Corporate Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Event Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Development Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Science Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Health Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Political Communication,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Sports Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Fashion Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Photojournalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Broadcast Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Data Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Investigative Journalism,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Documentary Film Making,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Cinematography,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Video Editing,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Sound Recording & Design,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Animation & VFX,3,6,Undergraduate,UGC,Media & Communication
+BAJMC,Graphic Design for Media,3,6,Undergraduate,UGC,Media & Communication
+MAJMC,Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Mass Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Advertising,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Public Relations,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Radio & TV Production,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Film Making,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Digital Media,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Social Media,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Corporate Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Event Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Development Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Science Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Health Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Political Communication,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Sports Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Fashion Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Photojournalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Broadcast Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Data Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Investigative Journalism,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Documentary Film Making,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Cinematography,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Video Editing,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Sound Recording & Design,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Animation & VFX,2,4,Postgraduate,UGC,Media & Communication
+MAJMC,Graphic Design for Media,2,4,Postgraduate,UGC,Media & Communication
+BMM,Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Mass Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Advertising,3,6,Undergraduate,UGC,Media & Communication
+BMM,Public Relations,3,6,Undergraduate,UGC,Media & Communication
+BMM,Radio & TV Production,3,6,Undergraduate,UGC,Media & Communication
+BMM,Film Making,3,6,Undergraduate,UGC,Media & Communication
+BMM,Digital Media,3,6,Undergraduate,UGC,Media & Communication
+BMM,Social Media,3,6,Undergraduate,UGC,Media & Communication
+BMM,Corporate Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Event Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Development Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Science Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Health Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Political Communication,3,6,Undergraduate,UGC,Media & Communication
+BMM,Sports Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Fashion Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Photojournalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Broadcast Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Data Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Investigative Journalism,3,6,Undergraduate,UGC,Media & Communication
+BMM,Documentary Film Making,3,6,Undergraduate,UGC,Media & Communication
+BMM,Cinematography,3,6,Undergraduate,UGC,Media & Communication
+BMM,Video Editing,3,6,Undergraduate,UGC,Media & Communication
+BMM,Sound Recording & Design,3,6,Undergraduate,UGC,Media & Communication
+BMM,Animation & VFX,3,6,Undergraduate,UGC,Media & Communication
+BMM,Graphic Design for Media,3,6,Undergraduate,UGC,Media & Communication
+MMC,Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Mass Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Advertising,2,4,Postgraduate,UGC,Media & Communication
+MMC,Public Relations,2,4,Postgraduate,UGC,Media & Communication
+MMC,Radio & TV Production,2,4,Postgraduate,UGC,Media & Communication
+MMC,Film Making,2,4,Postgraduate,UGC,Media & Communication
+MMC,Digital Media,2,4,Postgraduate,UGC,Media & Communication
+MMC,Social Media,2,4,Postgraduate,UGC,Media & Communication
+MMC,Corporate Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Event Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Development Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Science Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Health Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Political Communication,2,4,Postgraduate,UGC,Media & Communication
+MMC,Sports Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Fashion Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Photojournalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Broadcast Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Data Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Investigative Journalism,2,4,Postgraduate,UGC,Media & Communication
+MMC,Documentary Film Making,2,4,Postgraduate,UGC,Media & Communication
+MMC,Cinematography,2,4,Postgraduate,UGC,Media & Communication
+MMC,Video Editing,2,4,Postgraduate,UGC,Media & Communication
+MMC,Sound Recording & Design,2,4,Postgraduate,UGC,Media & Communication
+MMC,Animation & VFX,2,4,Postgraduate,UGC,Media & Communication
+MMC,Graphic Design for Media,2,4,Postgraduate,UGC,Media & Communication
+BFA,Painting,4,8,Undergraduate,UGC,Performing Arts
+BFA,Applied Arts,4,8,Undergraduate,UGC,Performing Arts
+BFA,Sculpture,4,8,Undergraduate,UGC,Performing Arts
+BFA,Printmaking,4,8,Undergraduate,UGC,Performing Arts
+BFA,Ceramics,4,8,Undergraduate,UGC,Performing Arts
+BFA,Textile Design,4,8,Undergraduate,UGC,Performing Arts
+MFA,Painting,2,4,Postgraduate,UGC,Performing Arts
+MFA,Applied Arts,2,4,Postgraduate,UGC,Performing Arts
+MFA,Sculpture,2,4,Postgraduate,UGC,Performing Arts
+MFA,Printmaking,2,4,Postgraduate,UGC,Performing Arts
+MFA,Ceramics,2,4,Postgraduate,UGC,Performing Arts
+MFA,Textile Design,2,4,Postgraduate,UGC,Performing Arts
+BPA,Music (Vocal),4,8,Undergraduate,UGC,Performing Arts
+BPA,Music (Instrumental),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Kathak),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Bharatanatyam),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Odissi),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Kuchipudi),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Manipuri),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Kathakali),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Mohiniyattam),4,8,Undergraduate,UGC,Performing Arts
+BPA,Dance (Sattriya),4,8,Undergraduate,UGC,Performing Arts
+BPA,Theatre & Drama,4,8,Undergraduate,UGC,Performing Arts
+MPA,Music (Vocal),2,4,Postgraduate,UGC,Performing Arts
+MPA,Music (Instrumental),2,4,Postgraduate,UGC,Performing Arts
+MPA,Dance,2,4,Postgraduate,UGC,Performing Arts
+MPA,Theatre & Drama,2,4,Postgraduate,UGC,Performing Arts
+B.Music,Indian Classical Music (Vocal),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Indian Classical Music (Instrumental - Sitar),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Indian Classical Music (Instrumental - Tabla),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Indian Classical Music (Instrumental - Flute),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Indian Classical Music (Instrumental - Violin),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Carnatic Music (Vocal),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Carnatic Music (Instrumental),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Hindustani Music (Vocal),4,8,Undergraduate,UGC,Music & Fine Arts
+B.Music,Hindustani Music (Instrumental),4,8,Undergraduate,UGC,Music & Fine Arts
+M.Music,Indian Classical Music (Vocal),2,4,Postgraduate,UGC,Music & Fine Arts
+M.Music,Indian Classical Music (Instrumental),2,4,Postgraduate,UGC,Music & Fine Arts
+M.Music,Carnatic Music,2,4,Postgraduate,UGC,Music & Fine Arts
+M.Music,Hindustani Music,2,4,Postgraduate,UGC,Music & Fine Arts
+BPA Dance,Bharatanatyam,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Kathak,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Odissi,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Kuchipudi,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Manipuri,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Kathakali,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Mohiniyattam,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Sattriya,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Chhau,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Folk Dance,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Dance,Contemporary Dance,4,8,Undergraduate,UGC,Dance & Performing Arts
+MPA Dance,Bharatanatyam,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Kathak,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Odissi,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Kuchipudi,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Manipuri,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Kathakali,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Mohiniyattam,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Sattriya,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Chhau,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Folk Dance,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Dance,Contemporary Dance,2,4,Postgraduate,UGC,Dance & Performing Arts
+BPA Theatre,Acting,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Direction,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Stage Design,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Lighting Design,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Sound Design,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Costume Design,4,8,Undergraduate,UGC,Dance & Performing Arts
+BPA Theatre,Makeup & Wig Design,4,8,Undergraduate,UGC,Dance & Performing Arts
+MPA Theatre,Acting,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Direction,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Stage Design,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Lighting Design,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Sound Design,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Costume Design,2,4,Postgraduate,UGC,Dance & Performing Arts
+MPA Theatre,Makeup & Wig Design,2,4,Postgraduate,UGC,Dance & Performing Arts
+BA Film Studies,Film Studies,3,6,Undergraduate,UGC,Film & Television
+MA Film Studies,Film Studies,2,4,Postgraduate,UGC,Film & Television
+BFA Film Making,Film Making,4,8,Undergraduate,UGC,Film & Television
+MFA Film Making,Film Making,2,4,Postgraduate,UGC,Film & Television
+B.Sc Film & Television Production,Film & Television Production,3,6,Undergraduate,UGC,Film & Television
+M.Sc Film & Television Production,Film & Television Production,2,4,Postgraduate,UGC,Film & Television
+BFA Cinematography,Cinematography,4,8,Undergraduate,UGC,Film & Television
+MFA Cinematography,Cinematography,2,4,Postgraduate,UGC,Film & Television
+BFA Editing,Film & Video Editing,4,8,Undergraduate,UGC,Film & Television
+MFA Editing,Film & Video Editing,2,4,Postgraduate,UGC,Film & Television
+BFA Sound Design,Sound Design & Recording,4,8,Undergraduate,UGC,Film & Television
+MFA Sound Design,Sound Design & Recording,2,4,Postgraduate,UGC,Film & Television
+BFA Direction,Film Direction,4,8,Undergraduate,UGC,Film & Television
+MFA Direction,Film Direction,2,4,Postgraduate,UGC,Film & Television
+BFA Screenwriting,Screenwriting,4,8,Undergraduate,UGC,Film & Television
+MFA Screenwriting,Screenwriting,2,4,Postgraduate,UGC,Film & Television
+BFA Production Design,Production Design,4,8,Undergraduate,UGC,Film & Television
+MFA Production Design,Production Design,2,4,Postgraduate,UGC,Film & Television
+BFA Photography,Photography,4,8,Undergraduate,UGC,Photography & Visual Arts
+MFA Photography,Photography,2,4,Postgraduate,UGC,Photography & Visual Arts
+B.Sc Photography,Photography,3,6,Undergraduate,UGC,Photography & Visual Arts
+M.Sc Photography,Photography,2,4,Postgraduate,UGC,Photography & Visual Arts
+BFA Photojournalism,Photojournalism,4,8,Undergraduate,UGC,Photography & Visual Arts
+MFA Photojournalism,Photojournalism,2,4,Postgraduate,UGC,Photography & Visual Arts
+BFA Fashion Photography,Fashion Photography,4,8,Undergraduate,UGC,Photography & Visual Arts
+MFA Fashion Photography,Fashion Photography,2,4,Postgraduate,UGC,Photography & Visual Arts
+BFA Wildlife Photography,Wildlife Photography,4,8,Undergraduate,UGC,Photography & Visual Arts
+MFA Wildlife Photography,Wildlife Photography,2,4,Postgraduate,UGC,Photography & Visual Arts
+BSW,General Social Work,3,6,Undergraduate,UGC,Social Work
+BSW,Medical & Psychiatric Social Work,3,6,Undergraduate,UGC,Social Work
+BSW,Community Development,3,6,Undergraduate,UGC,Social Work
+BSW,Rural Development,3,6,Undergraduate,UGC,Social Work
+BSW,Urban Development,3,6,Undergraduate,UGC,Social Work
+BSW,Child Welfare,3,6,Undergraduate,UGC,Social Work
+BSW,Women Welfare,3,6,Undergraduate,UGC,Social Work
+BSW,Labour Welfare,3,6,Undergraduate,UGC,Social Work
+BSW,Industrial Relations,3,6,Undergraduate,UGC,Social Work
+BSW,Family & Child Welfare,3,6,Undergraduate,UGC,Social Work
+BSW,Disaster Management,3,6,Undergraduate,UGC,Social Work
+BSW,Mental Health,3,6,Undergraduate,UGC,Social Work
+BSW,Substance Abuse,3,6,Undergraduate,UGC,Social Work
+BSW,Gerontology,3,6,Undergraduate,UGC,Social Work
+BSW,Disability Studies,3,6,Undergraduate,UGC,Social Work
+MSW,General Social Work,2,4,Postgraduate,UGC,Social Work
+MSW,Medical & Psychiatric Social Work,2,4,Postgraduate,UGC,Social Work
+MSW,Community Development,2,4,Postgraduate,UGC,Social Work
+MSW,Rural Development,2,4,Postgraduate,UGC,Social Work
+MSW,Urban Development,2,4,Postgraduate,UGC,Social Work
+MSW,Child Welfare,2,4,Postgraduate,UGC,Social Work
+MSW,Women Welfare,2,4,Postgraduate,UGC,Social Work
+MSW,Labour Welfare,2,4,Postgraduate,UGC,Social Work
+MSW,Industrial Relations,2,4,Postgraduate,UGC,Social Work
+MSW,Family & Child Welfare,2,4,Postgraduate,UGC,Social Work
+MSW,Disaster Management,2,4,Postgraduate,UGC,Social Work
+MSW,Mental Health,2,4,Postgraduate,UGC,Social Work
+MSW,Substance Abuse,2,4,Postgraduate,UGC,Social Work
+MSW,Gerontology,2,4,Postgraduate,UGC,Social Work
+MSW,Disability Studies,2,4,Postgraduate,UGC,Social Work
+PG Diploma in Social Work,Social Work,1,2,Postgraduate Diploma,UGC,Social Work
+PG Diploma in Counselling,Counselling Psychology,1,2,Postgraduate Diploma,UGC,Social Work
+Diploma in Social Work,Social Work,1,2,Diploma,UGC,Social Work
+Certificate in Social Work,Social Work,0.5,1,Certificate,UGC,Social Work
+BLIS,Library & Information Science,1,2,Undergraduate,UGC,Library & Information Science
+MLIS,Library & Information Science,1,2,Postgraduate,UGC,Library & Information Science
+B.Sc Library Science,Library Science,3,6,Undergraduate,UGC,Library & Information Science
+M.Sc Library Science,Library Science,2,4,Postgraduate,UGC,Library & Information Science
+BA Library Science,Library Science,3,6,Undergraduate,UGC,Library & Information Science
+MA Library Science,Library Science,2,4,Postgraduate,UGC,Library & Information Science
+Diploma in Library Science,Library Science,1,2,Diploma,UGC,Library & Information Science
+Certificate in Library Science,Library Science,0.5,1,Certificate,UGC,Library & Information Science
+PG Diploma in Digital Library,Digital Library Management,1,2,Postgraduate Diploma,UGC,Library & Information Science
+PG Diploma in Information Management,Information Management,1,2,Postgraduate Diploma,UGC,Library & Information Science
+B.Sc Yoga,Yoga Science,3,6,Undergraduate,UGC,Yoga & Naturopathy
+M.Sc Yoga,Yoga Science,2,4,Postgraduate,UGC,Yoga & Naturopathy
+PG Diploma in Yoga,Yoga Therapy,1,2,Postgraduate Diploma,UGC,Yoga & Naturopathy
+BPEd,Physical Education,2,4,Undergraduate,NCTE,Physical Education & Sports
+MPEd,Physical Education,2,4,Postgraduate,NCTE,Physical Education & Sports
+B.Sc Physical Education,Physical Education & Sports,3,6,Undergraduate,UGC,Physical Education & Sports
+M.Sc Physical Education,Physical Education & Sports,2,4,Postgraduate,UGC,Physical Education & Sports
+B.Sc Sports Science,Sports Science,3,6,Undergraduate,UGC,Physical Education & Sports
+M.Sc Sports Science,Sports Science,2,4,Postgraduate,UGC,Physical Education & Sports
+B.Sc Sports Management,Sports Management,3,6,Undergraduate,UGC,Physical Education & Sports
+M.Sc Sports Management,Sports Management,2,4,Postgraduate,UGC,Physical Education & Sports
+B.Sc Exercise & Physiology,Exercise & Physiology,3,6,Undergraduate,UGC,Physical Education & Sports
+M.Sc Exercise & Physiology,Exercise & Physiology,2,4,Postgraduate,UGC,Physical Education & Sports
+Diploma in Sports Coaching,Sports Coaching,1,2,Diploma,UGC,Physical Education & Sports
+Certificate in Fitness Training,Fitness Training,0.5,1,Certificate,UGC,Physical Education & Sports
+B.Sc Adventure Sports,Adventure Sports,3,6,Undergraduate,UGC,Physical Education & Sports
+B.Sc Yoga & Sports,Yoga & Sports Science,3,6,Undergraduate,UGC,Physical Education & Sports
+B.Sc Aviation,Aviation Science,3,6,Undergraduate,UGC,Aviation
+BBA Aviation,Aviation Management,3,6,Undergraduate,UGC,Aviation
+MBA Aviation,Aviation Management,2,4,Postgraduate,UGC/AICTE,Aviation
+B.Sc Aeronautical Science,Aeronautical Science,3,6,Undergraduate,UGC,Aviation
+AME,Aircraft Maintenance Engineering,3,6,Undergraduate,DGCA,Aviation
+CPL,Commercial Pilot License,1.5,3,Certificate,DGCA,Aviation
+PPL,Private Pilot License,1,2,Certificate,DGCA,Aviation
+ATPL,Airline Transport Pilot License,2,4,Certificate,DGCA,Aviation
+B.Sc Air Traffic Control,Air Traffic Control,3,6,Undergraduate,UGC,Aviation
+Diploma in Airport Management,Airport Management,1,2,Diploma,UGC,Aviation
+Diploma in Ground Staff,Ground Staff Operations,1,2,Diploma,UGC,Aviation
+Diploma in Cabin Crew,Cabin Crew & Hospitality,1,2,Diploma,UGC,Aviation
+B.Sc Nautical Science,Nautical Science,3,6,Undergraduate,UGC/DGS,Maritime & Nautical
+B.Tech Marine Engineering,Marine Engineering,4,8,Undergraduate,AICTE/DGS,Maritime & Nautical
+B.Tech Naval Architecture,Naval Architecture,4,8,Undergraduate,AICTE/DGS,Maritime & Nautical
+GP Rating,General Purpose Rating,1,2,Certificate,DGS,Maritime & Nautical
+DNS,Diploma in Nautical Science,1,2,Diploma,DGS,Maritime & Nautical
+ETO,Electro Technical Officer,1,2,Certificate,DGS,Maritime & Nautical
+GME,Graduate Marine Engineering,1,2,Certificate,DGS,Maritime & Nautical
+MBA Shipping & Logistics,Shipping & Logistics Management,2,4,Postgraduate,UGC/AICTE,Maritime & Nautical
+NDA,National Defence Academy (Army/Navy/Air Force),3,6,Undergraduate,Ministry of Defence,Defence & Military
+IMA,Indian Military Academy,1.5,3,Postgraduate,Ministry of Defence,Defence & Military
+OTA,Officers Training Academy,1,2,Postgraduate,Ministry of Defence,Defence & Military
+INA,Indian Naval Academy,4,8,Undergraduate,Ministry of Defence,Defence & Military
+AFA,Air Force Academy,1.5,3,Postgraduate,Ministry of Defence,Defence & Military

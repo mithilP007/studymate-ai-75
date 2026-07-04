@@ -346,7 +346,7 @@ function Landing() {
 
 // Only implemented features shown
 const FEATURES = [
-  { icon: MessageSquare, title: "AI Doubt Solver", desc: "Ask any topic in English, Tamil, Hindi or Hinglish. Get step-by-step explanations tailored to your syllabus." },
+  { icon: MessageSquare, title: "AI Doubt Solver", desc: "Ask any topic in English, Tamil, Hindi, Hinglish or Thanglish. Get step-by-step explanations tailored to your syllabus." },
   { icon: ListChecks, title: "Quiz & Flashcards", desc: "Auto-generate MCQs, 2-mark, 5-mark and 16-mark practice questions from any topic or uploaded notes." },
   { icon: GraduationCap, title: "Semester Learning", desc: "Tailored to your college and semester syllabus — not generic content. Supports 40,000+ Indian institutions." },
 ];

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
@@ -11,6 +11,15 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LogOut } from "lucide-react";
+import COURSES_DATA from "@/data/courses.json";
+
+interface CourseInfo {
+  semesters: number;
+  branches: string[];
+}
+
+const COURSES = COURSES_DATA as Record<string, CourseInfo>;
+const COURSE_NAMES = Object.keys(COURSES).sort();
 
 export const Route = createFileRoute("/_authenticated/settings")({
   ssr: false,
@@ -29,6 +38,30 @@ function SettingsPage() {
 
   const [form, setForm] = useState<any>({});
   useEffect(() => { if (profile) setForm(profile); }, [profile]);
+
+  const courseNames = useMemo(() => {
+    const names = [...COURSE_NAMES];
+    if (form.degree && !names.includes(form.degree)) {
+      names.push(form.degree);
+    }
+    return names.sort();
+  }, [form.degree]);
+
+  const departmentNames = useMemo(() => {
+    if (!form.degree || !COURSES[form.degree]) {
+      return form.department ? [form.department] : [];
+    }
+    const branches = [...COURSES[form.degree].branches];
+    if (form.department && !branches.includes(form.department)) {
+      branches.push(form.department);
+    }
+    return branches.sort();
+  }, [form.degree, form.department]);
+
+  const maxSemesters = useMemo(() => {
+    if (!form.degree || !COURSES[form.degree]) return 8;
+    return COURSES[form.degree].semesters;
+  }, [form.degree]);
 
   const save = async () => {
     const { error } = await supabase.from("profiles").update({
@@ -63,9 +96,57 @@ function SettingsPage() {
           <Section title="Academic">
             <Field label="College"><Input value={form.college_name ?? ""} onChange={(e) => setForm({ ...form, college_name: e.target.value })} /></Field>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Field label="Degree"><Input value={form.degree ?? ""} onChange={(e) => setForm({ ...form, degree: e.target.value })} /></Field>
-              <Field label="Department"><Input value={form.department ?? ""} onChange={(e) => setForm({ ...form, department: e.target.value })} /></Field>
-              <Field label="Semester"><Input type="number" min={1} max={12} value={form.semester ?? ""} onChange={(e) => setForm({ ...form, semester: e.target.value })} /></Field>
+              <Field label="Degree">
+                <Select 
+                  value={form.degree ?? ""} 
+                  onValueChange={(val) => {
+                    const maxSem = COURSES[val]?.semesters ?? 8;
+                    const nextSem = form.semester && Number(form.semester) > maxSem ? 1 : form.semester;
+                    setForm({ ...form, degree: val, department: "", semester: nextSem });
+                  }}
+                >
+                  <SelectTrigger className="h-10 rounded-xl">
+                    <SelectValue placeholder="Select Course" />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-64 overflow-y-auto">
+                    {courseNames.map((name) => (
+                      <SelectItem key={name} value={name}>{name}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </Field>
+              <Field label="Department">
+                <Select 
+                  value={form.department ?? ""} 
+                  onValueChange={(val) => setForm({ ...form, department: val })}
+                  disabled={!form.degree}
+                >
+                  <SelectTrigger className="h-10 rounded-xl">
+                    <SelectValue placeholder={form.degree ? "Select Branch" : "Select Course first"} />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-64 overflow-y-auto">
+                    {departmentNames.map((branch) => (
+                      <SelectItem key={branch} value={branch}>{branch}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </Field>
+              <Field label="Semester">
+                <Select 
+                  value={form.semester ? String(form.semester) : "1"} 
+                  onValueChange={(val) => setForm({ ...form, semester: Number(val) })}
+                  disabled={!form.degree}
+                >
+                  <SelectTrigger className="h-10 rounded-xl">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-64 overflow-y-auto">
+                    {Array.from({ length: maxSemesters }, (_, i) => (
+                      <SelectItem key={i + 1} value={String(i + 1)}>Sem {i + 1}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </Field>
             </div>
           </Section>
 
@@ -73,7 +154,11 @@ function SettingsPage() {
             <Field label="Preferred language">
               <Select value={form.preferred_language ?? "English"} onValueChange={(v) => setForm({ ...form, preferred_language: v })}>
                 <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>{["English","Tamil","Hindi","Hinglish","Other"].map(l => <SelectItem key={l} value={l}>{l}</SelectItem>)}</SelectContent>
+                <SelectContent>
+                  {["English", "Tamil", "Hindi", "Hinglish", "Thanglish"].map((l) => (
+                    <SelectItem key={l} value={l}>{l}</SelectItem>
+                  ))}
+                </SelectContent>
               </Select>
             </Field>
             <Field label="AI response style">

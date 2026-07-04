@@ -12,6 +12,15 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Check, GraduationCap, Loader2, PlusCircle, ArrowRight, Search, Sparkles } from "lucide-react";
 import STATE_DISTRICTS from "@/data/state-districts.json";
+import COURSES_DATA from "@/data/courses.json";
+
+interface CourseInfo {
+  semesters: number;
+  branches: string[];
+}
+
+const COURSES = COURSES_DATA as Record<string, CourseInfo>;
+const COURSE_NAMES = Object.keys(COURSES).sort();
 
 export const Route = createFileRoute("/_authenticated/onboarding")({
   ssr: false,
@@ -37,7 +46,7 @@ const INSTITUTION_TYPES = [
   { label: "Education",        keyword: "Education" },
 ];
 
-const LANGUAGES = ["English", "Tamil", "Hindi", "Hinglish", "Other"];
+const LANGUAGES = ["English", "Tamil", "Hindi", "Hinglish", "Thanglish"];
 const GOALS = ["Exam preparation", "Daily study", "Coding help", "Project help", "Interview prep", "Research help"];
 
 function Onboarding() {
@@ -72,6 +81,22 @@ function Onboarding() {
   const [semester, setSemester] = useState<string>("1");
   const [language, setLanguage] = useState("English");
   const [goal, setGoal] = useState("Exam preparation");
+
+  const maxSemesters = useMemo(() => {
+    if (!degree || !COURSES[degree]) return 8;
+    return COURSES[degree].semesters;
+  }, [degree]);
+
+  // When degree changes, reset department and ensure semester is within bounds
+  useEffect(() => {
+    if (degree) {
+      setDepartment("");
+      const maxSem = COURSES[degree]?.semesters ?? 8;
+      if (parseInt(semester, 10) > maxSem) {
+        setSemester("1");
+      }
+    }
+  }, [degree]);
 
   // Debounce search by 300 ms
   useEffect(() => {
@@ -230,7 +255,7 @@ function Onboarding() {
           manualCollege.district.trim().length > 1 &&
           !!manualCollege.type
         : !!selectedCollege)) ||
-    (step === 3 && fullName.trim().length > 1);
+    (step === 3 && fullName.trim().length > 1 && !!degree && !!department);
 
   return (
     <div className="min-h-screen bg-background">
@@ -619,32 +644,58 @@ function Onboarding() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="grid gap-1.5">
                   <Label>Degree / Course</Label>
-                  <Input value={degree} onChange={(e) => setDegree(e.target.value)} placeholder="B.E. / B.Tech / B.Sc" />
+                  <Select value={degree} onValueChange={setDegree}>
+                    <SelectTrigger className="h-10 rounded-xl">
+                      <SelectValue placeholder="Select Course" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-64 overflow-y-auto">
+                      {COURSE_NAMES.map((name) => (
+                        <SelectItem key={name} value={name}>{name}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
                 <div className="grid gap-1.5">
-                  <Label>Department</Label>
-                  <Input value={department} onChange={(e) => setDepartment(e.target.value)} placeholder="CSE / ECE / Mech" />
+                  <Label>Branch / Department</Label>
+                  <Select 
+                    value={department} 
+                    onValueChange={setDepartment}
+                    disabled={!degree}
+                  >
+                    <SelectTrigger className="h-10 rounded-xl">
+                      <SelectValue placeholder={degree ? "Select Branch" : "Select Course first"} />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-64 overflow-y-auto">
+                      {degree && COURSES[degree]?.branches.map((branch) => (
+                        <SelectItem key={branch} value={branch}>{branch}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
               <div className="grid sm:grid-cols-3 gap-4">
                 <div className="grid gap-1.5">
                   <Label>Semester</Label>
                   <Select value={semester} onValueChange={setSemester}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
-                    <SelectContent>{Array.from({ length: 10 }, (_, i) => <SelectItem key={i + 1} value={String(i + 1)}>Sem {i + 1}</SelectItem>)}</SelectContent>
+                    <SelectTrigger className="h-10 rounded-xl"><SelectValue /></SelectTrigger>
+                    <SelectContent className="max-h-64 overflow-y-auto">
+                      {Array.from({ length: maxSemesters }, (_, i) => (
+                        <SelectItem key={i + 1} value={String(i + 1)}>Sem {i + 1}</SelectItem>
+                      ))}
+                    </SelectContent>
                   </Select>
                 </div>
                 <div className="grid gap-1.5">
                   <Label>Language</Label>
                   <Select value={language} onValueChange={setLanguage}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger className="h-10 rounded-xl"><SelectValue /></SelectTrigger>
                     <SelectContent>{LANGUAGES.map((l) => <SelectItem key={l} value={l}>{l}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
                 <div className="grid gap-1.5">
                   <Label>Goal</Label>
                   <Select value={goal} onValueChange={setGoal}>
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger className="h-10 rounded-xl"><SelectValue /></SelectTrigger>
                     <SelectContent>{GOALS.map((g) => <SelectItem key={g} value={g}>{g}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>

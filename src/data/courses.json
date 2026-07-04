@@ -1,0 +1,2766 @@
+{
+  "B.Tech": {
+    "semesters": 8,
+    "branches": [
+      "Aeronautical Engineering",
+      "Aerospace Engineering",
+      "Agricultural Biotechnology",
+      "Agricultural Engineering",
+      "Automobile Engineering",
+      "Biomedical Engineering",
+      "Biotechnology",
+      "Chemical Engineering",
+      "Civil Engineering (CE)",
+      "Computer Science & Engineering (AI & ML)",
+      "Computer Science & Engineering (Blockchain)",
+      "Computer Science & Engineering (CSE)",
+      "Computer Science & Engineering (Cyber Security)",
+      "Computer Science & Engineering (Data Science)",
+      "Computer Science & Engineering (IoT)",
+      "Dairy Technology",
+      "Electrical & Electronics Engineering (EEE)",
+      "Electrical Engineering (EE)",
+      "Electronics & Communication Engineering (ECE)",
+      "Electronics & Communication Engineering (VLSI)",
+      "Environmental Engineering",
+      "Food Technology",
+      "Genetic Engineering",
+      "Industrial Engineering",
+      "Information Technology (IT)",
+      "Instrumentation & Control Engineering",
+      "Marine Engineering",
+      "Materials Science & Engineering",
+      "Mechanical Engineering (ME)",
+      "Mechatronics",
+      "Metallurgical Engineering",
+      "Mining Engineering",
+      "Nanotechnology",
+      "Naval Architecture",
+      "Petroleum Engineering",
+      "Production Engineering",
+      "Robotics & Automation",
+      "Textile Engineering"
+    ]
+  },
+  "M.Tech": {
+    "semesters": 4,
+    "branches": [
+      "Aeronautical Engineering",
+      "Aerospace Engineering",
+      "Agricultural Biotechnology",
+      "Agricultural Engineering",
+      "Automobile Engineering",
+      "Biomedical Engineering",
+      "Biotechnology",
+      "Chemical Engineering",
+      "Civil Engineering (CE)",
+      "Computer Science & Engineering (AI & ML)",
+      "Computer Science & Engineering (CSE)",
+      "Computer Science & Engineering (Cyber Security)",
+      "Computer Science & Engineering (Data Science)",
+      "Dairy Technology",
+      "Electrical & Electronics Engineering (EEE)",
+      "Electrical Engineering (EE)",
+      "Electronics & Communication Engineering (ECE)",
+      "Electronics & Communication Engineering (VLSI)",
+      "Environmental Engineering",
+      "Food Technology",
+      "Genetic Engineering",
+      "Industrial Engineering",
+      "Information Technology (IT)",
+      "Instrumentation & Control Engineering",
+      "Marine Engineering",
+      "Materials Science & Engineering",
+      "Mechanical Engineering (ME)",
+      "Mechatronics",
+      "Metallurgical Engineering",
+      "Mining Engineering",
+      "Nanotechnology",
+      "Naval Architecture",
+      "Petroleum Engineering",
+      "Production Engineering",
+      "Robotics & Automation",
+      "Textile Engineering"
+    ]
+  },
+  "Diploma in Engineering": {
+    "semesters": 6,
+    "branches": [
+      "Agricultural Engineering",
+      "Automobile Engineering",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Computer Science & Engineering",
+      "Electrical Engineering",
+      "Electronics Engineering",
+      "Mechanical Engineering",
+      "Mining Engineering",
+      "Textile Technology"
+    ]
+  },
+  "Integrated B.Tech + M.Tech": {
+    "semesters": 10,
+    "branches": [
+      "AI & ML",
+      "Biotechnology",
+      "CE",
+      "CSE",
+      "Cyber Security",
+      "Data Science",
+      "ECE",
+      "EE",
+      "IT",
+      "ME"
+    ]
+  },
+  "B.Arch": {
+    "semesters": 10,
+    "branches": [
+      "Architectural Conservation",
+      "Digital Architecture",
+      "Environmental Planning",
+      "General Architecture",
+      "Housing",
+      "Industrial Design",
+      "Landscape Architecture",
+      "Regional Planning",
+      "Sustainable Architecture",
+      "Town & Country Planning",
+      "Transport Planning",
+      "Urban Design"
+    ]
+  },
+  "M.Arch": {
+    "semesters": 4,
+    "branches": [
+      "Architectural Conservation",
+      "Digital Architecture",
+      "Environmental Planning",
+      "General Architecture",
+      "Housing",
+      "Industrial Design",
+      "Landscape Architecture",
+      "Regional Planning",
+      "Sustainable Architecture",
+      "Town & Country Planning",
+      "Transport Planning",
+      "Urban Design"
+    ]
+  },
+  "B.Plan": {
+    "semesters": 8,
+    "branches": [
+      "Environmental Planning",
+      "Regional Planning",
+      "Transport Planning",
+      "Urban Planning"
+    ]
+  },
+  "M.Plan": {
+    "semesters": 4,
+    "branches": [
+      "Environmental Planning",
+      "Regional Planning",
+      "Transport Planning",
+      "Urban Planning"
+    ]
+  },
+  "Integrated B.Arch + M.Arch": {
+    "semesters": 12,
+    "branches": [
+      "General Architecture",
+      "Sustainable Architecture",
+      "Urban Design"
+    ]
+  },
+  "B.Pharm": {
+    "semesters": 8,
+    "branches": [
+      "Biopharmaceutics",
+      "Clinical Pharmacy",
+      "Drug Regulatory Affairs",
+      "General Pharmacy",
+      "Industrial Pharmacy",
+      "Pharmaceutical Analysis",
+      "Pharmaceutical Chemistry",
+      "Pharmaceutics",
+      "Pharmacognosy",
+      "Pharmacology",
+      "Pharmacovigilance",
+      "Quality Assurance",
+      "Regulatory Affairs"
+    ]
+  },
+  "M.Pharm": {
+    "semesters": 4,
+    "branches": [
+      "Biopharmaceutics",
+      "Clinical Pharmacy",
+      "Drug Regulatory Affairs",
+      "General Pharmacy",
+      "Industrial Pharmacy",
+      "Pharmaceutical Analysis",
+      "Pharmaceutical Chemistry",
+      "Pharmaceutics",
+      "Pharmacognosy",
+      "Pharmacology",
+      "Pharmacovigilance",
+      "Quality Assurance",
+      "Regulatory Affairs"
+    ]
+  },
+  "D.Pharm": {
+    "semesters": 4,
+    "branches": [
+      "General Pharmacy"
+    ]
+  },
+  "Pharm.D": {
+    "semesters": 12,
+    "branches": [
+      "Doctor of Pharmacy"
+    ]
+  },
+  "Pharm.D (Post Baccalaureate)": {
+    "semesters": 6,
+    "branches": [
+      "Doctor of Pharmacy"
+    ]
+  },
+  "Integrated B.Pharm + M.Pharm": {
+    "semesters": 12,
+    "branches": [
+      "Pharmaceutical Analysis",
+      "Pharmaceutical Chemistry",
+      "Pharmaceutics",
+      "Pharmacology"
+    ]
+  },
+  "BBA": {
+    "semesters": 6,
+    "branches": [
+      "Accounting",
+      "Agri-Business Management",
+      "Aviation Management",
+      "Banking & Insurance",
+      "Business Intelligence & Analytics",
+      "Digital Marketing",
+      "Energy Management",
+      "Entrepreneurship",
+      "Event Management",
+      "Fashion Management",
+      "Finance",
+      "General",
+      "Healthcare Management",
+      "Hospitality & Tourism",
+      "Human Resource Management",
+      "Infrastructure Management",
+      "International Business",
+      "Logistics Management",
+      "Luxury Brand Management",
+      "Marketing",
+      "Media Management",
+      "Operations Management",
+      "Port & Shipping Management",
+      "Project Management",
+      "Real Estate Management",
+      "Retail Management",
+      "Rural Management",
+      "Sports Management",
+      "Supply Chain Management",
+      "Telecom Management"
+    ]
+  },
+  "MBA": {
+    "semesters": 4,
+    "branches": [
+      "Agri-Business Management",
+      "Artificial Intelligence & Machine Learning",
+      "Aviation Management",
+      "Banking & Financial Services",
+      "Business Analytics",
+      "Data Analytics",
+      "Digital Marketing",
+      "Energy Management",
+      "Entrepreneurship",
+      "Event Management",
+      "Fashion Management",
+      "Finance",
+      "General Management",
+      "Healthcare Management",
+      "Human Resource Management (HRM)",
+      "Information Technology (IT)",
+      "Infrastructure Management",
+      "International Business",
+      "Logistics & Warehouse Management",
+      "Marketing",
+      "Media Management",
+      "Operations Management",
+      "Pharmaceutical Management",
+      "Port & Shipping Management",
+      "Project Management",
+      "Real Estate Management",
+      "Retail Management",
+      "Rural Management",
+      "Sports Management",
+      "Supply Chain Management",
+      "Telecom Management",
+      "Tourism & Hospitality Management"
+    ]
+  },
+  "Integrated BBA + MBA": {
+    "semesters": 10,
+    "branches": [
+      "Business Analytics",
+      "Finance",
+      "General",
+      "HR",
+      "International Business",
+      "Marketing",
+      "Operations"
+    ]
+  },
+  "BMS": {
+    "semesters": 6,
+    "branches": [
+      "Finance",
+      "General",
+      "HR",
+      "Marketing"
+    ]
+  },
+  "BCA": {
+    "semesters": 6,
+    "branches": [
+      "Animation & Multimedia",
+      "Artificial Intelligence",
+      "Blockchain Technology",
+      "Cloud Computing",
+      "Cyber Security",
+      "Data Science",
+      "Full Stack Development",
+      "Gaming & Graphics",
+      "General",
+      "Internet of Things (IoT)",
+      "Machine Learning",
+      "Mobile Application Development",
+      "Software Development"
+    ]
+  },
+  "MCA": {
+    "semesters": 4,
+    "branches": [
+      "Artificial Intelligence",
+      "Big Data Analytics",
+      "Blockchain Technology",
+      "Cloud Computing",
+      "Cyber Security",
+      "Data Science",
+      "Full Stack Development",
+      "General",
+      "Internet of Things (IoT)",
+      "Machine Learning",
+      "Mobile Computing",
+      "Software Engineering"
+    ]
+  },
+  "MCA (Lateral Entry)": {
+    "semesters": 4,
+    "branches": [
+      "Artificial Intelligence",
+      "Cloud Computing",
+      "Cyber Security",
+      "Data Science",
+      "General"
+    ]
+  },
+  "Integrated BCA + MCA": {
+    "semesters": 10,
+    "branches": [
+      "Artificial Intelligence",
+      "Cloud Computing",
+      "Cyber Security",
+      "Data Science",
+      "General"
+    ]
+  },
+  "B.Sc": {
+    "semesters": 6,
+    "branches": [
+      "Acting & Drama",
+      "Advertising & Public Relations",
+      "Agricultural Biotechnology",
+      "Agricultural Economics",
+      "Agricultural Extension",
+      "Agricultural Microbiology",
+      "Agricultural Statistics",
+      "Agriculture",
+      "Agronomy",
+      "Anaesthesia Technology",
+      "Animal Husbandry",
+      "Animation",
+      "Animation & Multimedia",
+      "Aquaculture",
+      "Artificial Intelligence",
+      "Astronomy",
+      "Audiology & Speech Therapy",
+      "Aviation",
+      "Bakery & Confectionery",
+      "Biochemistry",
+      "Bioinformatics",
+      "Biology",
+      "Biotechnology",
+      "Botany",
+      "Cardiac Care Technology",
+      "Chemistry",
+      "Child Development",
+      "Climate Change & Sustainability",
+      "Clinical Research",
+      "Communication Design",
+      "Community Science",
+      "Computational Biology",
+      "Computer Science",
+      "Costume Design",
+      "Craft Design",
+      "Culinary Arts",
+      "Cyber Security",
+      "Dairy Technology",
+      "Dance",
+      "Data Science",
+      "Dialysis Technology",
+      "Dietetics",
+      "Disaster Management",
+      "Earth Science",
+      "Economics",
+      "Electronics",
+      "Emergency Medicine Technology",
+      "Entomology",
+      "Environmental Science",
+      "Event Management",
+      "Exhibition Design",
+      "Extension Education",
+      "Family Resource Management",
+      "Fashion Design",
+      "Film & Television Production",
+      "Fine Arts",
+      "Fisheries Science",
+      "Food & Nutrition",
+      "Food Processing",
+      "Food Science & Nutrition",
+      "Food Technology",
+      "Forensic Science",
+      "Forestry",
+      "Game Design & Development",
+      "Geography",
+      "Geology",
+      "Health Information Management",
+      "Home Science",
+      "Horticulture",
+      "Hospitality & Hotel Administration",
+      "Industrial Design",
+      "Information Technology",
+      "Instrumentation",
+      "Interior Design",
+      "Journalism & Mass Communication",
+      "Library & Information Science",
+      "Makeup & Styling",
+      "Marine Science",
+      "Material Science",
+      "Mathematics",
+      "Medical Imaging Technology",
+      "Medical Laboratory Technology",
+      "Meteorology",
+      "Microbiology",
+      "Music",
+      "Nanoscience & Technology",
+      "Naturopathy",
+      "Nautical Science",
+      "Nematology",
+      "Neuroscience",
+      "Neuroscience Technology",
+      "Nursing",
+      "Occupational Therapy",
+      "Oceanography",
+      "Operation Theatre Technology",
+      "Optometry",
+      "Photography",
+      "Physical Education",
+      "Physics",
+      "Physiotherapy",
+      "Plant Breeding & Genetics",
+      "Plant Pathology",
+      "Post Harvest Technology",
+      "Poultry Science",
+      "Psychology",
+      "Public Health",
+      "Radiology & Imaging Technology",
+      "Remote Sensing & GIS",
+      "Renewable Energy",
+      "Respiratory Therapy",
+      "Seed Technology",
+      "Sericulture",
+      "Set Design",
+      "Social Design",
+      "Soil Science",
+      "Sound Design",
+      "Sports Science",
+      "Statistics",
+      "Strategic Design Management",
+      "Sustainability Studies",
+      "Sustainable Design",
+      "Textile & Apparel Designing",
+      "Textile Design",
+      "Travel & Tourism",
+      "Visual Communication",
+      "Water Science & Technology",
+      "Wildlife Science",
+      "Yoga",
+      "Zoology"
+    ]
+  },
+  "M.Sc": {
+    "semesters": 4,
+    "branches": [
+      "Acting & Drama",
+      "Advertising & Public Relations",
+      "Agricultural Biotechnology",
+      "Agricultural Economics",
+      "Agricultural Extension",
+      "Agricultural Microbiology",
+      "Agricultural Statistics",
+      "Agriculture",
+      "Agronomy",
+      "Anaesthesia Technology",
+      "Animal Husbandry",
+      "Animation",
+      "Animation & Multimedia",
+      "Aquaculture",
+      "Artificial Intelligence",
+      "Astronomy",
+      "Audiology & Speech Therapy",
+      "Aviation",
+      "Bakery & Confectionery",
+      "Biochemistry",
+      "Bioinformatics",
+      "Biology",
+      "Biotechnology",
+      "Botany",
+      "Cardiac Care Technology",
+      "Chemistry",
+      "Child Development",
+      "Climate Change & Sustainability",
+      "Clinical Research",
+      "Communication Design",
+      "Community Science",
+      "Computational Biology",
+      "Computer Science",
+      "Costume Design",
+      "Craft Design",
+      "Culinary Arts",
+      "Cyber Security",
+      "Dairy Technology",
+      "Dance",
+      "Data Science",
+      "Dialysis Technology",
+      "Dietetics",
+      "Disaster Management",
+      "Earth Science",
+      "Economics",
+      "Electronics",
+      "Emergency Medicine Technology",
+      "Entomology",
+      "Environmental Science",
+      "Event Management",
+      "Exhibition Design",
+      "Extension Education",
+      "Family Resource Management",
+      "Fashion Design",
+      "Film & Television Production",
+      "Fine Arts",
+      "Fisheries Science",
+      "Food & Nutrition",
+      "Food Processing",
+      "Food Science & Nutrition",
+      "Food Technology",
+      "Forensic Science",
+      "Forestry",
+      "Game Design & Development",
+      "Geography",
+      "Geology",
+      "Health Information Management",
+      "Home Science",
+      "Horticulture",
+      "Hospitality & Hotel Administration",
+      "Industrial Design",
+      "Information Technology",
+      "Instrumentation",
+      "Interior Design",
+      "Journalism & Mass Communication",
+      "Library & Information Science",
+      "Makeup & Styling",
+      "Marine Science",
+      "Material Science",
+      "Mathematics",
+      "Medical Imaging Technology",
+      "Medical Laboratory Technology",
+      "Meteorology",
+      "Microbiology",
+      "Music",
+      "Nanoscience & Technology",
+      "Naturopathy",
+      "Nautical Science",
+      "Nematology",
+      "Neuroscience",
+      "Neuroscience Technology",
+      "Nursing",
+      "Occupational Therapy",
+      "Oceanography",
+      "Operation Theatre Technology",
+      "Optometry",
+      "Photography",
+      "Physical Education",
+      "Physics",
+      "Physiotherapy",
+      "Plant Breeding & Genetics",
+      "Plant Pathology",
+      "Post Harvest Technology",
+      "Poultry Science",
+      "Psychology",
+      "Public Health",
+      "Radiology & Imaging Technology",
+      "Remote Sensing & GIS",
+      "Renewable Energy",
+      "Respiratory Therapy",
+      "Seed Technology",
+      "Sericulture",
+      "Set Design",
+      "Social Design",
+      "Soil Science",
+      "Sound Design",
+      "Sports Science",
+      "Statistics",
+      "Strategic Design Management",
+      "Sustainability Studies",
+      "Sustainable Design",
+      "Textile & Apparel Designing",
+      "Textile Design",
+      "Travel & Tourism",
+      "Visual Communication",
+      "Water Science & Technology",
+      "Wildlife Science",
+      "Yoga",
+      "Zoology"
+    ]
+  },
+  "B.Sc (Hons)": {
+    "semesters": 8,
+    "branches": [
+      "Agriculture",
+      "Artificial Intelligence",
+      "Biochemistry",
+      "Biology",
+      "Biotechnology",
+      "Botany",
+      "Chemistry",
+      "Computer Science",
+      "Cyber Security",
+      "Data Science",
+      "Dietetics",
+      "Economics",
+      "Electronics",
+      "Environmental Science",
+      "Food Science & Nutrition",
+      "Forestry",
+      "Geography",
+      "Geology",
+      "Horticulture",
+      "Information Technology",
+      "Instrumentation",
+      "Mathematics",
+      "Medical Laboratory Technology",
+      "Microbiology",
+      "Nursing",
+      "Optometry",
+      "Physics",
+      "Psychology",
+      "Radiology & Imaging Technology",
+      "Statistics",
+      "Zoology"
+    ]
+  },
+  "Integrated B.Sc + M.Sc": {
+    "semesters": 10,
+    "branches": [
+      "Biology",
+      "Biotechnology",
+      "Chemistry",
+      "Computer Science",
+      "Data Science",
+      "Environmental Science",
+      "Mathematics",
+      "Physics"
+    ]
+  },
+  "BA": {
+    "semesters": 6,
+    "branches": [
+      "Advertising",
+      "Animation",
+      "Anthropology",
+      "Arabic",
+      "Archaeology",
+      "Assamese",
+      "Bengali",
+      "Bodo",
+      "Buddhist Studies",
+      "Christian Studies",
+      "Communication Studies",
+      "Dance",
+      "Development Studies",
+      "Dogri",
+      "Drama & Theatre",
+      "Economics",
+      "English",
+      "Environmental Studies",
+      "Event Management",
+      "Fashion Design",
+      "Film Studies",
+      "Fine Arts",
+      "Geography",
+      "Graphic Design",
+      "Gujarati",
+      "Haryanvi",
+      "Hindi",
+      "History",
+      "Interior Design",
+      "Islamic Studies",
+      "Jain Studies",
+      "Journalism & Mass Communication",
+      "Kannada",
+      "Kashmiri",
+      "Konkani",
+      "Library & Information Science",
+      "Linguistics",
+      "Maithili",
+      "Malayalam",
+      "Manipuri",
+      "Marathi",
+      "Media Studies",
+      "Military Science",
+      "Multimedia",
+      "Music",
+      "Nepali",
+      "Odia",
+      "Pali",
+      "Persian",
+      "Philosophy",
+      "Photography",
+      "Physical Education",
+      "Political Science",
+      "Psychology",
+      "Public Administration",
+      "Public Relations",
+      "Punjabi",
+      "Rajasthani",
+      "Religious Studies",
+      "Sanskrit",
+      "Santhali",
+      "Sindhi",
+      "Social Work",
+      "Sociology",
+      "Tamil",
+      "Telugu",
+      "Textile Design",
+      "Travel & Tourism",
+      "Urdu",
+      "Visual Arts",
+      "Women Studies",
+      "Yoga"
+    ]
+  },
+  "MA": {
+    "semesters": 4,
+    "branches": [
+      "Advertising",
+      "Animation",
+      "Anthropology",
+      "Arabic",
+      "Archaeology",
+      "Assamese",
+      "Bengali",
+      "Bodo",
+      "Buddhist Studies",
+      "Christian Studies",
+      "Communication Studies",
+      "Dance",
+      "Development Studies",
+      "Dogri",
+      "Drama & Theatre",
+      "Economics",
+      "English",
+      "Environmental Studies",
+      "Event Management",
+      "Fashion Design",
+      "Film Studies",
+      "Fine Arts",
+      "Geography",
+      "Graphic Design",
+      "Gujarati",
+      "Haryanvi",
+      "Hindi",
+      "History",
+      "Interior Design",
+      "Islamic Studies",
+      "Jain Studies",
+      "Journalism & Mass Communication",
+      "Kannada",
+      "Kashmiri",
+      "Konkani",
+      "Library & Information Science",
+      "Linguistics",
+      "Maithili",
+      "Malayalam",
+      "Manipuri",
+      "Marathi",
+      "Media Studies",
+      "Military Science",
+      "Multimedia",
+      "Music",
+      "Nepali",
+      "Odia",
+      "Pali",
+      "Persian",
+      "Philosophy",
+      "Photography",
+      "Physical Education",
+      "Political Science",
+      "Psychology",
+      "Public Administration",
+      "Public Relations",
+      "Punjabi",
+      "Rajasthani",
+      "Religious Studies",
+      "Sanskrit",
+      "Santhali",
+      "Sindhi",
+      "Social Work",
+      "Sociology",
+      "Tamil",
+      "Telugu",
+      "Textile Design",
+      "Travel & Tourism",
+      "Urdu",
+      "Visual Arts",
+      "Women Studies",
+      "Yoga"
+    ]
+  },
+  "BA (Hons)": {
+    "semesters": 8,
+    "branches": [
+      "Anthropology",
+      "Archaeology",
+      "Dance",
+      "Drama & Theatre",
+      "Economics",
+      "English",
+      "Fine Arts",
+      "Geography",
+      "Hindi",
+      "History",
+      "Journalism & Mass Communication",
+      "Linguistics",
+      "Music",
+      "Philosophy",
+      "Political Science",
+      "Psychology",
+      "Public Administration",
+      "Sanskrit",
+      "Social Work",
+      "Sociology"
+    ]
+  },
+  "Integrated BA + MA": {
+    "semesters": 10,
+    "branches": [
+      "Economics",
+      "English",
+      "History",
+      "Political Science",
+      "Psychology",
+      "Sociology"
+    ]
+  },
+  "B.Com": {
+    "semesters": 6,
+    "branches": [
+      "Accounting & Finance",
+      "Actuarial Science",
+      "Banking & Insurance",
+      "Business Analytics",
+      "Business Economics",
+      "Computer Applications",
+      "Corporate Secretaryship",
+      "Cost Accounting",
+      "Digital Marketing",
+      "E-Commerce",
+      "Economics",
+      "Entrepreneurship",
+      "Financial Markets",
+      "General",
+      "HRM",
+      "Hospitality Management",
+      "International Business",
+      "Investment Management",
+      "Marketing",
+      "Retail Management",
+      "Risk Management",
+      "Supply Chain Management",
+      "Taxation",
+      "Tourism & Travel Management",
+      "Wealth Management"
+    ]
+  },
+  "B.Com (Hons)": {
+    "semesters": 8,
+    "branches": [
+      "Accounting & Finance",
+      "Banking & Insurance",
+      "Business Analytics",
+      "Business Economics",
+      "Computer Applications",
+      "Economics",
+      "General",
+      "International Business",
+      "Marketing",
+      "Taxation"
+    ]
+  },
+  "M.Com": {
+    "semesters": 4,
+    "branches": [
+      "Accounting & Finance",
+      "Actuarial Science",
+      "Banking & Insurance",
+      "Business Analytics",
+      "Business Economics",
+      "Computer Applications",
+      "Corporate Secretaryship",
+      "Cost Accounting",
+      "Digital Marketing",
+      "E-Commerce",
+      "Economics",
+      "Entrepreneurship",
+      "Financial Markets",
+      "General",
+      "HRM",
+      "Hospitality Management",
+      "International Business",
+      "Investment Management",
+      "Marketing",
+      "Retail Management",
+      "Risk Management",
+      "Supply Chain Management",
+      "Taxation",
+      "Tourism & Travel Management",
+      "Wealth Management"
+    ]
+  },
+  "Integrated B.Com + M.Com": {
+    "semesters": 10,
+    "branches": [
+      "Accounting",
+      "Banking & Insurance",
+      "Business Analytics",
+      "Economics",
+      "Finance",
+      "General",
+      "International Business",
+      "Marketing",
+      "Taxation"
+    ]
+  },
+  "LLB": {
+    "semesters": 6,
+    "branches": [
+      "Alternative Dispute Resolution",
+      "Civil Law",
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "Cyber Law",
+      "Environmental Law",
+      "Family Law",
+      "General",
+      "Human Rights Law",
+      "Intellectual Property Law",
+      "International Law",
+      "Labour Law",
+      "Taxation Law"
+    ]
+  },
+  "LLM": {
+    "semesters": 4,
+    "branches": [
+      "Alternative Dispute Resolution",
+      "Civil Law",
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "Cyber Law",
+      "Environmental Law",
+      "Family Law",
+      "General",
+      "Human Rights Law",
+      "Intellectual Property Law",
+      "International Law",
+      "Labour Law",
+      "Taxation Law"
+    ]
+  },
+  "BA LLB": {
+    "semesters": 10,
+    "branches": [
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "General"
+    ]
+  },
+  "BBA LLB": {
+    "semesters": 10,
+    "branches": [
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "General"
+    ]
+  },
+  "B.Com LLB": {
+    "semesters": 10,
+    "branches": [
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "General"
+    ]
+  },
+  "B.Sc LLB": {
+    "semesters": 10,
+    "branches": [
+      "Constitutional Law",
+      "Corporate Law",
+      "Criminal Law",
+      "General"
+    ]
+  },
+  "MBBS": {
+    "semesters": 9,
+    "branches": [
+      "Medicine & Surgery"
+    ]
+  },
+  "BDS": {
+    "semesters": 8,
+    "branches": [
+      "Dental Surgery"
+    ]
+  },
+  "BAMS": {
+    "semesters": 9,
+    "branches": [
+      "Ayurvedic Medicine & Surgery"
+    ]
+  },
+  "BHMS": {
+    "semesters": 9,
+    "branches": [
+      "Homeopathic Medicine & Surgery"
+    ]
+  },
+  "BUMS": {
+    "semesters": 9,
+    "branches": [
+      "Unani Medicine & Surgery"
+    ]
+  },
+  "BSMS": {
+    "semesters": 9,
+    "branches": [
+      "Siddha Medicine & Surgery"
+    ]
+  },
+  "BNYS": {
+    "semesters": 9,
+    "branches": [
+      "Naturopathy & Yogic Sciences"
+    ]
+  },
+  "GNM": {
+    "semesters": 6,
+    "branches": [
+      "General Nursing & Midwifery"
+    ]
+  },
+  "B.Sc Nursing": {
+    "semesters": 8,
+    "branches": [
+      "Nursing"
+    ]
+  },
+  "Post Basic B.Sc Nursing": {
+    "semesters": 4,
+    "branches": [
+      "Nursing"
+    ]
+  },
+  "M.Sc Nursing": {
+    "semesters": 4,
+    "branches": [
+      "Nursing"
+    ]
+  },
+  "BPT": {
+    "semesters": 9,
+    "branches": [
+      "Physiotherapy"
+    ]
+  },
+  "MPT": {
+    "semesters": 4,
+    "branches": [
+      "Physiotherapy"
+    ]
+  },
+  "BOT": {
+    "semesters": 9,
+    "branches": [
+      "Occupational Therapy"
+    ]
+  },
+  "MOT": {
+    "semesters": 4,
+    "branches": [
+      "Occupational Therapy"
+    ]
+  },
+  "B.Sc MLT": {
+    "semesters": 6,
+    "branches": [
+      "Medical Laboratory Technology"
+    ]
+  },
+  "M.Sc MLT": {
+    "semesters": 4,
+    "branches": [
+      "Medical Laboratory Technology"
+    ]
+  },
+  "B.Sc MIT": {
+    "semesters": 6,
+    "branches": [
+      "Medical Imaging Technology"
+    ]
+  },
+  "B.Sc Optometry": {
+    "semesters": 8,
+    "branches": [
+      "Optometry"
+    ]
+  },
+  "M.Sc Optometry": {
+    "semesters": 4,
+    "branches": [
+      "Optometry"
+    ]
+  },
+  "B.Sc Radiotherapy": {
+    "semesters": 6,
+    "branches": [
+      "Radiotherapy"
+    ]
+  },
+  "B.Sc Anaesthesia": {
+    "semesters": 6,
+    "branches": [
+      "Anaesthesia Technology"
+    ]
+  },
+  "B.Sc Operation Theatre": {
+    "semesters": 6,
+    "branches": [
+      "Operation Theatre Technology"
+    ]
+  },
+  "B.Sc Dialysis": {
+    "semesters": 6,
+    "branches": [
+      "Dialysis Technology"
+    ]
+  },
+  "B.Sc Cardiac Care": {
+    "semesters": 6,
+    "branches": [
+      "Cardiac Care Technology"
+    ]
+  },
+  "B.Sc Neuroscience": {
+    "semesters": 6,
+    "branches": [
+      "Neuroscience Technology"
+    ]
+  },
+  "B.Sc Emergency Medicine": {
+    "semesters": 6,
+    "branches": [
+      "Emergency Medicine Technology"
+    ]
+  },
+  "B.Sc Respiratory Therapy": {
+    "semesters": 8,
+    "branches": [
+      "Respiratory Therapy"
+    ]
+  },
+  "B.Sc Audiology & Speech": {
+    "semesters": 6,
+    "branches": [
+      "Audiology & Speech Language Pathology"
+    ]
+  },
+  "M.Sc Audiology & Speech": {
+    "semesters": 4,
+    "branches": [
+      "Audiology & Speech Language Pathology"
+    ]
+  },
+  "B.Sc Prosthetics & Orthotics": {
+    "semesters": 9,
+    "branches": [
+      "Prosthetics & Orthotics"
+    ]
+  },
+  "M.Sc Prosthetics & Orthotics": {
+    "semesters": 4,
+    "branches": [
+      "Prosthetics & Orthotics"
+    ]
+  },
+  "BASLP": {
+    "semesters": 8,
+    "branches": [
+      "Audiology & Speech Language Pathology"
+    ]
+  },
+  "MASLP": {
+    "semesters": 4,
+    "branches": [
+      "Audiology & Speech Language Pathology"
+    ]
+  },
+  "B.Sc Clinical Psychology": {
+    "semesters": 6,
+    "branches": [
+      "Clinical Psychology"
+    ]
+  },
+  "M.Sc Clinical Psychology": {
+    "semesters": 4,
+    "branches": [
+      "Clinical Psychology"
+    ]
+  },
+  "M.Phil Clinical Psychology": {
+    "semesters": 4,
+    "branches": [
+      "Clinical Psychology"
+    ]
+  },
+  "Professional Diploma in Clinical Psychology": {
+    "semesters": 2,
+    "branches": [
+      "Clinical Psychology"
+    ]
+  },
+  "B.Sc Forensic Science": {
+    "semesters": 6,
+    "branches": [
+      "Forensic Science"
+    ]
+  },
+  "M.Sc Forensic Science": {
+    "semesters": 4,
+    "branches": [
+      "Forensic Science"
+    ]
+  },
+  "B.Sc Cyber Forensics": {
+    "semesters": 6,
+    "branches": [
+      "Cyber Forensics"
+    ]
+  },
+  "M.Sc Cyber Forensics": {
+    "semesters": 4,
+    "branches": [
+      "Cyber Forensics"
+    ]
+  },
+  "B.Ed": {
+    "semesters": 4,
+    "branches": [
+      "General Education",
+      "Physical Education",
+      "Special Education",
+      "Yoga Education"
+    ]
+  },
+  "M.Ed": {
+    "semesters": 4,
+    "branches": [
+      "General Education",
+      "Special Education"
+    ]
+  },
+  "B.El.Ed": {
+    "semesters": 8,
+    "branches": [
+      "Elementary Education"
+    ]
+  },
+  "D.El.Ed": {
+    "semesters": 4,
+    "branches": [
+      "Elementary Education"
+    ]
+  },
+  "B.P.Ed": {
+    "semesters": 4,
+    "branches": [
+      "Physical Education"
+    ]
+  },
+  "M.P.Ed": {
+    "semesters": 4,
+    "branches": [
+      "Physical Education"
+    ]
+  },
+  "B.Ed Special Education": {
+    "semesters": 4,
+    "branches": [
+      "Autism Spectrum Disorder",
+      "Cerebral Palsy",
+      "Hearing Impairment",
+      "Learning Disability",
+      "Mental Retardation",
+      "Multiple Disabilities",
+      "Visual Impairment"
+    ]
+  },
+  "M.Ed Special Education": {
+    "semesters": 4,
+    "branches": [
+      "Autism Spectrum Disorder",
+      "Hearing Impairment",
+      "Learning Disability",
+      "Mental Retardation",
+      "Visual Impairment"
+    ]
+  },
+  "PG Diploma in Special Education": {
+    "semesters": 2,
+    "branches": [
+      "Special Education"
+    ]
+  },
+  "Diploma in Rehabilitation": {
+    "semesters": 2,
+    "branches": [
+      "Rehabilitation Therapy"
+    ]
+  },
+  "B.Sc Rehabilitation": {
+    "semesters": 6,
+    "branches": [
+      "Rehabilitation Science"
+    ]
+  },
+  "M.Sc Rehabilitation": {
+    "semesters": 4,
+    "branches": [
+      "Rehabilitation Science"
+    ]
+  },
+  "B.Sc Agriculture": {
+    "semesters": 8,
+    "branches": [
+      "Agri-Marketing",
+      "Agricultural Biotechnology",
+      "Agricultural Business Management",
+      "Agricultural Economics",
+      "Agricultural Engineering",
+      "Agricultural Extension",
+      "Agricultural Microbiology",
+      "Agricultural Statistics",
+      "Agriculture",
+      "Agronomy",
+      "Animal Husbandry",
+      "Aquaculture",
+      "Child Development",
+      "Community Science",
+      "Dairy Science",
+      "Dairy Technology",
+      "Entomology",
+      "Extension Education",
+      "Family Resource Management",
+      "Fisheries Science",
+      "Food & Nutrition",
+      "Food Processing",
+      "Food Science & Nutrition",
+      "Food Technology",
+      "Forestry",
+      "Home Science",
+      "Horticulture",
+      "Nematology",
+      "Plant Breeding & Genetics",
+      "Plant Pathology",
+      "Post Harvest Technology",
+      "Poultry Science",
+      "Rural Development",
+      "Seed Technology",
+      "Sericulture",
+      "Soil Science",
+      "Textile & Apparel Designing",
+      "Veterinary Science",
+      "Water Science & Technology"
+    ]
+  },
+  "M.Sc Agriculture": {
+    "semesters": 4,
+    "branches": [
+      "Agri-Marketing",
+      "Agricultural Biotechnology",
+      "Agricultural Business Management",
+      "Agricultural Economics",
+      "Agricultural Engineering",
+      "Agricultural Extension",
+      "Agricultural Microbiology",
+      "Agricultural Statistics",
+      "Agriculture",
+      "Agronomy",
+      "Animal Husbandry",
+      "Aquaculture",
+      "Child Development",
+      "Community Science",
+      "Dairy Science",
+      "Dairy Technology",
+      "Entomology",
+      "Extension Education",
+      "Family Resource Management",
+      "Fisheries Science",
+      "Food & Nutrition",
+      "Food Processing",
+      "Food Science & Nutrition",
+      "Food Technology",
+      "Forestry",
+      "Home Science",
+      "Horticulture",
+      "Nematology",
+      "Plant Breeding & Genetics",
+      "Plant Pathology",
+      "Post Harvest Technology",
+      "Poultry Science",
+      "Rural Development",
+      "Seed Technology",
+      "Sericulture",
+      "Soil Science",
+      "Textile & Apparel Designing",
+      "Veterinary Science",
+      "Water Science & Technology"
+    ]
+  },
+  "BVSc & AH": {
+    "semesters": 10,
+    "branches": [
+      "Animal Husbandry",
+      "Veterinary Gynaecology",
+      "Veterinary Microbiology",
+      "Veterinary Parasitology",
+      "Veterinary Pathology",
+      "Veterinary Public Health",
+      "Veterinary Science",
+      "Veterinary Surgery"
+    ]
+  },
+  "MVSc": {
+    "semesters": 4,
+    "branches": [
+      "Animal Husbandry",
+      "Veterinary Gynaecology",
+      "Veterinary Microbiology",
+      "Veterinary Parasitology",
+      "Veterinary Pathology",
+      "Veterinary Public Health",
+      "Veterinary Science",
+      "Veterinary Surgery"
+    ]
+  },
+  "B.Des": {
+    "semesters": 8,
+    "branches": [
+      "Accessory Design",
+      "Animation Design",
+      "Apparel Production",
+      "Automobile Design",
+      "Ceramic Design",
+      "Communication Design",
+      "Costume Design",
+      "Craft Design",
+      "Exhibition Design",
+      "Fashion Communication",
+      "Fashion Design",
+      "Fashion Styling",
+      "Film & Video Design",
+      "Furniture Design",
+      "Game Design",
+      "Glass Design",
+      "Graphic Design",
+      "Industrial Design",
+      "Interaction Design",
+      "Interior Design",
+      "Jewellery Design",
+      "Knitwear Design",
+      "Leather Design",
+      "Makeup & Styling",
+      "Photography",
+      "Product Design",
+      "Set Design",
+      "Social Design",
+      "Sound Design",
+      "Strategic Design Management",
+      "Sustainable Design",
+      "Textile Design",
+      "Transportation Design",
+      "User Experience (UX) Design",
+      "User Interface (UI) Design",
+      "Visual Communication"
+    ]
+  },
+  "M.Des": {
+    "semesters": 4,
+    "branches": [
+      "Accessory Design",
+      "Animation Design",
+      "Apparel Production",
+      "Automobile Design",
+      "Ceramic Design",
+      "Communication Design",
+      "Costume Design",
+      "Craft Design",
+      "Exhibition Design",
+      "Fashion Communication",
+      "Fashion Design",
+      "Fashion Styling",
+      "Film & Video Design",
+      "Furniture Design",
+      "Game Design",
+      "Glass Design",
+      "Graphic Design",
+      "Industrial Design",
+      "Interaction Design",
+      "Interior Design",
+      "Jewellery Design",
+      "Knitwear Design",
+      "Leather Design",
+      "Makeup & Styling",
+      "Photography",
+      "Product Design",
+      "Set Design",
+      "Social Design",
+      "Sound Design",
+      "Strategic Design Management",
+      "Sustainable Design",
+      "Textile Design",
+      "Transportation Design",
+      "User Experience (UX) Design",
+      "User Interface (UI) Design",
+      "Visual Communication"
+    ]
+  },
+  "BHM": {
+    "semesters": 8,
+    "branches": [
+      "Airline & Airport Management",
+      "Bakery & Confectionery",
+      "Cruise Line Operations",
+      "Culinary Arts",
+      "Event Management",
+      "Food & Beverage Service",
+      "Food Production",
+      "Front Office Operations",
+      "Hospitality & Tourism",
+      "Hotel Management",
+      "Housekeeping Operations",
+      "Resort Management",
+      "Spa & Wellness Management",
+      "Travel & Tourism"
+    ]
+  },
+  "BHMCT": {
+    "semesters": 8,
+    "branches": [
+      "Airline & Airport Management",
+      "Bakery & Confectionery",
+      "Cruise Line Operations",
+      "Culinary Arts",
+      "Event Management",
+      "Food & Beverage Service",
+      "Food Production",
+      "Front Office Operations",
+      "Hospitality & Tourism",
+      "Hotel Management",
+      "Housekeeping Operations",
+      "Resort Management",
+      "Spa & Wellness Management",
+      "Travel & Tourism"
+    ]
+  },
+  "MHM": {
+    "semesters": 4,
+    "branches": [
+      "Airline & Airport Management",
+      "Bakery & Confectionery",
+      "Cruise Line Operations",
+      "Culinary Arts",
+      "Event Management",
+      "Food & Beverage Service",
+      "Food Production",
+      "Front Office Operations",
+      "Hospitality & Tourism",
+      "Hotel Management",
+      "Housekeeping Operations",
+      "Resort Management",
+      "Spa & Wellness Management",
+      "Travel & Tourism"
+    ]
+  },
+  "MTTM": {
+    "semesters": 4,
+    "branches": [
+      "Airline & Airport Management",
+      "Bakery & Confectionery",
+      "Cruise Line Operations",
+      "Culinary Arts",
+      "Event Management",
+      "Food & Beverage Service",
+      "Food Production",
+      "Front Office Operations",
+      "Hospitality & Tourism",
+      "Hotel Management",
+      "Housekeeping Operations",
+      "Resort Management",
+      "Spa & Wellness Management",
+      "Travel & Tourism"
+    ]
+  },
+  "Diploma in Hotel Management": {
+    "semesters": 3,
+    "branches": [
+      "Bakery & Confectionery",
+      "Food Production",
+      "Hotel Management",
+      "Travel & Tourism"
+    ]
+  },
+  "PhD": {
+    "semesters": 6,
+    "branches": [
+      "Agriculture",
+      "Architecture",
+      "Arts",
+      "Commerce",
+      "Computer Applications",
+      "Design",
+      "Education",
+      "Engineering",
+      "Humanities",
+      "Interdisciplinary Studies",
+      "Law",
+      "Management",
+      "Medicine",
+      "Pharmacy",
+      "Science",
+      "Social Sciences",
+      "Technology"
+    ]
+  },
+  "M.Phil": {
+    "semesters": 2,
+    "branches": [
+      "Agriculture",
+      "Architecture",
+      "Arts",
+      "Commerce",
+      "Computer Applications",
+      "Design",
+      "Education",
+      "Engineering",
+      "Humanities",
+      "Interdisciplinary Studies",
+      "Law",
+      "Management",
+      "Medicine",
+      "Pharmacy",
+      "Science",
+      "Social Sciences",
+      "Technology"
+    ]
+  },
+  "Diploma in Nursing": {
+    "semesters": 6,
+    "branches": [
+      "General Nursing"
+    ]
+  },
+  "Diploma in Pharmacy": {
+    "semesters": 4,
+    "branches": [
+      "Pharmacy"
+    ]
+  },
+  "Diploma in Medical Lab Tech": {
+    "semesters": 4,
+    "branches": [
+      "Medical Laboratory Technology"
+    ]
+  },
+  "Diploma in Radiography": {
+    "semesters": 4,
+    "branches": [
+      "Radiography"
+    ]
+  },
+  "Diploma in Physiotherapy": {
+    "semesters": 4,
+    "branches": [
+      "Physiotherapy"
+    ]
+  },
+  "Diploma in Optometry": {
+    "semesters": 4,
+    "branches": [
+      "Optometry"
+    ]
+  },
+  "Diploma in Dental Mechanics": {
+    "semesters": 4,
+    "branches": [
+      "Dental Mechanics"
+    ]
+  },
+  "Diploma in Dental Hygiene": {
+    "semesters": 4,
+    "branches": [
+      "Dental Hygiene"
+    ]
+  },
+  "Diploma in Operation Theatre": {
+    "semesters": 4,
+    "branches": [
+      "Operation Theatre Technology"
+    ]
+  },
+  "Diploma in Anaesthesia": {
+    "semesters": 4,
+    "branches": [
+      "Anaesthesia Technology"
+    ]
+  },
+  "Diploma in Dialysis": {
+    "semesters": 4,
+    "branches": [
+      "Dialysis Technology"
+    ]
+  },
+  "Diploma in X-Ray Technology": {
+    "semesters": 4,
+    "branches": [
+      "X-Ray Technology"
+    ]
+  },
+  "Diploma in ECG Technology": {
+    "semesters": 2,
+    "branches": [
+      "ECG Technology"
+    ]
+  },
+  "Diploma in Sanitary Inspector": {
+    "semesters": 2,
+    "branches": [
+      "Sanitary Inspection"
+    ]
+  },
+  "Diploma in Health Inspector": {
+    "semesters": 2,
+    "branches": [
+      "Health Inspection"
+    ]
+  },
+  "Certificate in Nursing": {
+    "semesters": 3,
+    "branches": [
+      "Auxiliary Nursing & Midwifery"
+    ]
+  },
+  "Certificate in Pharmacy": {
+    "semesters": 2,
+    "branches": [
+      "Pharmacy Assistant"
+    ]
+  },
+  "Certificate in Medical Lab Tech": {
+    "semesters": 2,
+    "branches": [
+      "Lab Assistant"
+    ]
+  },
+  "Certificate in First Aid": {
+    "semesters": 1,
+    "branches": [
+      "First Aid"
+    ]
+  },
+  "CA": {
+    "semesters": 9,
+    "branches": [
+      "Chartered Accountancy"
+    ]
+  },
+  "CS": {
+    "semesters": 6,
+    "branches": [
+      "Company Secretary"
+    ]
+  },
+  "CMA": {
+    "semesters": 6,
+    "branches": [
+      "Cost & Management Accounting"
+    ]
+  },
+  "CFA": {
+    "semesters": 4,
+    "branches": [
+      "Chartered Financial Analyst"
+    ]
+  },
+  "CPA": {
+    "semesters": 2,
+    "branches": [
+      "Certified Public Accountant"
+    ]
+  },
+  "ACCA": {
+    "semesters": 4,
+    "branches": [
+      "Association of Chartered Certified Accountants"
+    ]
+  },
+  "FRM": {
+    "semesters": 2,
+    "branches": [
+      "Financial Risk Management"
+    ]
+  },
+  "CIA": {
+    "semesters": 2,
+    "branches": [
+      "Certified Internal Auditor"
+    ]
+  },
+  "CISA": {
+    "semesters": 2,
+    "branches": [
+      "Certified Information Systems Auditor"
+    ]
+  },
+  "CISM": {
+    "semesters": 2,
+    "branches": [
+      "Certified Information Security Manager"
+    ]
+  },
+  "CISSP": {
+    "semesters": 2,
+    "branches": [
+      "Certified Information Systems Security Professional"
+    ]
+  },
+  "PMP": {
+    "semesters": 1,
+    "branches": [
+      "Project Management Professional"
+    ]
+  },
+  "PRINCE2": {
+    "semesters": 1,
+    "branches": [
+      "Projects in Controlled Environments"
+    ]
+  },
+  "Six Sigma": {
+    "semesters": 1,
+    "branches": [
+      "Six Sigma Certification"
+    ]
+  },
+  "ITIL": {
+    "semesters": 1,
+    "branches": [
+      "Information Technology Infrastructure Library"
+    ]
+  },
+  "CMA (US)": {
+    "semesters": 2,
+    "branches": [
+      "Certified Management Accountant (US)"
+    ]
+  },
+  "CPA (Australia)": {
+    "semesters": 2,
+    "branches": [
+      "Certified Practising Accountant"
+    ]
+  },
+  "CFP": {
+    "semesters": 2,
+    "branches": [
+      "Certified Financial Planner"
+    ]
+  },
+  "CWM": {
+    "semesters": 2,
+    "branches": [
+      "Chartered Wealth Manager"
+    ]
+  },
+  "CMT": {
+    "semesters": 2,
+    "branches": [
+      "Chartered Market Technician"
+    ]
+  },
+  "CAIA": {
+    "semesters": 2,
+    "branches": [
+      "Chartered Alternative Investment Analyst"
+    ]
+  },
+  "CERA": {
+    "semesters": 2,
+    "branches": [
+      "Certified Enterprise Risk Actuary"
+    ]
+  },
+  "Actuarial Science": {
+    "semesters": 6,
+    "branches": [
+      "Actuarial Science"
+    ]
+  },
+  "BAJMC": {
+    "semesters": 6,
+    "branches": [
+      "Advertising",
+      "Animation & VFX",
+      "Broadcast Journalism",
+      "Cinematography",
+      "Corporate Communication",
+      "Data Journalism",
+      "Development Communication",
+      "Digital Media",
+      "Documentary Film Making",
+      "Event Communication",
+      "Fashion Journalism",
+      "Film Making",
+      "Graphic Design for Media",
+      "Health Communication",
+      "Investigative Journalism",
+      "Journalism",
+      "Mass Communication",
+      "Photojournalism",
+      "Political Communication",
+      "Public Relations",
+      "Radio & TV Production",
+      "Science Communication",
+      "Social Media",
+      "Sound Recording & Design",
+      "Sports Journalism",
+      "Video Editing"
+    ]
+  },
+  "MAJMC": {
+    "semesters": 4,
+    "branches": [
+      "Advertising",
+      "Animation & VFX",
+      "Broadcast Journalism",
+      "Cinematography",
+      "Corporate Communication",
+      "Data Journalism",
+      "Development Communication",
+      "Digital Media",
+      "Documentary Film Making",
+      "Event Communication",
+      "Fashion Journalism",
+      "Film Making",
+      "Graphic Design for Media",
+      "Health Communication",
+      "Investigative Journalism",
+      "Journalism",
+      "Mass Communication",
+      "Photojournalism",
+      "Political Communication",
+      "Public Relations",
+      "Radio & TV Production",
+      "Science Communication",
+      "Social Media",
+      "Sound Recording & Design",
+      "Sports Journalism",
+      "Video Editing"
+    ]
+  },
+  "BMM": {
+    "semesters": 6,
+    "branches": [
+      "Advertising",
+      "Animation & VFX",
+      "Broadcast Journalism",
+      "Cinematography",
+      "Corporate Communication",
+      "Data Journalism",
+      "Development Communication",
+      "Digital Media",
+      "Documentary Film Making",
+      "Event Communication",
+      "Fashion Journalism",
+      "Film Making",
+      "Graphic Design for Media",
+      "Health Communication",
+      "Investigative Journalism",
+      "Journalism",
+      "Mass Communication",
+      "Photojournalism",
+      "Political Communication",
+      "Public Relations",
+      "Radio & TV Production",
+      "Science Communication",
+      "Social Media",
+      "Sound Recording & Design",
+      "Sports Journalism",
+      "Video Editing"
+    ]
+  },
+  "MMC": {
+    "semesters": 4,
+    "branches": [
+      "Advertising",
+      "Animation & VFX",
+      "Broadcast Journalism",
+      "Cinematography",
+      "Corporate Communication",
+      "Data Journalism",
+      "Development Communication",
+      "Digital Media",
+      "Documentary Film Making",
+      "Event Communication",
+      "Fashion Journalism",
+      "Film Making",
+      "Graphic Design for Media",
+      "Health Communication",
+      "Investigative Journalism",
+      "Journalism",
+      "Mass Communication",
+      "Photojournalism",
+      "Political Communication",
+      "Public Relations",
+      "Radio & TV Production",
+      "Science Communication",
+      "Social Media",
+      "Sound Recording & Design",
+      "Sports Journalism",
+      "Video Editing"
+    ]
+  },
+  "BFA": {
+    "semesters": 8,
+    "branches": [
+      "Applied Arts",
+      "Ceramics",
+      "Painting",
+      "Printmaking",
+      "Sculpture",
+      "Textile Design"
+    ]
+  },
+  "MFA": {
+    "semesters": 4,
+    "branches": [
+      "Applied Arts",
+      "Ceramics",
+      "Painting",
+      "Printmaking",
+      "Sculpture",
+      "Textile Design"
+    ]
+  },
+  "BPA": {
+    "semesters": 8,
+    "branches": [
+      "Dance (Bharatanatyam)",
+      "Dance (Kathak)",
+      "Dance (Kathakali)",
+      "Dance (Kuchipudi)",
+      "Dance (Manipuri)",
+      "Dance (Mohiniyattam)",
+      "Dance (Odissi)",
+      "Dance (Sattriya)",
+      "Music (Instrumental)",
+      "Music (Vocal)",
+      "Theatre & Drama"
+    ]
+  },
+  "MPA": {
+    "semesters": 4,
+    "branches": [
+      "Dance",
+      "Music (Instrumental)",
+      "Music (Vocal)",
+      "Theatre & Drama"
+    ]
+  },
+  "B.Music": {
+    "semesters": 8,
+    "branches": [
+      "Carnatic Music (Instrumental)",
+      "Carnatic Music (Vocal)",
+      "Hindustani Music (Instrumental)",
+      "Hindustani Music (Vocal)",
+      "Indian Classical Music (Instrumental - Flute)",
+      "Indian Classical Music (Instrumental - Sitar)",
+      "Indian Classical Music (Instrumental - Tabla)",
+      "Indian Classical Music (Instrumental - Violin)",
+      "Indian Classical Music (Vocal)"
+    ]
+  },
+  "M.Music": {
+    "semesters": 4,
+    "branches": [
+      "Carnatic Music",
+      "Hindustani Music",
+      "Indian Classical Music (Instrumental)",
+      "Indian Classical Music (Vocal)"
+    ]
+  },
+  "BPA Dance": {
+    "semesters": 8,
+    "branches": [
+      "Bharatanatyam",
+      "Chhau",
+      "Contemporary Dance",
+      "Folk Dance",
+      "Kathak",
+      "Kathakali",
+      "Kuchipudi",
+      "Manipuri",
+      "Mohiniyattam",
+      "Odissi",
+      "Sattriya"
+    ]
+  },
+  "MPA Dance": {
+    "semesters": 4,
+    "branches": [
+      "Bharatanatyam",
+      "Chhau",
+      "Contemporary Dance",
+      "Folk Dance",
+      "Kathak",
+      "Kathakali",
+      "Kuchipudi",
+      "Manipuri",
+      "Mohiniyattam",
+      "Odissi",
+      "Sattriya"
+    ]
+  },
+  "BPA Theatre": {
+    "semesters": 8,
+    "branches": [
+      "Acting",
+      "Costume Design",
+      "Direction",
+      "Lighting Design",
+      "Makeup & Wig Design",
+      "Sound Design",
+      "Stage Design"
+    ]
+  },
+  "MPA Theatre": {
+    "semesters": 4,
+    "branches": [
+      "Acting",
+      "Costume Design",
+      "Direction",
+      "Lighting Design",
+      "Makeup & Wig Design",
+      "Sound Design",
+      "Stage Design"
+    ]
+  },
+  "BA Film Studies": {
+    "semesters": 6,
+    "branches": [
+      "Film Studies"
+    ]
+  },
+  "MA Film Studies": {
+    "semesters": 4,
+    "branches": [
+      "Film Studies"
+    ]
+  },
+  "BFA Film Making": {
+    "semesters": 8,
+    "branches": [
+      "Film Making"
+    ]
+  },
+  "MFA Film Making": {
+    "semesters": 4,
+    "branches": [
+      "Film Making"
+    ]
+  },
+  "B.Sc Film & Television Production": {
+    "semesters": 6,
+    "branches": [
+      "Film & Television Production"
+    ]
+  },
+  "M.Sc Film & Television Production": {
+    "semesters": 4,
+    "branches": [
+      "Film & Television Production"
+    ]
+  },
+  "BFA Cinematography": {
+    "semesters": 8,
+    "branches": [
+      "Cinematography"
+    ]
+  },
+  "MFA Cinematography": {
+    "semesters": 4,
+    "branches": [
+      "Cinematography"
+    ]
+  },
+  "BFA Editing": {
+    "semesters": 8,
+    "branches": [
+      "Film & Video Editing"
+    ]
+  },
+  "MFA Editing": {
+    "semesters": 4,
+    "branches": [
+      "Film & Video Editing"
+    ]
+  },
+  "BFA Sound Design": {
+    "semesters": 8,
+    "branches": [
+      "Sound Design & Recording"
+    ]
+  },
+  "MFA Sound Design": {
+    "semesters": 4,
+    "branches": [
+      "Sound Design & Recording"
+    ]
+  },
+  "BFA Direction": {
+    "semesters": 8,
+    "branches": [
+      "Film Direction"
+    ]
+  },
+  "MFA Direction": {
+    "semesters": 4,
+    "branches": [
+      "Film Direction"
+    ]
+  },
+  "BFA Screenwriting": {
+    "semesters": 8,
+    "branches": [
+      "Screenwriting"
+    ]
+  },
+  "MFA Screenwriting": {
+    "semesters": 4,
+    "branches": [
+      "Screenwriting"
+    ]
+  },
+  "BFA Production Design": {
+    "semesters": 8,
+    "branches": [
+      "Production Design"
+    ]
+  },
+  "MFA Production Design": {
+    "semesters": 4,
+    "branches": [
+      "Production Design"
+    ]
+  },
+  "BFA Photography": {
+    "semesters": 8,
+    "branches": [
+      "Photography"
+    ]
+  },
+  "MFA Photography": {
+    "semesters": 4,
+    "branches": [
+      "Photography"
+    ]
+  },
+  "B.Sc Photography": {
+    "semesters": 6,
+    "branches": [
+      "Photography"
+    ]
+  },
+  "M.Sc Photography": {
+    "semesters": 4,
+    "branches": [
+      "Photography"
+    ]
+  },
+  "BFA Photojournalism": {
+    "semesters": 8,
+    "branches": [
+      "Photojournalism"
+    ]
+  },
+  "MFA Photojournalism": {
+    "semesters": 4,
+    "branches": [
+      "Photojournalism"
+    ]
+  },
+  "BFA Fashion Photography": {
+    "semesters": 8,
+    "branches": [
+      "Fashion Photography"
+    ]
+  },
+  "MFA Fashion Photography": {
+    "semesters": 4,
+    "branches": [
+      "Fashion Photography"
+    ]
+  },
+  "BFA Wildlife Photography": {
+    "semesters": 8,
+    "branches": [
+      "Wildlife Photography"
+    ]
+  },
+  "MFA Wildlife Photography": {
+    "semesters": 4,
+    "branches": [
+      "Wildlife Photography"
+    ]
+  },
+  "BSW": {
+    "semesters": 6,
+    "branches": [
+      "Child Welfare",
+      "Community Development",
+      "Disability Studies",
+      "Disaster Management",
+      "Family & Child Welfare",
+      "General Social Work",
+      "Gerontology",
+      "Industrial Relations",
+      "Labour Welfare",
+      "Medical & Psychiatric Social Work",
+      "Mental Health",
+      "Rural Development",
+      "Substance Abuse",
+      "Urban Development",
+      "Women Welfare"
+    ]
+  },
+  "MSW": {
+    "semesters": 4,
+    "branches": [
+      "Child Welfare",
+      "Community Development",
+      "Disability Studies",
+      "Disaster Management",
+      "Family & Child Welfare",
+      "General Social Work",
+      "Gerontology",
+      "Industrial Relations",
+      "Labour Welfare",
+      "Medical & Psychiatric Social Work",
+      "Mental Health",
+      "Rural Development",
+      "Substance Abuse",
+      "Urban Development",
+      "Women Welfare"
+    ]
+  },
+  "PG Diploma in Social Work": {
+    "semesters": 2,
+    "branches": [
+      "Social Work"
+    ]
+  },
+  "PG Diploma in Counselling": {
+    "semesters": 2,
+    "branches": [
+      "Counselling Psychology"
+    ]
+  },
+  "Diploma in Social Work": {
+    "semesters": 2,
+    "branches": [
+      "Social Work"
+    ]
+  },
+  "Certificate in Social Work": {
+    "semesters": 1,
+    "branches": [
+      "Social Work"
+    ]
+  },
+  "BLIS": {
+    "semesters": 2,
+    "branches": [
+      "Library & Information Science"
+    ]
+  },
+  "MLIS": {
+    "semesters": 2,
+    "branches": [
+      "Library & Information Science"
+    ]
+  },
+  "B.Sc Library Science": {
+    "semesters": 6,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "M.Sc Library Science": {
+    "semesters": 4,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "BA Library Science": {
+    "semesters": 6,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "MA Library Science": {
+    "semesters": 4,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "Diploma in Library Science": {
+    "semesters": 2,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "Certificate in Library Science": {
+    "semesters": 1,
+    "branches": [
+      "Library Science"
+    ]
+  },
+  "PG Diploma in Digital Library": {
+    "semesters": 2,
+    "branches": [
+      "Digital Library Management"
+    ]
+  },
+  "PG Diploma in Information Management": {
+    "semesters": 2,
+    "branches": [
+      "Information Management"
+    ]
+  },
+  "B.Sc Yoga": {
+    "semesters": 6,
+    "branches": [
+      "Yoga Science"
+    ]
+  },
+  "M.Sc Yoga": {
+    "semesters": 4,
+    "branches": [
+      "Yoga Science"
+    ]
+  },
+  "PG Diploma in Yoga": {
+    "semesters": 2,
+    "branches": [
+      "Yoga Therapy"
+    ]
+  },
+  "BPEd": {
+    "semesters": 4,
+    "branches": [
+      "Physical Education"
+    ]
+  },
+  "MPEd": {
+    "semesters": 4,
+    "branches": [
+      "Physical Education"
+    ]
+  },
+  "B.Sc Physical Education": {
+    "semesters": 6,
+    "branches": [
+      "Physical Education & Sports"
+    ]
+  },
+  "M.Sc Physical Education": {
+    "semesters": 4,
+    "branches": [
+      "Physical Education & Sports"
+    ]
+  },
+  "B.Sc Sports Science": {
+    "semesters": 6,
+    "branches": [
+      "Sports Science"
+    ]
+  },
+  "M.Sc Sports Science": {
+    "semesters": 4,
+    "branches": [
+      "Sports Science"
+    ]
+  },
+  "B.Sc Sports Management": {
+    "semesters": 6,
+    "branches": [
+      "Sports Management"
+    ]
+  },
+  "M.Sc Sports Management": {
+    "semesters": 4,
+    "branches": [
+      "Sports Management"
+    ]
+  },
+  "B.Sc Exercise & Physiology": {
+    "semesters": 6,
+    "branches": [
+      "Exercise & Physiology"
+    ]
+  },
+  "M.Sc Exercise & Physiology": {
+    "semesters": 4,
+    "branches": [
+      "Exercise & Physiology"
+    ]
+  },
+  "Diploma in Sports Coaching": {
+    "semesters": 2,
+    "branches": [
+      "Sports Coaching"
+    ]
+  },
+  "Certificate in Fitness Training": {
+    "semesters": 1,
+    "branches": [
+      "Fitness Training"
+    ]
+  },
+  "B.Sc Adventure Sports": {
+    "semesters": 6,
+    "branches": [
+      "Adventure Sports"
+    ]
+  },
+  "B.Sc Yoga & Sports": {
+    "semesters": 6,
+    "branches": [
+      "Yoga & Sports Science"
+    ]
+  },
+  "B.Sc Aviation": {
+    "semesters": 6,
+    "branches": [
+      "Aviation Science"
+    ]
+  },
+  "BBA Aviation": {
+    "semesters": 6,
+    "branches": [
+      "Aviation Management"
+    ]
+  },
+  "MBA Aviation": {
+    "semesters": 4,
+    "branches": [
+      "Aviation Management"
+    ]
+  },
+  "B.Sc Aeronautical Science": {
+    "semesters": 6,
+    "branches": [
+      "Aeronautical Science"
+    ]
+  },
+  "AME": {
+    "semesters": 6,
+    "branches": [
+      "Aircraft Maintenance Engineering"
+    ]
+  },
+  "CPL": {
+    "semesters": 3,
+    "branches": [
+      "Commercial Pilot License"
+    ]
+  },
+  "PPL": {
+    "semesters": 2,
+    "branches": [
+      "Private Pilot License"
+    ]
+  },
+  "ATPL": {
+    "semesters": 4,
+    "branches": [
+      "Airline Transport Pilot License"
+    ]
+  },
+  "B.Sc Air Traffic Control": {
+    "semesters": 6,
+    "branches": [
+      "Air Traffic Control"
+    ]
+  },
+  "Diploma in Airport Management": {
+    "semesters": 2,
+    "branches": [
+      "Airport Management"
+    ]
+  },
+  "Diploma in Ground Staff": {
+    "semesters": 2,
+    "branches": [
+      "Ground Staff Operations"
+    ]
+  },
+  "Diploma in Cabin Crew": {
+    "semesters": 2,
+    "branches": [
+      "Cabin Crew & Hospitality"
+    ]
+  },
+  "B.Sc Nautical Science": {
+    "semesters": 6,
+    "branches": [
+      "Nautical Science"
+    ]
+  },
+  "B.Tech Marine Engineering": {
+    "semesters": 8,
+    "branches": [
+      "Marine Engineering"
+    ]
+  },
+  "B.Tech Naval Architecture": {
+    "semesters": 8,
+    "branches": [
+      "Naval Architecture"
+    ]
+  },
+  "GP Rating": {
+    "semesters": 2,
+    "branches": [
+      "General Purpose Rating"
+    ]
+  },
+  "DNS": {
+    "semesters": 2,
+    "branches": [
+      "Diploma in Nautical Science"
+    ]
+  },
+  "ETO": {
+    "semesters": 2,
+    "branches": [
+      "Electro Technical Officer"
+    ]
+  },
+  "GME": {
+    "semesters": 2,
+    "branches": [
+      "Graduate Marine Engineering"
+    ]
+  },
+  "MBA Shipping & Logistics": {
+    "semesters": 4,
+    "branches": [
+      "Shipping & Logistics Management"
+    ]
+  },
+  "NDA": {
+    "semesters": 6,
+    "branches": [
+      "National Defence Academy (Army/Navy/Air Force)"
+    ]
+  },
+  "IMA": {
+    "semesters": 3,
+    "branches": [
+      "Indian Military Academy"
+    ]
+  },
+  "OTA": {
+    "semesters": 2,
+    "branches": [
+      "Officers Training Academy"
+    ]
+  },
+  "INA": {
+    "semesters": 8,
+    "branches": [
+      "Indian Naval Academy"
+    ]
+  },
+  "AFA": {
+    "semesters": 3,
+    "branches": [
+      "Air Force Academy"
+    ]
+  }
+}

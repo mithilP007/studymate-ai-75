@@ -1,4 +1,4 @@
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link, useRouterState, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -35,6 +35,25 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
   const [collapsed, setCollapsed] = useState(false);
   const [search, setSearch] = useState("");
   const pathname = useRouterState({ select: (r) => r.location.pathname });
+  const navigate = useNavigate();
+
+  const handleNewChat = () => {
+    localStorage.removeItem("active_chat_id");
+    if (onNewChat) {
+      onNewChat();
+    } else {
+      navigate({ to: "/app" });
+    }
+  };
+
+  const handleSelectChat = (id: string) => {
+    localStorage.setItem("active_chat_id", id);
+    if (onSelectChat) {
+      onSelectChat(id);
+    } else {
+      navigate({ to: "/app" });
+    }
+  };
 
   const { data: profile } = useQuery({
     queryKey: ["profile", user?.id],
@@ -69,7 +88,11 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
       )}
     >
       <div className="h-16 flex items-center justify-between px-3 border-b border-sidebar-border">
-        {!collapsed && <Logo />}
+        {!collapsed && (
+          <Link to="/app" className="hover:opacity-90 transition-opacity">
+            <Logo />
+          </Link>
+        )}
         <Button variant="ghost" size="icon" className="rounded-lg" onClick={() => setCollapsed((c) => !c)}>
           {collapsed ? <PanelLeftOpen className="size-4" /> : <PanelLeftClose className="size-4" />}
         </Button>
@@ -77,7 +100,7 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
 
       <div className="p-3">
         <Button
-          onClick={onNewChat}
+          onClick={handleNewChat}
           className="w-full bg-brand text-brand-foreground hover:opacity-90 rounded-xl h-10 justify-start gap-2"
         >
           <MessageSquarePlus className="size-4" />
@@ -109,7 +132,7 @@ export function AppSidebar({ activeChatId, onSelectChat, onNewChat }: Props) {
                   {g.items.map((c) => (
                     <button
                       key={c.id}
-                      onClick={() => onSelectChat?.(c.id)}
+                      onClick={() => handleSelectChat(c.id)}
                       className={cn(
                         "w-full text-left text-sm rounded-md px-2 py-1.5 truncate hover:bg-sidebar-accent transition-colors",
                         activeChatId === c.id && "bg-sidebar-accent font-medium"

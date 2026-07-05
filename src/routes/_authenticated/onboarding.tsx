@@ -496,21 +496,11 @@ function Onboarding() {
             ) : (
               /* ── Manual Entry Form ── */
               <div className="rounded-xl border border-dashed border-brand/40 bg-brand-soft/10 p-5 space-y-4 animate-fade-up">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center">
                   <div className="flex items-center gap-2">
                     <PlusCircle className="size-4 text-brand" />
                     <h3 className="text-sm font-bold text-foreground">Add College Manually</h3>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setIsManualEntry(false);
-                      setManualCollege({ name: "", state: "", district: "", type: "" });
-                    }}
-                    className="text-xs text-brand hover:underline font-semibold"
-                  >
-                    Back to Search
-                  </button>
                 </div>
 
                 <p className="text-xs text-muted-foreground">
@@ -613,7 +603,19 @@ function Onboarding() {
               )}
 
               <div className="flex gap-2 w-full sm:w-auto">
-                <Button type="button" variant="outline" onClick={() => setStep(1)} className="rounded-xl">
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => {
+                    if (isManualEntry) {
+                      setIsManualEntry(false);
+                      setManualCollege({ name: "", state: "", district: "", type: "" });
+                    } else {
+                      setStep(1);
+                    }
+                  }}
+                  className="rounded-xl"
+                >
                   Back
                 </Button>
                 <Button

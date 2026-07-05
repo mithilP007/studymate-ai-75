@@ -41,7 +41,15 @@ const MODES = ["Learn", "Summarize", "Quiz", "Code Help", "Exam Prep", "Project 
 function Dashboard() {
   const { user } = useAuth();
   const qc = useQueryClient();
-  const [chatId, setChatId] = useState<string | null>(null);
+  const [chatId, setChatId] = useState<string | null>(() => localStorage.getItem("active_chat_id"));
+
+  useEffect(() => {
+    if (chatId) {
+      localStorage.setItem("active_chat_id", chatId);
+    } else {
+      localStorage.removeItem("active_chat_id");
+    }
+  }, [chatId]);
   const [messages, setMessages] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [streaming, setStreaming] = useState(false);
